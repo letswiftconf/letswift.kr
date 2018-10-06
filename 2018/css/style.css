@@ -160,3 +160,167 @@
 		right: 20px;
 	}
 }
+
+/* home */
+
+@media (max-width: 767px) {
+	#home .home-canvans {
+		height: 400px;
+		line-height: 400px;
+		top: 70px;
+		left: 90px;
+		right: 20px;
+	}
+
+	#home .home-noti img {
+		width: 200px;
+	}
+
+	#home .home-noti .content {
+		position: absolute;
+		top: 6px;
+		left: 45px;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	#home .home-icons .icon-music {
+		position: absolute;
+		width: 51px;
+		height: 70px;
+		left: 0;
+		bottom: 0;
+	}
+	
+	#home .home-icons .icon-sessions {
+		position: absolute;
+		width: 52px;
+		height: 67px;
+		left: calc(26% + 5px);
+		bottom: 0;
+	}
+	
+	#home .home-icons .icon-2016 {
+		position: absolute;
+		width: 52px;
+		height: 67px;
+		right: 0;
+		bottom: 0;
+	}
+	
+	#home .home-icons .icon-2017 {
+		position: absolute;
+		width: 52px;
+		height: 67px;
+		right: calc(26% + 5px);
+		bottom: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	#home .section {
+		height: 580px !important;
+	}
+
+	#home .home-canvans {
+		height: 300px;
+		line-height: 300px;
+		top: 70px;
+		left: 90px;
+		right: 20px;
+	}
+}
+
+/* about */
+
+#section-about .container {
+	border: 3px solid #151515;
+  padding: 100px 20px;
+}
+
+#section-about .flex-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#section-about .container .image {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#section-about .container .image img {
+	width: 163px;
+	height: 163px;
+}
+
+#section-about .container .text {
+	margin: 12px 49px;
+	text-align: left;
+  color: black;
+  flex-direction: column;
+}
+
+#section-about .container .text h3 {
+	font-size: 23px;
+  margin-bottom: 42px;
+}
+
+#section-about .container .text p {
+	margin-bottom: 0;
+  font-size: 16px;
+}
+
+#section-about .container .text .ticket {
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#section-about .container .btn-ticket {
+	border: 2px solid #151515;
+	border-radius: 11px;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+  padding: 10px 50px;
+  margin-left: 94px;
+}
+
+@media (max-width: 992px) {
+  #section-about .container {
+		padding: 50px 20px;
+  }
+
+  #section-about .container .text {
+    margin: 0 30px;
+  }
+  
+  #section-about .container .btn-ticket {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-about .container {
+		padding: 30px;
+  }
+
+  #section-about .container .text {
+    margin: 0;
+    text-align: center;
+  }
+
+  #section-about .container .text h3 {
+    margin-top: 42px
+  }
+
+  #section-about .container .btn-ticket {
+    margin: 42px 0 0 0;
+  }
+}
