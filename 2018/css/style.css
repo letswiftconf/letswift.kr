@@ -1,0 +1,162 @@
+/* home */
+
+#home .section {
+	background-color: #707070;
+	float: left;
+	height: 700px !important;
+}
+
+#home .section .container {
+	position: relative;
+	margin: 55px auto;
+	height: calc(100% - 110px);
+}
+
+#home .home-canvans {
+	background-color: white;
+}
+
+#home .home-sidemenu {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#home .home-canvans {
+	position: absolute;
+	left: 82px;
+	right: 278px;
+	max-width: 700px;
+	height: 485px;
+	line-height: 485px;
+}
+
+#home .home-canvans img {
+	max-width: 277px;
+	width: 50%;
+	margin: auto;
+}
+
+#home .home-noti {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#home .home-noti .content {
+	position: absolute;
+	top: 10px;
+	left: 55px;
+	text-align: left;
+	font-size: 12px;
+	color: black;
+}
+
+#home .home-noti img {
+	width: 243px;
+}
+
+#home .home-icons {
+	width: 100%;
+	height: 100%;
+}
+
+#home .home-icons .icon-music {
+	position: absolute;
+	width: 51px;
+	height: 70px;
+	right: 206px;
+	bottom: 0;
+}
+
+#home .home-icons .icon-sessions {
+	position: absolute;
+	width: 52px;
+	height: 67px;
+	right: 103px;
+	bottom: 0;
+}
+
+#home .home-icons .icon-2016 {
+	position: absolute;
+	width: 52px;
+	height: 67px;
+	right: 0;
+	bottom: 100px;
+}
+
+#home .home-icons .icon-2017 {
+	position: absolute;
+	width: 52px;
+	height: 67px;
+	right: 0;
+	bottom: 0;
+}
+
+@media (max-width: 767px) {
+	#home .home-canvans {
+		height: 400px;
+		line-height: 400px;
+		top: 70px;
+		left: 90px;
+		right: 20px;
+	}
+
+	#home .home-noti img {
+		width: 200px;
+	}
+
+	#home .home-noti .content {
+		position: absolute;
+		top: 6px;
+		left: 45px;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	#home .home-icons .icon-music {
+		position: absolute;
+		width: 51px;
+		height: 70px;
+		left: 0;
+		bottom: 0;
+	}
+	
+	#home .home-icons .icon-sessions {
+		position: absolute;
+		width: 52px;
+		height: 67px;
+		left: calc(26% + 5px);
+		bottom: 0;
+	}
+	
+	#home .home-icons .icon-2016 {
+		position: absolute;
+		width: 52px;
+		height: 67px;
+		right: 0;
+		bottom: 0;
+	}
+	
+	#home .home-icons .icon-2017 {
+		position: absolute;
+		width: 52px;
+		height: 67px;
+		right: calc(26% + 5px);
+		bottom: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	#home .section {
+		height: 580px !important;
+	}
+
+	#home .home-canvans {
+		height: 300px;
+		line-height: 300px;
+		top: 70px;
+		left: 90px;
+		right: 20px;
+	}
+}
