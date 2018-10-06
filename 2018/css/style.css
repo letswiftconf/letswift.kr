@@ -307,6 +307,11 @@
   margin-left: 94px;
 }
 
+#section-about .container .btn-ticket:hover {
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 992px) {
   #section-about .container {
 		padding: 50px 20px;
