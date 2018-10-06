@@ -248,6 +248,9 @@
 #section-about .container {
 	border: 3px solid #151515;
   padding: 100px 20px;
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.16);
 }
 
 #section-about .flex-container {
