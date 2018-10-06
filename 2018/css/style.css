@@ -1,3 +1,15 @@
+/* common */
+
+.page-section {
+  padding-top: 80px !important;
+  padding-bottom: 0 !important;
+}
+
+.page-section h2 {
+  font-size: 32px;
+  color: black;
+}
+
 /* home */
 
 #home .section {
@@ -324,3 +336,5 @@
     margin: 42px 0 0 0;
   }
 }
+
+/* program */
