@@ -347,6 +347,59 @@
 
 /* program */
 
+/* staff */
+
+#section-staff {
+  background-color: #EFEFEF;
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+}
+
+#section-staff .flex-container {
+  margin: auto;
+  margin: calc(-24px / 2) calc(-37px / 2);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#section-staff .staff {
+  margin: calc(24px / 2) calc(37px / 2);
+}
+
+#section-staff .staff .avatar {
+  width: 137px;
+  height: 137px;
+}
+
+#section-staff .staff .name {
+  margin-top: 13px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: bold;  
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  #section-staff .flex-container {
+    margin: auto;
+    margin: calc(-24px / 2) calc(-20px / 2);
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  #section-staff .staff {
+    margin: calc(24px / 2) calc(20px / 2);
+  }
+
+  #section-staff .staff .avatar {
+    width: 120px;
+    height: 120px;
+  }  
+}
+
 /* venue */
 
 #section-venue .flex-container {
