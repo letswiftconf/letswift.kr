@@ -616,13 +616,15 @@
 
 	#logo {
 		display: block;
-		height: 100px;
+		width: 124px;
+		height: 60px;
 		float: none;
 		margin: 0 auto 0 !important;
 		max-width: none;
 		text-align: center;
 		border: 0 !important;
-		padding: 0 !important;
+		padding: 19px 0 0 0 !important;
+		/* padding: 0 !important; */
 	}
 
 	#logo a.standard-logo { display: inline-block; }
@@ -636,7 +638,7 @@
 	#primary-menu-trigger {
 		opacity: 1;
 		pointer-events: auto;
-		top: 25px;
+		top: 5px;
 		margin-top: 0;
 		left: 0;
 		z-index: 1;
