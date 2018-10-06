@@ -338,3 +338,53 @@
 }
 
 /* program */
+
+/* venue */
+
+#section-venue .flex-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+#section-venue .map {
+  border: none;
+  flex-grow: 1;
+}
+
+#section-venue .info {
+  margin-top: 53px;
+  margin-bottom: 53px;
+  margin-left: 70px;
+}
+
+#section-venue .info h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  color: black;
+}
+
+#section-venue .info ul {
+  list-style: none;
+  font-size: 16px;
+  color: black;
+}
+
+#section-venue .info li {
+  margin-top: 24px;
+}
+
+#section-venue .info ul .key {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #section-venue .map {
+    height: 200px;
+  }
+
+  #section-venue .info {
+    margin-left: 0;
+  }
+}
