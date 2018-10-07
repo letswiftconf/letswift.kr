@@ -347,6 +347,138 @@
 
 /* program */
 
+#section-program .table-program {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 32px 0;
+  width: calc(100% + 64px);
+  margin: 0 -32px;
+}
+
+#section-program .table-program th:not(:empty) {
+  padding: 14px 19px;
+  background-color: #151515;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#section-program .table-program td {
+  height: 15px;
+  vertical-align: top;
+}
+
+#section-program .table-program td.session:not(:empty),
+#section-program .table-program td.workshop:not(:empty) {
+  padding: 12px 19px;
+  background-color: #EFEFEF;
+  color: black;
+  font-size: 15px;
+  width: 42%;
+}
+
+#section-program .table-program td.session {
+  vertical-align: middle;
+}
+
+#section-program .table-program td.session.reserved {
+  background-color: #90DD22;
+  vertical-align: top;
+}
+
+#section-program .table-program td.session .time {
+  display: block;
+  font-weight: bold;
+}
+#section-program .table-program td.session .speaker {
+  float: right;
+}
+
+#section-program .table-program td.workshop .time {
+  display: block;
+  font-weight: bold;
+}
+#section-program .table-program td.workshop .title {
+  display: block;
+}
+#section-program .table-program td.workshop .speaker {
+  display: block;
+}
+
+#section-program .table-program td.time {
+  min-height: 180px;
+  height: 180px;
+}
+
+#section-program .table-program td.time:not(:empty) {
+  padding: 6px 0;
+  color: #151515;
+  font-size: 15px;
+  font-weight: bold;
+  border-top: 4px solid #151515;
+}
+
+@media (max-width: 992px) {
+  #section-program .table-program {
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-program .table-program {
+    border-collapse: separate;
+    border-spacing: 16px 0;
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+  }
+
+  #section-program .table-program td.session {
+    position: relative;
+    padding-bottom: 60px !important;
+  }
+
+  #section-program .table-program td.session .speaker {
+    position: absolute;
+    left: 19px;
+    bottom: 19px;
+  }
+
+  #section-program .table-program td.workshop .speaker {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  #section-program .table-program {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+  }
+
+  #section-program .table-program td {
+    height: 10px;
+  }
+
+  #section-program .table-program th:not(:empty) {
+    padding: 5px 10px;
+  }
+
+  #section-program .table-program td.session:not(:empty),
+  #section-program .table-program td.workshop:not(:empty) {
+    padding: 8px 10px;
+  }
+
+  #section-program .table-program td.session .speaker {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+  }
+}
+
 /* staff */
 
 #section-staff {
