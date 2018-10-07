@@ -364,6 +364,7 @@
 
 #section-staff .staff {
   margin: calc(24px / 2) calc(37px / 2);
+  cursor: pointer;
 }
 
 #section-staff .staff .avatar {
@@ -382,6 +383,44 @@
   text-align: center;
 }
 
+#section-staff .staff-modal {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  padding: 57px 189px;
+  background-color: white;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+
+#section-staff .staff-modal .avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#section-staff .staff-modal .name::before {
+  content: '@';
+}
+
+#section-staff .staff-modal .name {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#section-staff .staff-modal .bio {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  #section-staff .staff-modal {
+    padding: 30px 60px;
+  }
+}
+
 @media (max-width: 767px) {
   #section-staff .flex-container {
     margin: auto;
@@ -397,7 +436,19 @@
   #section-staff .staff .avatar {
     width: 120px;
     height: 120px;
-  }  
+  }
+
+  #section-staff .staff-modal {
+    padding: 30px 20px;
+  }
+
+  #section-staff .staff-modal .avatar {
+    margin-bottom: 10px;
+  }
+
+  #section-staff .staff-modal .name {
+    margin-bottom: 15px;
+  }
 }
 
 /* venue */
