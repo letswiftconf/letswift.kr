@@ -559,6 +559,19 @@ header {
   text-align: left;
 }
 
+#section-speakers .speaker .submit {
+  margin-top: 1px;
+  width: 100%;
+  color: black;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: left;
+}
+
+#section-speakers .speaker .submit:hover {
+  color: #ff39b7;
+}
+
 #section-speakers .speaker .description {
   margin-top: 10px;
   background-color: white;
@@ -647,39 +660,31 @@ header {
   padding-bottom: 80px !important;
 }
 
-#section-staff .description {
-  margin-top: 1px;
-  width: 100%;
-  color: black;
-  font-size: 17px;
-  font-weight: 800;
-  text-align: left;
-}
-
 #section-staff .flex-container {
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 80px;
-  margin: calc(-24px / 2) calc(-37px / 2);
+  width: 100%;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
   display: flex;
   flex-flow: row wrap;
 }
 
 #section-staff .staff {
-  margin: calc(24px / 2) calc(37px / 2);
+  flex-basis: 22%;
+  padding: 2.5em 1em;
 }
 
 #section-staff .staff .avatar {
+  border-color: #ff39b7;
+  border-style: solid;
+  border-width: 6px;
   display: inline-block;
-  width: 137px;
-  height: 137px;
+  width: 100%;
   object-fit: cover;
   background-position: 50%, 50%;
   background-size: cover;
 }
 
 #section-staff .staff:hover .avatar {
-  opacity: 0.8;
   -webkit-animation: swing 1s ease;
   animation: swing 1s ease;
   -webkit-animation-iteration-count: infinite;
@@ -689,80 +694,47 @@ header {
 #section-staff .staff .name {
   margin-top: 13px;
   width: 100%;
-  background-color: white;
-  color: black;
+  color: #ff39b7;
   font-size: 18px;
-  line-height: 35px;
   font-weight: bold;
   text-align: center;
 }
 
-#section-staff .staff-modal {
-  position: fixed;
-  top: 100px;
-  left: 10%;
-  right: 10%;
+#section-staff .staff .company {
+  margin-bottom: 6px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
-  padding: 57px 189px;
-  background-color: white;
-  border: 1.5px solid black;
-  cursor: pointer;
-  z-index: 50;
 }
 
-#section-staff .staff-modal .avatar {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
+#section-staff .staff .hashtag {
+  margin-bottom: 6px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: underline;
 }
 
-#section-staff .staff-modal .name::before {
-  content: '@';
-}
-
-#section-staff .staff-modal .name {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-#section-staff .staff-modal .bio {
-  margin-bottom: 0;
-  font-size: 18px;
+#section-staff .staff .description {
+  width: 100%;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
-  #section-staff .staff-modal {
-    padding: 30px 60px;
+  #section-staff .staff {
+    flex-basis: 29%;
+    padding: 1em 0;
   }
 }
 
 @media (max-width: 767px) {
-  #section-staff .flex-container {
-    margin: auto;
-    margin: calc(-24px / 2) calc(-20px / 2);
-    display: flex;
-    flex-flow: row wrap;
-  }
-
   #section-staff .staff {
-    margin: calc(24px / 2) calc(20px / 2);
-  }
-
-  #section-staff .staff .avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  #section-staff .staff-modal {
-    padding: 30px 20px;
-  }
-
-  #section-staff .staff-modal .avatar {
-    margin-bottom: 10px;
-  }
-
-  #section-staff .staff-modal .name {
-    margin-bottom: 15px;
+    flex-basis: 45%;
+    padding: 2em 0;
   }
 }
 
