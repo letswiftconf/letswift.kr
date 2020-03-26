@@ -43,6 +43,18 @@ header {
   box-shadow: 0 0 4px 4px #FFC9B7;
 }
 
+.btn-photos {
+  display: inline-block;
+  border-radius: 100px;
+  line-height: 20px;
+	font-weight: 500;
+	color: gray;
+  width: 100%;
+  background-color: white;
+  padding: 10px 45px;
+  box-shadow: 0 0 1px 1px #FFC9B7;
+}
+
 /* .btn-submit:hover {
 	color: #FF33B7;
 } */
@@ -115,6 +127,14 @@ header {
 	max-width: 100%;
   max-height: 485px;
   line-height: 485px;
+}
+
+#home .home-photos {
+	position: absolute;
+  top: 300px;
+	left: 0;
+  min-width: 300px;
+  text-align: center;
 }
 
 #home .home-submit {
