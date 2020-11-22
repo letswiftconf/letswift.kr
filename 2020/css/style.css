@@ -2669,9 +2669,9 @@ html.js .main .section .mediaobject-destroyed .mediaobject-posterframe {
 }
 
 .ct-ultrafast .typography-headline {
-    width: 199px;
-    height: 26px;
-    background-size: 199px 26px;
+    width: 154px;
+    height: 38px;
+    background-size: 154px 38px;
     background-repeat: no-repeat;
     background-image: url(../images/ultra_fast_wireless_large.png);
     position: relative;
@@ -2680,9 +2680,9 @@ html.js .main .section .mediaobject-destroyed .mediaobject-posterframe {
 }
 
 .ct-privacy .typography-headline {
-    width: 186px;
-    height: 26px;
-    background-size: 186px 26px;
+    width: 154px;
+    height: 38px;
+    background-size: 154px 38px;
     background-repeat: no-repeat;
     background-image: url(../images/privacy_large.png);
     position: relative;
@@ -2691,60 +2691,70 @@ html.js .main .section .mediaobject-destroyed .mediaobject-posterframe {
 }
 
 .section-monday.typography-headline {
-    width: 173px;
-    height: 30px;
+    width: 206px;
+    height: 47px;
     left: 20px;
     top: 10px;
-    background-size: 173px 30px;
+    background-size: 206px 47px;
     background-repeat: no-repeat;
     background-image: url(../images/monday_large.png);
     position: relative;
 }
 
 .section-tueday.typography-headline {
-    width: 173px;
-    height: 30px;
+    width: 206px;
+    height: 47px;
     left: 20px;
     top: 10px;
-    background-size: 173px 30px;
+    background-size: 206px 47px;
     background-repeat: no-repeat;
     background-image: url(../images/tuesday_large.png);
     position: relative;
 }
 
 .section-wedday.typography-headline {
-    width: 173px;
-    height: 30px;
+    width: 206px;
+    height: 47px;
     left: 20px;
     top: 10px;
-    background-size: 173px 30px;
+    background-size: 206px 47px;
     background-repeat: no-repeat;
     background-image: url(../images/wednesday_large.png);
     position: relative;
 }
 
 .section-thuday.typography-headline {
-    width: 173px;
-    height: 30px;
+    width: 206px;
+    height: 47px;
     left: 20px;
     top: 10px;
-    background-size: 173px 30px;
+    background-size: 206px 47px;
     background-repeat: no-repeat;
     background-image: url(../images/thursday_large.png);
     position: relative;
 }
 
 .section-friday.typography-headline {
-    width: 173px;
-    height: 30px;
+    width: 206px;
+    height: 47px;
     left: 20px;
     top: 10px;
-    background-size: 173px 30px;
+    background-size: 206px 47px;
     background-repeat: no-repeat;
     background-image: url(../images/friday_large.png);
     position: relative;
 }
 
+.section-apps.typography-headline {
+    width: 206px;
+    height: 47px;
+    left: 20px;
+    top: 10px;
+    background-size: 206px 47px;
+    background-repeat: no-repeat;
+    background-image: url(../images/apps_large.png);
+    position: relative;
+}
 
 .typography-headline {
     font-size: 48px;
