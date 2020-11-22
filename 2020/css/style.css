@@ -2691,55 +2691,55 @@ html.js .main .section .mediaobject-destroyed .mediaobject-posterframe {
 }
 
 .section-monday.typography-headline {
-    width: 140px;
+    width: 173px;
     height: 30px;
     left: 20px;
     top: 10px;
-    background-size: 140px 30px;
+    background-size: 173px 30px;
     background-repeat: no-repeat;
     background-image: url(../images/monday_large.png);
     position: relative;
 }
 
 .section-tueday.typography-headline {
-    width: 140px;
+    width: 173px;
     height: 30px;
     left: 20px;
     top: 10px;
-    background-size: 140px 30px;
+    background-size: 173px 30px;
     background-repeat: no-repeat;
     background-image: url(../images/tuesday_large.png);
     position: relative;
 }
 
 .section-wedday.typography-headline {
-    width: 140px;
+    width: 173px;
     height: 30px;
     left: 20px;
     top: 10px;
-    background-size: 140px 30px;
+    background-size: 173px 30px;
     background-repeat: no-repeat;
     background-image: url(../images/wednesday_large.png);
     position: relative;
 }
 
 .section-thuday.typography-headline {
-    width: 140px;
+    width: 173px;
     height: 30px;
     left: 20px;
     top: 10px;
-    background-size: 140px 30px;
+    background-size: 173px 30px;
     background-repeat: no-repeat;
     background-image: url(../images/thursday_large.png);
     position: relative;
 }
 
 .section-friday.typography-headline {
-    width: 140px;
+    width: 173px;
     height: 30px;
     left: 20px;
     top: 10px;
-    background-size: 140px 30px;
+    background-size: 173px 30px;
     background-repeat: no-repeat;
     background-image: url(../images/friday_large.png);
     position: relative;
