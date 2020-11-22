@@ -2664,7 +2664,7 @@ html.js .main .section .mediaobject-destroyed .mediaobject-posterframe {
     height: 30px;
     background-size: 140px 30px;
     background-repeat: no-repeat;
-    background-image: url(../images/headline-hero_large.png);
+    background-image: url(../images/stay-at-home_title.png);
     position: relative;
 }
 
@@ -6547,7 +6547,7 @@ body {
     height: 122px;
     background-size: 885px 122px;
     background-repeat: no-repeat;
-    background-image: url("../images/headline-hero_large.png");
+    background-image: url("../images/headline-title_large.png");
 }
 @media only screen and (max-width: 1068px)
 {
