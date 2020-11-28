@@ -2480,6 +2480,27 @@ html.js .main .section .mediaobject-destroyed .mediaobject-posterframe {
     position: relative;
 }
 
+.section-sponsors.typography-host {
+    width: 65px;
+    height: 39px;
+    top: 10px;
+    background-size: 65px 39px;
+    background-repeat: no-repeat;
+    background-image: url(../images/host-title.png);
+    position: relative;
+}
+
+.section-sponsors.typography-sponsor {
+    width: 65px;
+    height: 39px;
+    top: 10px;
+    background-size: 65px 39px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sponsor-title.png);
+    position: relative;
+}
+
+
 .typography-headline {
     font-size: 48px;
     line-height: 1.08365;
