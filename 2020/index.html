@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR" lang="ko-KR" dir="ltr" prefix="og: http://ogp.me/ns#"><head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    
         <title>레츠스위프트 2020 @home</title>
         <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
@@ -47,12 +47,12 @@
                                     레츠스위프트 2020 테크토크와 함께하세요. 매일 저녁 여러 가지 기술 주제에 대해 토론할 수 있습니다. 
                                     </p>
                                     <p>
-                                    <a href="https://festa.io/events/1315" aria-label="Tickets" class="icon"><span class="icon-shim">티켓 구하기</span></a><br>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP87dYR09f3O5YVpSX5iI2IrXIroO4StEw65lUpAj3snrzQQ/viewform" aria-label="Questions" class="icon"><span class="icon-shim">주제별 사전 질문남기기</span></a><br>
+                                    <span class="icon-shim">* 티켓 판매 완료 *</span><br>
+                                    
                                     </p>
                                 </div>
                                 <div class="column copy-column large-6 small-12">
-                                    <img src="images/stay-at-home_large.png" height="300px">
+                                    <img id="panel-right-image" src="images/stay-at-home_large.png">
                                 </div>
                             </div>
                         </div>
@@ -104,6 +104,9 @@
                                     모두가 기대하고 있는 동시성 기능이 언어에 들어갈 예정이라 벌써부터 기대됩니다. <br>
                                     그리고 Swift for TensorFlow라는 구글 프로젝트를 비롯해서 ML 관련 기술로도 성장하고 있습니다. 
                                     </p>
+                                    <h4 class="panel-body">
+                                        패널 : 김윤봉, 곽도영, 김형규, 김정
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -120,6 +123,9 @@
                                     기업 서비스에 도입은 조심스럽게 접근해야하지만, 새 기술을 마음껏 펼칠 프로젝트가 있다면 도전하시겠어요? <br>
                                     여러분들의 선택이 궁금합니다. 
                                     </p>
+                                    <h4 class="panel-body">
+                                        패널 : 정낙천, 이봉원, 김정
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -136,11 +142,12 @@
                                     앱 프로젝트 규모가 커지면서 패키지 관리도 중요해 지고 있습니다. SPM으로 대동단결할 수 있는걸까요? <br> 
                                     통합 빌드 환경에 대한 경험을 공유해주세요. 
                                     </p>
+                                    <h4 class="panel-body">
+                                        패널 : 안정민, 김형규, 장수한, 김정
+                                    </h4>
                                 </div>
                             </div>
-                            <br>
                         </div>
-                    </div>
                     <div class="ct-screen-time tile-half-full layout-a" data-component-list="ProgressiveImage">
                         <div class="row">
                                 <div class="column large-10">
@@ -154,6 +161,9 @@
                                     테스트도 확실하게 도움이 되고, 유지보수도 편리한 아키텍처가 있을까요? 테스트 자랑 좀 해주세요.<br>
                                     배포 환경은 또 다른 생태계가 만들어지고 있고, 특히 커스텀 앱 배포에 대해 소개하는 시간도 있습니다.
                                     </p>
+                                    <h4 class="panel-body">
+                                        패널 : 정낙천, 윤성관, 김성호, 노수진, 강사룡
+                                    </h4>
                                 </div>
                             </div>
                     </div>
@@ -170,10 +180,14 @@
                                     코드 리뷰를 하는 회사들이 많아지고 있지만, 여전히 외로운 iOS 개발자도 많습니다. <br>
                                     개발하기도 바쁜데 기술 블로그를 꼭 써야 하는걸까요? 커뮤니티에서만 나눌 수 있는 이야기를 들려주세요.
                                     </p>
+                                    <h4 class="panel-body">
+                                        패널 : 최원영, 이준원, 강사룡, 김정
+                                    </h4>
                                 </div>
                             </div>
                         </div>          
-                        
+                    </div>                        
+
                     <br>
                         <div class="ct-screen-time tile-half-full layout-a" data-component-list="ProgressiveImage">
                             <div class="row">
@@ -181,12 +195,65 @@
                                     <h2 class="section-apps typography-headline">
                                         <span class="visuallyhidden">Apps</span>
                                     </h2>
+                                    &nbsp;
+                                    <h5 class="panel-headline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;새로워진 레츠스위프트 공식 앱을 다운받으세요. 
+                                    </h5>
                                     <div class="section-app">
-                                        &nbsp;&nbsp;&nbsp;<a class="link-btn" href="https://apps.apple.com/kr/app/lets-conference/id1282995254?l=ko&ls=1" target="_blank"><img class="download-image" src="images/app/Download_on_the_App_Store_Badge_KR_RGB_blk_100317.svg" height="40px"></a>
+                                        &nbsp;&nbsp;<a id="app-link-btn" href="https://apps.apple.com/kr/app/lets-conference/id1282995254?l=ko&ls=1" target="_blank"><img class="download-image" src="images/app/Download_on_the_App_Store_Badge_KR_RGB_blk_100317.svg" height="40px"></a>
                                         <img class="app-image" src="images/app/LetSwift_iPhone_Dark_1.png" alt="Mock1" height="300px">
                                         <img class="app-image" src="images/app/LetSwift_iPhone_Dark_2.png" alt="Mock2" height="300px">
                                     </div>
-            
+                                </div>
+                            </div>
+                        </div>       
+                        <br>
+                        <div class="ct-screen-time tile-half-full layout-a" data-component-list="ProgressiveImage">
+                            <div class="row">
+                                <div class="column large-12">
+                                    <h2 class="section-goods typography-headline">
+                                        <span class="visuallyhidden">Goods</span>
+                                    </h2>
+                                    &nbsp;
+                                    <h5 class="panel-headline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;올해 말까지만 한정판매하는 굿즈샵을 방문해보세요.</h5>
+                                    <h5><a href="http://marpple.shop/kr/codesquad">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; 굿즈샵 바로가기 &gt;</a></h5>
+                                    <div class="section-app">
+                                        <img class="goods-image" src="images/goods.png" alt="Goods" width="75%">
+                                    </div>
+                                    <div id="sponsors-text">
+                                        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 제품을 선택하고 원하는 사이즈와 색상을 고르실 수 있습니다. 굿즈샵은 전문 기업 마플에서 직접 운영하고 제작하고 보내줍니다.</p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+
+                        <!--- Sponsors--->                 
+                        <br>
+                        <div class="ct-screen-time tile-half-full layout-a" data-component-list="ProgressiveImage">
+                            <div class="row">
+                                <div class="column large-12">
+                                    <h2 class="section-sponsors typography-headline">
+                                        <span class="visuallyhidden">Sponsors</span>
+                                    </h2>
+                                    <div class="container clearfix">
+                                        <div class="flex-container">
+                                            <div class="bottommargin"><a href="#" class="button button-border button-circle t600">주관</a></div>
+                                            <div class="container clearfix">
+                                                <div class="col-sm-3 bottommargin">
+                                                    <a href="http://codesquad.kr/"><img src="images/sponsors/codesquad.png" alt="Codesquad" width="40%"></a>
+                                                </div>
+                                            </div>
+                                            <div class="bottommargin"><a href="#" class="button button-border button-circle t600">후원</a></div>
+                                            <div class="container clearfix">
+                                                <div class="col-sm-3 bottommargin">
+                                                    <a href="https://isamt.com"><img src="images/sponsors/samt.png" alt="SAMT" width="40%"></a>
+                                                    <div id="sponsors-text">
+                                                        <p> (주)에스에이엠티는 Apple의 기업 고객이 Apple 기기를 보다 효율적으로 도입하여 ABM에 등록해서 사용할 수 있도록 하고, Apple 기기의 배포 및 관리와 활용을 지원하는 Apple의 공인 총판(Apple Authorized Distributor)이며 Preferred Device Enrollment Reseller 입니다.</p>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                        </div>
+                                    </div>            
                                 </div>
                             </div>
                         </div>                        
@@ -210,7 +277,7 @@
                             <section class="ac-gf-buystrip-info-column ac-gf-buystrip-info-shipping">
                                 <div class="ac-gf-buystrip-info-content with-cta">
                                     <h3 class="ac-gf-buystrip-info-title">Copyright</h3>
-                                    <p class="ac-gf-buystrip-info-copy">© 2016-2020 레츠스위프</p>
+                                    <p class="ac-gf-buystrip-info-copy">© 2016-2020 레츠스위프트</p>
                                 </div>
                             </section>
                             <section class="ac-gf-buystrip-info-column ac-gf-buystrip-info-retail">
@@ -220,7 +287,7 @@
                                 </div>
                             </section>
                             <section class="ac-gf-buystrip-info-column ac-gf-buystrip-info-engraving">
-                                <div class="ac-gf-buystrip-info-content with-cta"><a class="ac-gf-block" href="http://letswift.kr/2019"></a>
+                                <div class="ac-gf-buystrip-info-content with-cta"><a class="ac-gf-block" href="http://letswift.kr/2019/"></a>
                                     <figure class="ac-gf-buystrip-info-icon ac-gf-buystrip-info-icon-engraving"></figure>
                                     <h3 class="ac-gf-buystrip-info-title">2019년 행사</h3>
                                     <p class="ac-gf-buystrip-info-copy">그 활기찼던 기술과 공유를 경험을</p> <span class="icon-wrapper ac-gf-buystrip-info-cta ac-gf-block-link"><span class="icon-copy">다시 보려면</span><span class="icon icon-after ac-gf-more"></span></span>
