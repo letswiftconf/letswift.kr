@@ -1,0 +1,7 @@
+@import "reset.css";
+
+/* Layout 레이아웃 */
+#wrap { width: 100%; }
+#header { width: 100%; height: 200px; background-color: rgb(118, 211, 134); }
+#contents { width: 100%; height: 500px;  background-color: rgb(201, 150, 88); }
+#footer { width: 100%; height: 150px; background-color: rgb(88, 122, 225); }
