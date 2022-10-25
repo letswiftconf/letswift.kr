@@ -3,13 +3,21 @@
 /* Layout */
 #wrap { width: 100%; }
 #header { width: 100%; background-color: rgb(118, 211, 134); }
-#contents { width: 100%; height: 500px;  background-color: rgb(201, 150, 88); }
+#contents { width: 100%; height: 100vh; }
 #footer { width: 100%; height: 150px; background-color: rgb(88, 122, 225); }
 
 /* container */
-.container { width: 990px; margin: 0 auto; height: inherit; background-color: rgba(255, 255, 255, 0.4); }
+.container { width: 990px; margin: 0 auto; height: inherit; }
 
 /* header */
 .header-menu { text-align: right; }
 .header-menu a { display: inline-block; padding: 10px 0px 10px 12px; }
 .header-menu a:hover { color: #555; }
+
+/* contents */
+#contents .container { display: flex; flex-direction: column; justify-content: center; }
+#contents .logo-tmp { position: relative; margin: 0 auto; width: 220px; height: 220px; background-image: url('../images/logo-back.png'); }
+#contents .logo-tmp img{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+#contents h1 { text-align: center; margin-top: 1.2em; font-size: 3.25rem; font-weight: 700; }
+#contents h1 b { color: #71A1D3; }
+#contents p { text-align: center; margin-top: 1.1em; font-size: 1.625em; color: #181818; }
