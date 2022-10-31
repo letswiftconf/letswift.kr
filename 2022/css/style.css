@@ -41,3 +41,24 @@
 #section-03 .profile-list img { width: 100%; }
 #section-03 .profile-list h4 { font-family: 'Noto Sans KR'; font-weight: 700; font-size: 22px; color: #0A0A0A; }
 #section-03 .profile-list span { display: inline-block; margin-top: 5px; font-family: 'Noto Sans KR'; font-weight: 300; color: #3C3C3C; }
+
+/* contents > section-05:Location */
+#section-05 { display: flex; }
+#section-05 > div { width: 50%; }
+#section-05 .text-container { display: flex; justify-content: end; align-items: center; color: white; background: url('../images/img-background-map.png') no-repeat bottom #000000; }
+
+#section-05 .text-contents { width: 80%; }
+#section-05 ul {  }
+#section-05 h3 { border-bottom: 1px solid #FAAA41; font-family: 'Jost'; font-weight: 700; font-size: 47px; }
+
+#section-05 li:first-child { margin-top: 55px; }
+#section-05 li { margin-bottom: 48px; }
+#section-05 li:last-child { margin-bottom: 0px; }
+
+#section-05 li.address img { vertical-align: top; }
+#section-05 li.address .caption { display: inline-block; font-family: 'Noto Sans KR'; }
+#section-05 li.address .caption h4 { margin-bottom: 10px; font-weight: 700; font-size: 22px; }
+#section-05 li.address .caption span { font-weight: 400; font-size: 18px; } 
+
+
+#section-05 .map-container { background-color: #555; }
