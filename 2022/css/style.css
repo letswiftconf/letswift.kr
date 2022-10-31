@@ -1,16 +1,16 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 /* Layout */
 #wrap { width: 100%; }
 #header { width: 100%; background-color: rgba(118, 211, 134, 0.5); }
 #header > .container { display: flex; justify-content: space-between; padding: 20px 0; }
 #contents { width: 100%; }
-#contents section { height: 100vh; background-color: #f2f2f2; border-top: 1px solid red; }
+#contents section { min-height: 100vh; background-color: #f2f2f2; border-top: 1px solid red; }
 #footer { width: 100%; height: 100px; line-height: 100px;  background-color: #0A0A0A; color: white; text-align: center;}
 
 /* container */
-.container { width: 1100px; margin: 0 auto; position: relative; height: inherit; }
+.container { width: 1720px; margin: 0 auto; position: relative; height: inherit; }
 
 /* header */
 .logo { display: inline-block; }
@@ -19,12 +19,12 @@
 .header-menu a:hover { color: #555; }
 
 /* contents > section-01:home */
-#contents .section-01 { position: relative; background-color: #0A0A0A; color: white; }
+#contents .section-01 { height: 100vh; position: relative; background-color: #0A0A0A; color: white; }
 .section-01 .social-links { position: absolute; left: 0px; bottom: 50px; }
 .section-01 h2 { font-weight: bold; font-size: 104px; }
 
 /* contents > section-02:about */
-#contents .section-02 { background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
+#contents .section-02 { height: 100vh; background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
 #contents .section-02 > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .section-02 h3 { margin-bottom: 53px; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938em;}
 .section-02 h3 b { color: #FF3F2A; }
@@ -34,3 +34,10 @@
 .btn-location { width: 380px; height: 55px; border-radius: 30px;  display: inline-block; box-sizing: border-box; cursor: default; background: linear-gradient(to bottom right, #F0B056, #EB4E38); font-family: 'Noto Sans KR';}
 .btn-location:hover { cursor: pointer; }
 .btn-location a { color: white; line-height: 55px; }
+
+/* contents > section-03:speakers */
+#section-03 h3 { text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
+#section-03 .profile-list li { width: 19.8%; display: inline-block; text-align: center; }
+#section-03 .profile-list img { width: 100%; }
+#section-03 .profile-list h4 { font-family: 'Noto Sans KR'; font-weight: 700; font-size: 22px; color: #0A0A0A; }
+#section-03 .profile-list span { display: inline-block; margin-top: 5px; font-family: 'Noto Sans KR'; font-weight: 300; color: #3C3C3C; }
