@@ -18,6 +18,7 @@
     <meta property="og:url" content="http://letswift.kr/2022/">
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div id="wrap">
@@ -172,7 +173,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="map-container">
+                <div id="map-container">
                     map
                 </div>
             </section>
@@ -185,5 +186,24 @@
         <!-- //footer -->
     </div>
 <!-- //#wrap -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=365eae6b9cf6cff5c55de7974a5b2a7c"></script>
+<script>
+    var container = document.getElementById('map-container'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(37.468078, 127.039236), //지도의 중심좌표.
+        draggable: false,
+        level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+    
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+    // 지도를 클릭한 위치에 표출할 마커입니다
+    var marker = new kakao.maps.Marker({ 
+        // 지도 중심좌표에 마커를 생성합니다 
+        position: map.getCenter() 
+    }); 
+    // 지도에 마커를 표시합니다
+    marker.setMap(map);
+</script>
 </body>
 </html>
