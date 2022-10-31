@@ -1,4 +1,5 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap');
 
 /* Layout */
 #wrap { width: 100%; }
@@ -22,3 +23,14 @@
 .section-01 .social-links { position: absolute; left: 0px; bottom: 50px; }
 .section-01 h2 { font-weight: bold; font-size: 104px; }
 
+/* contents > section-02:about */
+#contents .section-02 { background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
+#contents .section-02 > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.section-02 h3 { margin-bottom: 53px; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938em;}
+.section-02 h3 b { color: #FF3F2A; }
+.section-02 p { margin-bottom: 23px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125em; }
+.section-02 p em { font-weight: 500; font-size: 1.438em; }
+
+.btn-location { width: 380px; height: 55px; border-radius: 30px;  display: inline-block; box-sizing: border-box; cursor: default; background: linear-gradient(to bottom right, #F0B056, #EB4E38); font-family: 'Noto Sans KR';}
+.btn-location:hover { cursor: pointer; }
+.btn-location a { color: white; line-height: 55px; }
