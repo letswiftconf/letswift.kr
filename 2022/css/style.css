@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700;800&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700;800&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 /* Layout */
 #wrap { width: 100%; }
@@ -15,7 +15,7 @@
 /* header */
 .logo { display: inline-block; }
 .header-menu { text-align: right; }
-.header-menu a { display: inline-block; padding: 10px 0px 10px 12px; }
+.header-menu a { display: inline-block; padding: 10px 0px 10px 12px; font-family: 'Jost'; font-weight: 500; color: white; }
 .header-menu a:hover { color: #555; }
 
 /* contents > section-01:home */
@@ -42,29 +42,35 @@
 .btn-location a { color: white; line-height: 55px; }
 
 /* contents > section-03:speakers */
-#section-03 h3 { text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
-#section-03 .profile-list li { width: 19.8%; display: inline-block; text-align: center; }
-#section-03 .profile-list img { width: 100%; }
-#section-03 .profile-list h4 { font-family: 'Noto Sans KR'; font-weight: 700; font-size: 22px; color: #0A0A0A; }
-#section-03 .profile-list span { display: inline-block; margin-top: 5px; font-family: 'Noto Sans KR'; font-weight: 300; color: #3C3C3C; }
+#speakers h3 { text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
+#speakers .profile-list li { width: 19.8%; display: inline-block; text-align: center; }
+#speakers .profile-list img { width: 100%; }
+#speakers .profile-list h4 { font-family: 'Noto Sans KR'; font-weight: 700; font-size: 22px; color: #0A0A0A; }
+#speakers .profile-list span { display: inline-block; margin-top: 5px; font-family: 'Noto Sans KR'; font-weight: 300; color: #3C3C3C; }
+
+/* contents > section-04:Program */
+
 
 /* contents > section-05:Location */
-#section-05 { display: flex; }
-#section-05 > div { width: 50%; }
+#location { display: flex; }
+#location > div { width: 50%; }
 
-#section-05 .text-container { display: flex; justify-content: end; align-items: center; color: white; background: url('../images/img-background-map.png') no-repeat bottom #000000; }
-#section-05 .text-contents { width: 80%; }
-#section-05 .text-contents h3 { border-bottom: 1px solid #FAAA41; font-family: 'Jost'; font-weight: 700; font-size: 47px; }
+#location .text-container { display: flex; justify-content: end; align-items: center; color: white; background: url('../images/img-background-map.png') no-repeat bottom #000000; }
+#location .text-contents { width: 80%; }
+#location .text-contents h3 { border-bottom: 1px solid #FAAA41; font-family: 'Jost'; font-weight: 700; font-size: 47px; }
 
-#section-05 li:first-child { margin-top: 55px; }
-#section-05 li { margin-bottom: 48px; }
-#section-05 li:last-child { margin-bottom: 0px; }
-#section-05 li.address img { vertical-align: top; }
-#section-05 li.address .caption { display: inline-block; font-family: 'Noto Sans KR'; }
-#section-05 li.address .caption h4 { margin-bottom: 10px; font-weight: 700; font-size: 22px; }
-#section-05 li.address .caption span { font-weight: 400; font-size: 18px; } 
+#location li:first-child { margin-top: 55px; }
+#location li { margin-bottom: 48px; }
+#location li:last-child { margin-bottom: 0px; }
+#location li.address img { vertical-align: top; }
+#location li.address .caption { display: inline-block; font-family: 'Noto Sans KR'; }
+#location li.address .caption h4 { margin-bottom: 10px; font-weight: 700; font-size: 22px; }
+#location li.address .caption span { font-weight: 400; font-size: 18px; } 
 
-#section-05 .map-container { background-color: #555; }
+#location .map-container { background-color: #555; }
+
+/* contents > section-06:Staff */
+
 
 /* mourn */
 #mourn { height: 350px; text-align: center; color: white; background: url('../images/img-background-footer.png') no-repeat right top #131419; }
