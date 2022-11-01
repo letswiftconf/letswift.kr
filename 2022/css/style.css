@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700;800&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 /* Layout */
 #wrap { width: 100%; }
@@ -20,8 +20,14 @@
 
 /* contents > section-01:home */
 #contents .section-01 { height: 100vh; position: relative; background-color: #0A0A0A; color: white; }
+.section-01 > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .section-01 .social-links { position: absolute; left: 0px; bottom: 50px; }
-.section-01 h2 { font-weight: bold; font-size: 104px; }
+.section-01 .social-links a { display: inline-block; }
+.section-01 .social-links a:last-child { margin-left: 35px; }
+.section-01 h2 { position:relative; display: inline-block; font-family: 'Jost'; font-weight: 800; font-size: 120px; }
+.section-01 h2::after { position: absolute; top: -20px; right: -40px; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
+
+
 
 /* contents > section-02:about */
 #contents .section-02 { height: 100vh; background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
