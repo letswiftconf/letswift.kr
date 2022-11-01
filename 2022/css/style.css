@@ -4,7 +4,6 @@
 /* Layout */
 #wrap { width: 100%; }
 #header { width: 100%; background-color: rgba(118, 211, 134, 0.5); }
-#header > .container { display: flex; justify-content: space-between; padding: 20px 0; }
 #contents { width: 100%; }
 #contents section { min-height: 100vh; background-color: #f2f2f2; border-top: 1px solid red; }
 #footer { width: 100%; background-color: #0A0A0A; color: white; text-align: center;}
@@ -13,10 +12,14 @@
 .container { width: 1720px; margin: 0 auto; position: relative; height: inherit; }
 
 /* header */
+#header { position: fixed; top: 0; left: 0; z-index: 999999; }
+#header > .container { display: flex; justify-content: space-between; padding: 20px 0; }
 .logo { display: inline-block; }
 .header-menu { text-align: right; }
 .header-menu a { display: inline-block; padding: 10px 0px 10px 12px; font-family: 'Jost'; font-weight: 500; color: white; }
 .header-menu a:hover { color: #555; }
+
+
 
 /* contents > section-01:home */
 #contents .section-01 { height: 100vh; position: relative; background-color: #0A0A0A; color: white; }
@@ -26,7 +29,6 @@
 .section-01 .social-links a:last-child { margin-left: 35px; }
 .section-01 h2 { position:relative; display: inline-block; font-family: 'Jost'; font-weight: 800; font-size: 120px; }
 .section-01 h2::after { position: absolute; top: -20px; right: -40px; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
-
 
 
 /* contents > section-02:about */
@@ -39,7 +41,8 @@
 
 .btn-location { width: 380px; height: 55px; border-radius: 30px;  display: inline-block; box-sizing: border-box; cursor: default; background: linear-gradient(to bottom right, #F0B056, #EB4E38); font-family: 'Noto Sans KR';}
 .btn-location:hover { cursor: pointer; }
-.btn-location a { color: white; line-height: 55px; }
+.btn-location a { margin-left: 6px; color: white; line-height: 55px; }
+.btn-location img { vertical-align: text-bottom; }
 
 /* contents > section-03:speakers */
 #speakers h3 { text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
