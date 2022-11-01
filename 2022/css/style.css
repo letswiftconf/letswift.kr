@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 /* Layout */
 #wrap { width: 100%; }
@@ -7,7 +7,7 @@
 #header > .container { display: flex; justify-content: space-between; padding: 20px 0; }
 #contents { width: 100%; }
 #contents section { min-height: 100vh; background-color: #f2f2f2; border-top: 1px solid red; }
-#footer { width: 100%; height: 100px; line-height: 100px;  background-color: #0A0A0A; color: white; text-align: center;}
+#footer { width: 100%; background-color: #0A0A0A; color: white; text-align: center;}
 
 /* container */
 .container { width: 1720px; margin: 0 auto; position: relative; height: inherit; }
@@ -45,20 +45,29 @@
 /* contents > section-05:Location */
 #section-05 { display: flex; }
 #section-05 > div { width: 50%; }
-#section-05 .text-container { display: flex; justify-content: end; align-items: center; color: white; background: url('../images/img-background-map.png') no-repeat bottom #000000; }
 
+#section-05 .text-container { display: flex; justify-content: end; align-items: center; color: white; background: url('../images/img-background-map.png') no-repeat bottom #000000; }
 #section-05 .text-contents { width: 80%; }
-#section-05 ul {  }
-#section-05 h3 { border-bottom: 1px solid #FAAA41; font-family: 'Jost'; font-weight: 700; font-size: 47px; }
+#section-05 .text-contents h3 { border-bottom: 1px solid #FAAA41; font-family: 'Jost'; font-weight: 700; font-size: 47px; }
 
 #section-05 li:first-child { margin-top: 55px; }
 #section-05 li { margin-bottom: 48px; }
 #section-05 li:last-child { margin-bottom: 0px; }
-
 #section-05 li.address img { vertical-align: top; }
 #section-05 li.address .caption { display: inline-block; font-family: 'Noto Sans KR'; }
 #section-05 li.address .caption h4 { margin-bottom: 10px; font-weight: 700; font-size: 22px; }
 #section-05 li.address .caption span { font-weight: 400; font-size: 18px; } 
 
-
 #section-05 .map-container { background-color: #555; }
+
+/* mourn */
+#mourn { height: 350px; text-align: center; color: white; background: url('../images/img-background-footer.png') no-repeat right top #131419; }
+#mourn .container { display: flex; flex-direction: column; justify-content: center; }
+#mourn span { display: block; margin-bottom: 20px; font-family: 'Nanum Myeongjo', serif; font-weight: 400; font-size: 22px; }
+#mourn span:last-child { margin-bottom: 0; }
+#mourn span b { font-weight: 800; font-size: 25px; }
+
+/* footer */
+#footer { text-align: center; }
+#footer .copywriter { height: 100px; line-height: 100px;}
+
