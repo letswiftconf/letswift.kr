@@ -60,7 +60,7 @@
         </div>
         <!-- //header -->
         <div id="contents">
-            <section id="home" class="section-01">
+            <section id="home">
                 <div class="container">
                     <h2><span>Let'Swift</span><span class="year">2022</span></h2>
                     <p>November 30th, 2022 at Yangjae AT Center</p>
@@ -72,7 +72,7 @@
                 </div>
             </section>
             <!-- //section-01 -->
-            <section id="about" class="section-02">
+            <section id="about">
                 <div class="container">
                     <h3><b>Let'</b>s play at <b>Swift</b> Playgrounds</h3>
                     <span><em>지난 3년 간 다채로운 행사와 다양한 만남에 목말라 있었나요?</em></span>
@@ -165,28 +165,24 @@
                         <h3>Location</h3>
                         <ul>
                             <li class="address">
-                                <img src="./images/icon-location-address.png">
                                 <div class="caption">
                                     <h4>위치</h4>
                                     <span>서울특별시 강남구 강남대로 27, 양재 AT Center 4층</span>
                                 </div>
                             </li>
                             <li class="address">
-                                <img src="./images/icon-location-address.png">
                                 <div class="caption">
                                     <h4>일시</h4>
                                     <span>11월 31일 수요일</span>
                                 </div>
                             </li>
                             <li class="address">
-                                <img src="./images/icon-location-address.png">
                                 <div class="caption">
                                     <h4>시간</h4>
                                     <span>AM 10:00 - PM 05:00</span>
                                 </div>
                             </li>
                             <li class="address">
-                                <img src="./images/icon-location-address.png">
                                 <div class="caption">
                                     <h4>지하철</h4>
                                     <span>신분당선 양재시민의 숲 역 4번 출구</span>
@@ -237,7 +233,6 @@
 function toggleMenu() {
     const elem = document.querySelector("#mobile-menu-panel");
     const isOpen = elem.classList.contains("visible");
-    console.log(isOpen);
     if (isOpen) {
         elem.className = "hide";
     } else {

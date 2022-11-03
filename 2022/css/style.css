@@ -30,30 +30,32 @@
 #header { position: fixed; top: 0; left: 0; z-index: 999999; }
 #header > .container { display: flex; justify-content: space-between; padding: 1.250em 0; }
 .header-menu { text-align: right; }
-.header-menu a { display: inline-block; padding: 0.625em 0px 0.625em 0.750em; font-family: 'Jost'; font-weight: 500; color: white; }
+.header-menu a { display: inline-block; padding: 0.625em 0px 0.625em 6em; font-family: 'Jost'; font-weight: 500; color: white; }
 .header-menu a:hover { color: rgb(161, 161, 161); }
 .logo { display: inline-block; }
 
 /* contents > section-01:home */
-#contents #home { height: 100vh; position: relative; background-color: #0A0A0A; color: white; }
+#contents #home { height: 100vh; position: relative; color: white; background-color: #202020; }
+#contents #home::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 100%; opacity: 0.07; background: url('../images/img-background-home.png') no-repeat center; background-size: cover; }
+
 #home > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 #home .social-links { position: absolute; left: 0px; bottom: 10vh; }
 #home .social-links a { display: inline-block; }
 #home .social-links a:last-child { margin-left: 2vw; }
 #home h2 { margin-bottom: 2.125rem; position:relative; display: inline-block; font-family: 'Jost'; font-weight: 800; font-size: 7.500rem; }
 #home h2::after { position: absolute; top: -20px; right: -40px; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
-#home p { font-size: 1.375rem; font-family: 'Jost'; font-weight: 400; }
+#home p { text-align: center; font-size: 1.375rem; font-family: 'Jost'; font-weight: 400; }
 #home p.ticket-day { margin-top: 0.4em; }
 
 /* contents > section-02:about */
-#contents .section-02 { height: 100vh; background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
-#contents .section-02 > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
-.section-02 h3 { margin-bottom: 3.313rem; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938rem;}
-.section-02 h3 b { color: #FF3F2A; }
-.section-02 span { margin-bottom: 1.500em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125rem; }
-.section-02 span em { font-weight: 500; font-size: 1.438rem; }
+#contents #about { height: 100vh; background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
+#contents #about > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#about h3 { margin-bottom: 3.313rem; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938rem;}
+#about h3 b { color: #FF3F2A; }
+#about span { margin-bottom: 1.500em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125rem; }
+#about span em { font-weight: 500; font-size: 1.438rem; }
 
-.btn-location { width: 380px; height: 3.438rem; border-radius: 30px;  display: inline-block; box-sizing: border-box; cursor: default; background: linear-gradient(to bottom right, #F0B056, #EB4E38); font-family: 'Noto Sans KR';}
+.btn-location { width: 380px; height: 3.438rem; border-radius: 1.875em;  display: inline-block; box-sizing: border-box; cursor: default; background: linear-gradient(to bottom right, #F0B056, #EB4E38); font-family: 'Noto Sans KR';}
 .btn-location:hover { cursor: pointer; }
 .btn-location a { margin-left: 0.375em; color: white; line-height: 3.438rem; }
 .btn-location img { vertical-align: text-bottom; }
@@ -77,14 +79,15 @@
 #location .text-container { display: flex; justify-content: end; align-items: center; color: white; background: url('../images/img-background-map.png') no-repeat bottom #000000; }
 #location .text-contents { width: 80%; padding-top: 10%; padding-bottom: 10%; }
 #location .text-contents h3 { border-bottom: 1px solid #FAAA41; font-family: 'Jost'; font-weight: 700; font-size: 2.938rem; }
-
 #location li:first-child { margin-top: 3.438em; }
 #location li { margin-bottom: 3.000em; }
 #location li:last-child { margin-bottom: 0px; }
 #location li.address img { vertical-align: top; }
 #location li.address .caption { display: inline-block; font-family: 'Noto Sans KR'; }
 #location li.address .caption h4 { margin-bottom: 0.625em; font-size: 1.375rem; font-weight: 700; }
-#location li.address .caption span { font-weight: 400; font-size: 1.125rem; } 
+#location li.address .caption span { margin-left: 2.300em; font-weight: 400; font-size: 1.125rem; } 
+#location li.address .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-address.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
+
 
 #location #map-container { background: url('../images/img-map.png') no-repeat #555 center; }
 
@@ -109,6 +112,7 @@
     .container { width: 96%; }
     #contents #home { background-color: darkgreen; }
 
+    .header-menu a { padding: 0.625em 0px 0.625em 3em; }
 }
 
 /* 화면너비 0 ~ 1280 : 데스크탑 */
@@ -120,10 +124,12 @@
 @media (max-width: 1024px) {
     .container { width: 98%; }
     #contents #home { background-color: red; }
-
+    .header-menu a { padding: 0.625em 0px 0.625em 1.2em; }
     /* contents > Home */
     #home h2 span { display: block; }
     #home h2 span.year { text-align: center; }
+    /* contents > Location */
+    #location li.address .caption span { margin-left: 0; font-weight: 400; font-size: 1.125rem; } 
 
 }
 
@@ -159,7 +165,11 @@
     #home h2 { font-size: 5.5rem; }
     #home h2::after { display: none;}
     #home h2::before { position: absolute; top: -30%; left: 58%; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
+    /* contents > About */
+    #contents #about { padding: 2.4em 0 }
+    #about span { line-height: 1.4em; }
+    .btn-location { width: 98%; }
     /* contents > Location */
-    #location li.address .caption span { font-size: 1.0rem; }
+    #location li.address .caption span { font-size: 1.18rem; }
     
 }
