@@ -18,34 +18,156 @@
     <meta property="og:url" content="http://letswift.kr/2022/">
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-
     <div id="wrap">
-        <!-- <div id="header">
+        <!-- 데스트탑 헤더 -->
+        <div id="header">
             <div class="container">
+                <h1 class="logo">
+                    <img src="./images/logo-letswift.png" alt="letswift">
+                </h1>
                 <div class="header-menu">
-                    <a href="">menu1</a>
-                    <a href="">menu2</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <!-- <a href="#speakers">Speakers</a> -->
+                    <!-- <a href="#program">Program</a> -->
+                    <a href="#location">Location</a>
+                    <!-- <a href="#staff">Staff</a> -->
                 </div>
-            </div>
-        </div> -->
-        <!-- //header -->
-        <div id="contents">
-            <div class="container">
-                <div class="logo-tmp">
-                    <img src="./images/logo-swift-white.png" alt="" srcset="">
-                </div>
-                <h1><b>레츠스위프트 2022</b> 곧 찾아갑니다.</h1>
-                <p>현재 페이지를 준비하고 있습니다. <br/>빠른 시일 내에 준비하여 찾아뵙겠습니다.</p>
             </div>
         </div>
+        <!-- 모바일 헤더 -->
+        <div id="mobile-header">
+            <div class="container">
+                <h1 class="logo">
+                    <img src="./images/logo-letswift.png" alt="letswift">
+                </h1>
+                <a href="javascript:void(0);" onclick="toggleMenu()"><img src="./images/icon-menu.png" alt="메뉴 열기"></a>
+                <aside id="mobile-menu-panel" class="hide">
+                    <a href="javascript:void(0);" onclick="toggleMenu()" id="menu-close"><img src="./images/icon-menu-close.png" alt="메뉴 닫기"></a>
+                    <ul id="mobile-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#speakers">Speakers</a></li> -->
+                        <!-- <li><a href="#program">Program</a></li> -->
+                        <li><a href="#location">Location</a></li>
+                        <!-- <li><a href="#staff">Staff</a></li> -->
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <!-- //header -->
+        <div id="contents">
+            <section id="home">
+                <div class="container">
+                    <h2><span>Let'Swift</span><span class="year">2022</span></h2>
+                    <p>November 30th, 2022 at Yangjae AT Center</p>
+                    <p class="ticket-day">11.16일에 티켓 판매 예정입니다</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/letswiftkr" target="_blank"><img src="./images/social-icon-twitter.png" alt="트위터 바로가기"></a>
+                        <a href="https://www.instagram.com/letswiftkr/" target="_blank"><img src="./images/social-icon-instagram.png" alt="인스타그램 바로가기"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- //section-01: home -->
+            <section id="about">
+                <div class="container">
+                    <h3><b>Let'</b>s play at <b>Swift</b> Playgrounds</h3>
+                    <span><em>지난 3년 간 다채로운 행사와 다양한 만남에 목말라 있었나요?</em></span>
+                    <span>드디어 긴 침묵 끝에, 3년 만에 2022 레츠스위프트가 오프라인으로 돌아왔습니다!</span>
+                    <span>Swift는 오픈소스 프로젝트로, 학생부터 베테랑 개발자까지 다양한 개발자가 함께 만들어가는언어입니다.<br/>
+                        난이도 있는 기술 토픽에 대한 발표, 직접 코드 품질을 개선하는 워크숍,<br/>
+                        후원사와 함께하는 티타임과 테크토크, 네트워킹까지</span>
+                    <span>누구나 참여할 수 있는 커뮤니케이션 네트워크를 통해 다양한 활용 방식을 나눠보세요.</span>
+                    <span>함께 Swift Playground에서 만나고, 배우고, 즐겨요!</span>
+                    <div class="btn-location">
+                        <a href="#">
+                            <img src="./images/icon-button-location.png" alt="위치 아이콘"/>
+                            <span>2022년 11월 30일 수요일, 양재 AT 센터 4층</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- //section-02:about -->
+            <!-- //section-03 -->
+            <!-- //section-04 -->
+            <section id="location">
+                <div class="text-container">
+                    <div class="text-contents">
+                        <h3>Location</h3>
+                        <ul>
+                            <li class="address">
+                                <div class="caption">
+                                    <h4>위치</h4>
+                                    <span>서울특별시 강남구 강남대로 27, 양재 AT Center 4층</span>
+                                </div>
+                            </li>
+                            <li class="date">
+                                <div class="caption">
+                                    <h4>일시</h4>
+                                    <span>11월 31일 수요일</span>
+                                </div>
+                            </li>
+                            <li class="time">
+                                <div class="caption">
+                                    <h4>시간</h4>
+                                    <span>AM 10:00 - PM 05:00</span>
+                                </div>
+                            </li>
+                            <li class="subway">
+                                <div class="caption">
+                                    <h4>지하철</h4>
+                                    <span>신분당선 양재시민의 숲 역 4번 출구</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="map-container">
+                    <!-- TODO: map API -->
+                </div>
+            </section>
+            <!-- //section-05 -->
+            <!-- //section-06 -->
+        </div>
         <!-- //contents -->
-        <!-- <div id="footer">
-            <div class="container">footer</div>
-        </div> -->
+        <section id="pray">
+            <div class="container">
+                    <span>10월 29일 너무도 안타까운 참사로 유명을 달리하신,</span>
+                    <span>저희와 함께 끝까지 맡은 바를 다 해주셨던 <b>고 Davy님</b>의 영원한 안식을 빕니다.</span>
+                    <span>상심에 빠지셨을 유가족 분들께 깊은 애도의 마음을 보내며</span>
+                    <span>삼가 고인의 명복을 빕니다.</span>
+            </div>
+        </section>
+        <!-- //#pray -->
+        <footer id="footer">
+            <div class="container">
+                <div class="copywriter">© 2016-2022 레츠스위프트   /   Designed By JiheeHwang</div>
+            </div>
+        </footer>
         <!-- //footer -->
     </div>
+<!-- //#wrap -->
+<script>
+(function() {
+    const mobileLinksElem = document.querySelector("#mobile-links");
+    mobileLinksElem.addEventListener('click', () => {
+        toggleMenu();
+    });
+})();
 
+function toggleMenu() {
+    const elem = document.querySelector("#mobile-menu-panel");
+    const isOpen = elem.classList.contains("visible");
+    if (isOpen) {
+        elem.className = "hide";
+    } else {
+        elem.className = "visible";
+    }
+}
+
+</script>
 </body>
 </html>
