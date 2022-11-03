@@ -41,8 +41,9 @@
         <div id="contents">
             <section class="section-01">
                 <div class="container">
-                    <h2>Let'Swift 2022</h2>
+                    <h2><span>Let'Swift</span><span class="year">2022</span></h2>
                     <p>November 30th, 2022 at Yangjae AT Center</p>
+                    <p>11.16일에 티켓 판매 예정입니다</p>
                     <div class="social-links">
                         <a href="https://twitter.com/letswiftkr" target="_blank"><img src="./images/social-icon-twitter.png" alt="트위터 바로가기"></a>
                         <a href="https://www.instagram.com/letswiftkr/" target="_blank"><img src="./images/social-icon-instagram.png" alt="인스타그램 바로가기"></a>
@@ -53,13 +54,13 @@
             <section id="about" class="section-02">
                 <div class="container">
                     <h3><b>Let'</b>s play at <b>Swift</b> Playgrounds</h3>
-                    <p><em>지난 3년 간 다채로운 행사와 다양한 만남에 목말라 있었나요?</em></p>
-                    <p>드디어 긴 침묵 끝에, 3년 만에 2022 레츠스위프트가 오프라인으로 돌아왔습니다!</p>
-                    <p>Swift는 오픈소스 프로젝트로, 학생부터 베테랑 개발자까지 다양한 개발자가 함께 만들어가는언어입니다.<br/>
+                    <span><em>지난 3년 간 다채로운 행사와 다양한 만남에 목말라 있었나요?</em></span>
+                    <span>드디어 긴 침묵 끝에, 3년 만에 2022 레츠스위프트가 오프라인으로 돌아왔습니다!</span>
+                    <span>Swift는 오픈소스 프로젝트로, 학생부터 베테랑 개발자까지 다양한 개발자가 함께 만들어가는언어입니다.<br/>
                         난이도 있는 기술 토픽에 대한 발표, 직접 코드 품질을 개선하는 워크숍,<br/>
-                        후원사와 함께하는 티타임과 테크토크, 네트워킹까지</p>
-                    <p>누구나 참여할 수 있는 커뮤니케이션 네트워크를 통해 다양한 활용 방식을 나눠보세요.</p>
-                    <p>함께 Swift Playground에서 만나고, 배우고, 즐겨요!</p>
+                        후원사와 함께하는 티타임과 테크토크, 네트워킹까지</span>
+                    <span>누구나 참여할 수 있는 커뮤니케이션 네트워크를 통해 다양한 활용 방식을 나눠보세요.</span>
+                    <span>함께 Swift Playground에서 만나고, 배우고, 즐겨요!</span>
                     <div class="btn-location">
                         <a href="#">
                             <img src="./images/icon-button-location.png" alt="위치 아이콘"/>
@@ -174,7 +175,7 @@
                     </div>
                 </div>
                 <div id="map-container">
-                    map
+                    <!-- TODO: map API -->
                 </div>
             </section>
             <!-- //section-05 -->
@@ -187,7 +188,7 @@
             <!-- //section-06 -->
         </div>
         <!-- //contents -->
-        <section id="mourn">
+        <section id="pray">
             <div class="container">
                     <span>10월 29일 너무도 안타까운 참사로 유명을 달리하신,</span>
                     <span>저희와 함께 끝까지 맡은 바를 다 해주셨던 <b>고 Davy님</b>의 영원한 안식을 빕니다.</span>
@@ -195,7 +196,7 @@
                     <span>삼가 고인의 명복을 빕니다.</span>
             </div>
         </section>
-        <!-- //#mourn -->
+        <!-- //#pray -->
         <footer id="footer">
             <div class="container">
                 <div class="copywriter">© 2016-2022 레츠스위프트   /   Designed By JiheeHwang       </div>
@@ -204,24 +205,5 @@
         <!-- //footer -->
     </div>
 <!-- //#wrap -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=365eae6b9cf6cff5c55de7974a5b2a7c"></script>
-<script>
-    var container = document.getElementById('map-container'); //지도를 담을 영역의 DOM 레퍼런스
-    var options = { //지도를 생성할 때 필요한 기본 옵션
-        center: new kakao.maps.LatLng(37.468078, 127.039236), //지도의 중심좌표.
-        draggable: false,
-        level: 3 //지도의 레벨(확대, 축소 정도)
-    };
-    
-    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-    // 지도를 클릭한 위치에 표출할 마커입니다
-    var marker = new kakao.maps.Marker({ 
-        // 지도 중심좌표에 마커를 생성합니다 
-        position: map.getCenter() 
-    }); 
-    // 지도에 마커를 표시합니다
-    marker.setMap(map);
-</script>
 </body>
 </html>
