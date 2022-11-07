@@ -44,7 +44,7 @@
                 <h1 class="logo">
                     <img src="./images/logo-letswift.png" alt="letswift">
                 </h1>
-                <a href="javascript:void(0);" onclick="toggleMenu()"><img src="./images/icon-menu.png" alt="메뉴 열기"></a>
+                <a href="javascript:void(0);" onclick="toggleMenu()" class="menu-hamburger"><img src="./images/icon-menu.png" alt="메뉴 열기"></a>
                 <aside id="mobile-menu-panel" class="hide">
                     <a href="javascript:void(0);" onclick="toggleMenu()" id="menu-close"><img src="./images/icon-menu-close.png" alt="메뉴 닫기"></a>
                     <ul id="mobile-links">
@@ -163,10 +163,10 @@
             <!-- //section-03 -->
             <section id="program">
                 <div class="container">
-                    <!-- <h3>Program</h3> -->
-                    <!-- <div class="cont-wrap desktop">
+                    <h3>Program</h3>
+                    <div class="cont-wrap desktop">
                         <img src="./images/cont-program-desktop.png" alt="">
-                    </div> -->
+                    </div>
                     <div class="cont-wrap mobile">
                         <ul class="tabs">
                             <li data-tab="tab-1" class="active">401호</li>
@@ -299,7 +299,111 @@
                         </ol>
                         <!-- //tab-1: contents -->
                         <ol id="tab-2" class="tab-content">
-                            tab conten2
+                            <li class="speech">
+                                <p class="time">10:30 - 10:50</p>
+                                <div class="caption">
+                                    <h5>사업가의 눈으로 본 iOS 개발자의 미래</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>이재관</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>권성우</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech workshop">
+                                <p class="time">11:00 - 11:50</p>
+                                <div class="caption">
+                                    <h5>SwiftUI와 TCA로 Github Search 앱
+                                        만들기</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>허규영</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>김대영</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">11:50 - 12:30</p>
+                                <div class="caption">
+                                    <h5>점심시간</h5>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">12:30 - 12:50</p>
+                                <div class="caption">
+                                    <h5>우당탕탕! Safari Extension에서 Xcode Extension까지</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>이다혜</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>김정</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">13:00 - 13:40</p>
+                                <div class="caption">
+                                    <h5>미정</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>강민규</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>안정민</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">13:50 - 14:10</p>
+                                <div class="caption">
+                                    <h5>당근마켓 iOS 개발문화</h5>
+                                    <span>
+                                        <i>티타임 with</i>
+                                        <strong>당근마켓</strong>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">14:20 - 14:40</p>
+                                <div class="caption">
+                                    <h5>미정</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>김예원</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>이현호</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech workshop">
+                                <p class="time">15:00 - 16:10</p>
+                                <div class="caption">
+                                    <h5>그래서 테스트 코드는 어떻게 작성하고 있나요?</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>윤중현</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">16:20 - 16:40</p>
+                                <div class="caption">
+                                    <h5>경품추첨</h5>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">16:40 - 16:50</p>
+                                <div class="caption">
+                                    <h5>사진촬영</h5>
+                                </div>
+                            </li>
                         </ol>
                         <!-- //tab-2: contents -->
                     </div>
@@ -340,6 +444,7 @@
                 </div>
                 <div id="map-container">
                     <!-- TODO: map API -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.6416304042623!2d127.03806362258882!3d37.46918249531285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1862f6fb2c9%3A0x298b5b2b72c5a493!2zYVTshLzthLA!5e0!3m2!1sko!2skr!4v1667525313768!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
             <!-- //section: Map -->
@@ -357,59 +462,150 @@
                     <h3>Staff</h3>
                     <ul>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/godrem.png" alt="김정의 프로필사진">
                             <div class="caption">
                                 <h4>고드름</h4>
                                 <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/bibi.png" alt="Bibi의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>Bibi</h4>
+                                <span>도메인에 진심인 개발자🐭</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/rosa.png" alt="Rosa의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>Rosa</h4>
+                                <span>즐거운 여행길을 오르고 있습니다.</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/kangkyung.png" alt="강경의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>강경</h4>
+                                <span>클라이밍과 고양이를 좋아합니다😻</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/leeo.png" alt="리이오의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>리이오</h4>
+                                <span>개발보다는 협업을 좋아하는<br/>개발자입니다.</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/jaegu.png" alt="손재구의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>손재구</h4>
+                                <span>꿈많은 개발자입니다. 반가워요</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/sanghoon.png" alt="안상훈의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>안상훈</h4>
+                                <span>모두가 즐기는 재미있는 행사가 되었으면 합니다 😉</span>
                             </div>
                         </li>
                         <li>
-                            <img src="./images/staff-godrem.png" alt="김정의 프로필사진">
+                            <img src="./images/staff/sanghee.png" alt="안상희의 프로필사진">
                             <div class="caption">
-                                <h4>고드름</h4>
-                                <span>무엇이든 만드는 게 즐거운 레츠개발자</span>
+                                <h4>안상희</h4>
+                                <span>음악을 사랑하는 개발자</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/enne.png" alt="엔느의 프로필사진">
+                            <div class="caption">
+                                <h4>엔느</h4>
+                                <span>print("열정!열정!열정!")</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/yongwoon.png" alt="용운의 프로필사진">
+                            <div class="caption">
+                                <h4>용운</h4>
+                                <span>iOS가 좋은 개발자 윤용운입니다.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/river.png" alt="이가은의 프로필사진">
+                            <div class="caption">
+                                <h4>이가은(river)</h4>
+                                <span>꿈꾸는 개발자, 이가은입니다 :)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/donghun.png" alt="이동헌의 프로필사진">
+                            <div class="caption">
+                                <h4>이동헌</h4>
+                                <span>재미있는 개발 문화를 만들고 있어요!</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/dongju.png" alt="임동주의 프로필사진">
+                            <div class="caption">
+                                <h4>임동주</h4>
+                                <span>커피 한 잔의 여유를 함께 나눌 수 있는 개발자가 되고 싶어요 :)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/soohyeon.png" alt="장수현의 프로필사진">
+                            <div class="caption">
+                                <h4>장수현</h4>
+                                <span>인테리어에 관심많은 서타트업 백엔드 개발자입니다 😎</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/jinho.png" alt="장진호의 프로필사진">
+                            <div class="caption">
+                                <h4>장진호</h4>
+                                <span>놀고싶어서 일하는 개발자 입니다</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/hyeryeong.png" alt="장혜령의 프로필사진">
+                            <div class="caption">
+                                <h4>장혜령</h4>
+                                <span>함께하는 것을 좋아하는 iOS 개발자입니다 :) </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/intaek.png" alt="조인택의 프로필사진">
+                            <div class="caption">
+                                <h4>조인택</h4>
+                                <span>안녕하세요. iOS 개발자 조인택입니다!</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/jeein.png" alt="지인의 프로필사진">
+                            <div class="caption">
+                                <h4>지인</h4>
+                                <span>같이 즐거운 시간 보내요 ☺️🤭🤗 </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/hoju.png" alt="호주의 프로필사진">
+                            <div class="caption">
+                                <h4>호주</h4>
+                                <span>고양이 두 마리의 집사이며 피자를 좋아합니다🍕</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/seunghyeon.png" alt="홍승현의 프로필사진">
+                            <div class="caption">
+                                <h4>홍승현</h4>
+                                <span>호기심으로 더 성장하는 개발자가 되고 싶습니다😄</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/staff/jee.png" alt="황지희의 프로필사진">
+                            <div class="caption">
+                                <h4>황지희</h4>
+                                <span>여행을 사랑하는, 호기심 가득한 iOS 디발자입니다.</span>
                             </div>
                         </li>
                     </ul>
@@ -466,6 +662,15 @@
         const newActiveContent = document.querySelector(`#program #${dataId}`);
         newActiveContent.classList.add('active');
     });
+
+    // const mapContainer = document.querySelector('#map-container');
+    // mapContainer.addEventListener('touchmove', ev => {
+    //     if (weShouldStopDefaultScrollAndZoom) {
+    //         ev.preventDefault();
+    //         ev.stopImmediatePropagation();
+    //     };
+    // }, { passive: false });
+    
 })();
 
 function toggleMenu() {

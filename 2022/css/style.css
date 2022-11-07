@@ -33,6 +33,8 @@
 .header-menu a { display: inline-block; padding: 0.625em 0px 0.625em 6em; font-family: 'Jost'; font-weight: 500; color: white; }
 .header-menu a:hover { color: rgb(161, 161, 161); }
 .logo { display: inline-block; }
+.logo img { width: 129px; height: auto; }
+
 
 /* contents > section-01:home */
 #contents #home { height: 100vh; position: relative; color: white; background-color: #202020; }
@@ -75,12 +77,13 @@
 
 
 /* contents > section-04:Program */
-#program { background-color: #0A0A0A; }
+#program { background-color: #0A0A0A; padding: 8rem 0; }
 #program .cont-wrap.desktop { overflow-x: scroll; }
+#program h3 { margin-bottom: 2rem; font-size: 47px; text-align: left; color: white; font-family: 'Jost'; font-weight: 700; }
 
 /* Program: 모바일 */
-#program .cont-wrap.mobile { color: white; }
-#program .cont-wrap.mobile .tabs li { width: 45%; display: inline-block; cursor: pointer; padding: 1.4% 1%; font-family: 'Jost'; font-weight: 700; font-size: 17px; border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+#program .cont-wrap.mobile { display: none; color: white; }
+#program .cont-wrap.mobile .tabs li { width: 45%; display: inline-block; cursor: pointer; padding: 1.4% 1%; text-align: center; font-family: 'Jost'; font-weight: 700; font-size: 17px; border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
 #program .cont-wrap.mobile .tabs li:first-child { margin-right: 3%; }
 #program .cont-wrap.mobile .tabs li.active { border-bottom: 2px solid #FAAA41; color: #FAAA41; }
 
@@ -89,10 +92,10 @@
 
 
     /* Program: 모바일 - 공통 */
-#program .tab-content > li { position: relative; padding-bottom: 25px; }
+#program .tab-content > li { position: relative; padding-bottom: 30px; }
 #program .tab-content > li::before { content: ''; width: 1px; height: 100%; position: absolute; top: 5px; left: -9px; background-color: rgba(250, 170, 65, 0.4); }
 #program .tab-content > li:last-child::before { display: none;  }
-#program .tab-content .time { position: relative; margin-bottom: 0.8rem; color: #FAAA41; font-family: 'Jost'; font-weight: 600; }
+#program .tab-content .time { position: relative; margin-bottom: 1rem; color: #FAAA41; font-family: 'Jost'; font-weight: 600; }
 #program .tab-content .time::before { content: ''; position: absolute; top: 4px; left: -12px; width: 7px; height: 7px; background-color: #FAAA41; border-radius: 50%; }
 #program .tab-content .caption { padding: 1rem; border-radius: 10px; }
 #program .tab-content h5 { font-size: 16px; font-family: 'Noto Sans KR'; font-weight: 700; }
@@ -103,6 +106,10 @@
 #program .tab-content .speech .caption span { color: rgba(255, 255, 255, 0.6); }
 #program .tab-content .speech .caption span > strong { font-family: 'Noto Sans KR'; font-weight: 700; }
 #program .tab-content .speech .caption span > i { font-size: 14px; font-family: 'Jost'; font-weight: 300; }
+
+#program .speech.workshop .caption { border: 1px solid #FAAA41; }
+#program .speech.workshop h5::after { content: '워크샵'; position: absolute; top: -10px; right: 0; border: 1px dashed #FAAA41; color: #FAAA41; padding: 8px 20px; border-radius: 20px; font-family: 'Noto Sans KR'; font-weight: 400;}
+
 
     /* Program: 모바일 - 쉬는시간 */
 #program .tab-content .rest .caption { background-color: rgba(255, 255, 255, 0.1); }
@@ -137,7 +144,9 @@
 #location li.subway .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-subway.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
 
 
-#location #map-container { background: url('../images/img-map.png') no-repeat #555 center; }
+/* #location #map-container { background: url('../images/img-map.png') no-repeat #555 center; } */
+/* #map-container { pointer-events: none; } */
+
 
 /* contents > section:Sponsor */
 #contents section#sponsor { min-height: auto; padding-top: 100px; padding-bottom: 100px; }
@@ -147,19 +156,20 @@
 
 
 /* contents > section-06:Staff */
-#staff {}
-#staff h3 { font-size: 47px; font-family: 'Jost'; font-weight: 700; }
+#staff { padding: 8rem 0; background-color: #0A0A0A; color: white; }
+#staff h3 { margin-bottom: 2rem; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
 #staff ul { display: inline-flex; flex-wrap: wrap; }
-#staff ul li { width: 14.285% }
+#staff ul li { width: 13.285%; margin-right: 1%; margin-bottom: 3.4%;}
 #staff ul li img { width: 100%; }
-#staff li h4 { margin-top: 18px; font-size: 18px; font-family: 'Noto Sans KR'; font-weight: 700; }
-#staff li span { margin-top: 9px; display: inline-block; font-size: 14px; font-family: 'Noto Sans KR'; font-weight: 400; }
-
+#staff .caption { font-family: 'Noto Sans KR'; }
+#staff li h4 { margin-top: 18px; font-size: 18px; font-weight: 700; }
+#staff li span { margin-top: 9px; display: inline-block; line-height: 1.2em; font-size: 0.875rem; font-weight: 300; }
 
 /* pray */
-#pray { height: 350px; text-align: center; color: white; background: url('../images/img-background-footer.png') no-repeat right top #131419; }
+#pray { position: relative; height: 350px; text-align: center; color: white; background-color: #131419;}
+#pray::before { content: ''; display: block; position: absolute; right: 0; top: 0; width: 100%; height: 100%; background: url('../images/background-pray.png') no-repeat right top; }
 #pray .container { display: flex; flex-direction: column; justify-content: center; }
-#pray span { display: block; margin-bottom: 1.250em; font-size: 1.375rem; font-family: 'Nanum Myeongjo', serif; font-weight: 400; }
+#pray span { display: block; margin-bottom: 0.7em; line-height: 1.3em; font-size: 1.375rem; font-family: 'Nanum Myeongjo', serif; font-weight: 400; }
 #pray span:last-child { margin-bottom: 0; }
 #pray span b { font-weight: 800; font-size: 1.563rem; }
 
@@ -176,6 +186,8 @@
     .header-menu a { padding: 0.625em 0px 0.625em 3em; }
     /* contents > Sponsor */
     #sponsor li { width: 24%; height: auto; }
+    /* contents > Staff */
+    #staff ul li { width: 18%; margin-right: 2%; }
 }
 
 /* 화면너비 0 ~ 1280 : 데스크탑 */
@@ -193,6 +205,18 @@
     #home h2 span.year { text-align: center; }
     /* contents > Location */
     #location li .caption span { margin-left: 0; font-weight: 400; font-size: 1.125rem; } 
+    /* contents > Staff */
+    #staff ul li { width: 22%; margin-right: 3%; }
+    /* contents > Pray */
+    #pray::before { opacity: 0.4; }
+
+    /* contents > Program */
+    #program { background-color: #0A0A0A; padding: 8rem 0; }
+    #program .cont-wrap.desktop { display: none; }
+    /* #program .cont-wrap.desktop { overflow-x: ; } */
+    /* Program: 모바일 */
+    #program h3 { text-align: center; }
+    #program .cont-wrap.mobile { display: block; }
 
 }
 
@@ -215,7 +239,6 @@
     /* pray */
     #pray { height: 300px; }
     #pray span { margin-bottom: 1em; font-size: 1.275rem; }
-
     /* 이때부터 program 모바일 이미지 보여주기 */
 }
 
@@ -227,6 +250,7 @@
     #header { display: none; }
     #mobile-header { display: block; }
     #mobile-header .logo { width: 100%; text-align: center; }
+    .menu-hamburger img { width: 28px; height: 11px; display: inline-block; margin-top: 12px; }
     /* contents > Home */
     #home h2 { font-size: 5.5rem; }
     #home h2::after { display: none;}
@@ -240,7 +264,11 @@
     /* contents > Sponsor */
     #contents section#sponsor { padding-top: 2rem; padding-bottom: 2rem; }
     #sponsor li { width: 49%; height: auto; }
-
+    /* contents > Staff */
+    #staff { padding: 5rem 0; }
+    #staff ul li { width: 29.3%; margin-right: 4%; margin-bottom: 7%; }
+    /* contents > Pray */
+    #pray::before { opacity: 0.2; right: 0; top: 0; background: url('../images/background-pray-mobile.png') no-repeat bottom right; }
     
     
 }
