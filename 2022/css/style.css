@@ -9,7 +9,7 @@
 #wrap { width: 100%; }
 #header { width: 100%; background-color: rgba(32, 32, 32, 1.0); }
 #contents { width: 100%; }
-#contents section { min-height: 100vh; background-color: #f2f2f2; }
+#contents section { min-height: 100vh; }
 #footer { width: 100%; background-color: #0A0A0A; color: white; text-align: center;}
 
 /* container */
@@ -33,6 +33,8 @@
 .header-menu a { display: inline-block; padding: 0.625em 0px 0.625em 6em; font-family: 'Jost'; font-weight: 500; color: white; }
 .header-menu a:hover { color: rgb(161, 161, 161); }
 .logo { display: inline-block; }
+.logo img { width: 129px; height: auto; }
+
 
 /* contents > section-01:home */
 #contents #home { height: 100vh; position: relative; color: white; background-color: #202020; }
@@ -52,16 +54,21 @@
 #contents #about > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 #about h3 { margin-bottom: 3.313rem; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938rem;}
 #about h3 b { color: #FF3F2A; }
-#about span { margin-bottom: 1.500em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125rem; }
+#about span { margin-bottom: 0.9em; line-height: 1.5em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125rem; }
 #about span em { font-weight: 500; font-size: 1.438rem; }
 
-.btn-location { width: 380px; height: 3.438rem; border-radius: 1.875em;  display: inline-block; box-sizing: border-box; cursor: default; background: linear-gradient(to bottom right, #F0B056, #EB4E38); font-family: 'Noto Sans KR';}
-.btn-location:hover { cursor: pointer; }
-.btn-location a { margin-left: 0.375em; color: white; line-height: 3.438rem; }
-.btn-location img { vertical-align: text-bottom; }
+/* round button */
+.btn-round { height: 3.438rem; padding: 0 40px; border-radius: 1.875em;  display: inline-block; box-sizing: border-box; cursor: default; background: #F14F3D; font-family: 'Noto Sans KR';}
+.btn-round:hover { cursor: pointer; }
+.btn-round a { margin-right: 0.375em; color: white; line-height: 3.438rem; }
+.btn-round img { vertical-align: text-bottom; }
 
+.btn-round.location { background: #F14F3D; }
+.btn-round.question { background-color: #FAAA41; }
+#about .buttons .spacer { display: inline-block; width: 26px; }
 
 /* contents > section-03:speakers */
+#speakers { background-color: #f2f2f2; }
 #speakers h3 { text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
 #speakers .profile-list li { width: 19.8%; display: inline-block; text-align: center; }
 #speakers .profile-list img { width: 100%; }
@@ -70,7 +77,51 @@
 
 
 /* contents > section-04:Program */
+#program { background-color: #0A0A0A; padding: 8rem 0; }
+#program .cont-wrap.desktop { overflow-x: scroll; }
+#program h3 { margin-bottom: 2rem; font-size: 47px; text-align: left; color: white; font-family: 'Jost'; font-weight: 700; }
 
+/* Program: 모바일 */
+#program .cont-wrap.mobile { display: none; color: white; }
+#program .cont-wrap.mobile .tabs li { width: 45%; display: inline-block; cursor: pointer; padding: 1.4% 1%; text-align: center; font-family: 'Jost'; font-weight: 700; font-size: 17px; border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+#program .cont-wrap.mobile .tabs li:first-child { margin-right: 3%; }
+#program .cont-wrap.mobile .tabs li.active { border-bottom: 2px solid #FAAA41; color: #FAAA41; }
+
+#program .cont-wrap.mobile .tab-content { padding-top: 35px; display: none; margin-left: 12px; }
+#program .cont-wrap.mobile .tab-content.active { display: inherit; }
+
+
+    /* Program: 모바일 - 공통 */
+#program .tab-content > li { position: relative; padding-bottom: 30px; }
+#program .tab-content > li::before { content: ''; width: 1px; height: 100%; position: absolute; top: 5px; left: -9px; background-color: rgba(250, 170, 65, 0.4); }
+#program .tab-content > li:last-child::before { display: none;  }
+#program .tab-content .time { position: relative; margin-bottom: 1rem; color: white; font-family: 'Jost'; font-weight: 600; }
+#program .tab-content .time::before { content: ''; position: absolute; top: 4px; left: -12px; width: 7px; height: 7px; background-color: #FAAA41; border-radius: 50%; }
+#program .tab-content .caption { padding: 1rem; border-radius: 10px; }
+#program .tab-content h5 { font-size: 16px; font-family: 'Noto Sans KR'; font-weight: 700; }
+
+    /* Program: 모바일 - 스피치 */
+#program .tab-content .speech .caption { border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; }
+#program .tab-content .speech .caption h5 { margin-bottom: 8px; }
+#program .tab-content .speech .caption span { color: rgba(255, 255, 255, 0.6); }
+#program .tab-content .speech .caption span > strong { font-family: 'Noto Sans KR'; font-weight: 700; }
+#program .tab-content .speech .caption span > i { font-size: 14px; font-family: 'Jost'; font-weight: 300; }
+
+#program .speech.workshop .caption { border: 1px solid #FAAA41; }
+#program .speech.workshop h5::after { content: '워크샵'; position: absolute; top: -10px; right: 0; border: 1px dashed #FAAA41; color: #FAAA41; padding: 8px 20px; border-radius: 20px; font-family: 'Noto Sans KR'; font-weight: 400;}
+
+
+    /* Program: 모바일 - 쉬는시간 */
+#program .tab-content .rest .caption { background-color: rgba(255, 255, 255, 0.1); }
+
+    /* Program: 모바일 - 이벤트 */
+#program .tab-content .event { color: #FAAA41; }
+#program .tab-content .event .caption { border: 2px dashed #FAAA41; }
+#program .tab-content .event .actors { margin-top: 8px; }
+#program .tab-content .event .actors li:first-child { margin-bottom: 4px; }
+#program .tab-content .event .actors li { font-family: 'Noto Sans KR'; }
+#program .tab-content .event .actors .role { font-weight: 300; display: inline-block; width: 60px; }
+#program .tab-content .event .actors li b { font-weight: 700; }
 
 /* contents > section-05:Location */
 #location { display: flex; }
@@ -83,24 +134,36 @@
 #location li { margin-bottom: 3.000em; }
 #location li:last-child { margin-bottom: 0px; }
 #location li.address img { vertical-align: top; }
-#location li.address .caption { display: inline-block; font-family: 'Noto Sans KR'; }
+#location li .caption { display: inline-block; font-family: 'Noto Sans KR'; }
 #location li .caption h4 { margin-bottom: 0.625em; font-size: 1.375rem; font-weight: 700; }
 #location li .caption span { margin-left: 2.300em; font-weight: 400; font-size: 1.125rem; } 
+#location li.address .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-address.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
+#location li.day .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-calendar.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
+#location li.time .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-time.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
+#location li.subway .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-subway.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
 
-#location li.address h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-address.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
-#location li.date h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-calendar.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
-#location li.time h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-time.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
-#location li.subway h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-subway.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
+/* contents > section:Sponsor */
+#contents section#sponsor { min-height: auto; padding-top: 100px; padding-bottom: 100px; }
+#sponsor { background-color: white; }
+#sponsor li { width: 407px; height: 100px; display: inline-block; }
+#sponsor li img { width: 100%; }
 
-#location #map-container { background: url('../images/img-map.png') no-repeat #555 center; }
 
 /* contents > section-06:Staff */
-
+#staff { padding: 8rem 0; background-color: #0A0A0A; color: white; }
+#staff h3 { margin-bottom: 2rem; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
+#staff ul { display: inline-flex; flex-wrap: wrap; }
+#staff ul li { width: 13.285%; margin-right: 1%; margin-bottom: 3.4%;}
+#staff ul li img { width: 100%; }
+#staff .caption { font-family: 'Noto Sans KR'; }
+#staff li h4 { margin-top: 18px; font-size: 18px; font-weight: 700; }
+#staff li span { margin-top: 9px; display: inline-block; line-height: 1.2em; font-size: 0.875rem; font-weight: 300; }
 
 /* pray */
-#pray { height: 350px; text-align: center; color: white; background: url('../images/img-background-footer.png') no-repeat right top #131419; }
+#pray { position: relative; height: 350px; text-align: center; color: white; background-color: #131419;}
+#pray::before { content: ''; display: block; position: absolute; right: 0; top: 0; width: 100%; height: 100%; background: url('../images/background-pray.png') no-repeat right top; }
 #pray .container { display: flex; flex-direction: column; justify-content: center; }
-#pray span { display: block; margin-bottom: 1.250em; font-size: 1.375rem; font-family: 'Nanum Myeongjo', serif; font-weight: 400; }
+#pray span { display: block; margin-bottom: 0.7em; line-height: 1.3em; font-size: 1.375rem; font-family: 'Nanum Myeongjo', serif; font-weight: 400; }
 #pray span:last-child { margin-bottom: 0; }
 #pray span b { font-weight: 800; font-size: 1.563rem; }
 
@@ -110,12 +173,15 @@
 
 
 /* 디자인시안: 1720px */
-/* 화면너비 0 ~ 1740 : 데스크탑 */
+/* 화면너비 0 ~ 1720 : 데스크탑 */
 @media (max-width: 1740px) {
     .container { width: 96%; }
     .header-menu a { padding: 0.625em 0px 0.625em 3em; }
+    /* contents > Sponsor */
+    #sponsor li { width: 24%; height: auto; }
+    /* contents > Staff */
+    #staff ul li { width: 18%; margin-right: 2%; }
 }
-
 
 /* 화면너비 0 ~ 1024 : 데스크탑 */
 @media (max-width: 1024px) {
@@ -125,7 +191,17 @@
     #home h2 span { display: block; }
     #home h2 span.year { text-align: center; }
     /* contents > Location */
-    #location li.address .caption span { margin-left: 0; font-weight: 400; font-size: 1.125rem; } 
+    #location li .caption span { margin-left: 0; font-weight: 400; font-size: 1.125rem; } 
+    /* contents > Staff */
+    #staff ul li { width: 22%; margin-right: 3%; }
+    /* contents > Pray */
+    #pray::before { opacity: 0.4; }
+    /* contents > Program */
+    #program { background-color: #0A0A0A; padding: 8rem 0; }
+    #program .cont-wrap.desktop { display: none; }
+    /* Program: 모바일 */
+    #program h3 { text-align: center; }
+    #program .cont-wrap.mobile { display: block; }
 
 }
 
@@ -133,7 +209,6 @@
 @media (max-width: 768px) {
     html { font-size: 15px; }
     .container { width: 98%; }
-
     /* contents > Location */
     #location { display: flex; flex-direction: column; }
     #location > div { width: 100%; }
@@ -150,6 +225,8 @@
     /* header */
     #header { display: none; }
     #mobile-header { display: block; }
+    #mobile-header .logo { width: 100%; text-align: center; }
+    .menu-hamburger img { width: 28px; height: 11px; display: inline-block; margin-top: 12px; }
     /* contents > Home */
     #home h2 { font-size: 5.5rem; }
     #home h2::after { display: none;}
@@ -160,4 +237,14 @@
     .btn-location { width: 98%; }
     /* contents > Location */
     #location li .caption span { font-size: 1.18rem; }
+    /* contents > Sponsor */
+    #contents section#sponsor { padding-top: 2rem; padding-bottom: 2rem; }
+    #sponsor li { width: 49%; height: auto; }
+    /* contents > Staff */
+    #staff { padding: 5rem 0; }
+    #staff ul li { width: 29.3%; margin-right: 4%; margin-bottom: 7%; }
+    /* contents > Pray */
+    #pray::before { opacity: 0.2; right: 0; top: 0; background: url('../images/background-pray-mobile.png') no-repeat bottom right; }
+    /* contents > Program */
+    #program .tab-content h5 { line-height: 1.3rem; }
 }
