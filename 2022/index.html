@@ -33,8 +33,8 @@
                 <div class="header-menu">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <!-- <a href="#speakers">Speakers</a> -->
-                    <!-- <a href="#program">Program</a> -->
+                    <a href="#speakers">Speakers</a>
+                    <a href="#program">Program</a>
                     <a href="#location">Location</a>
                     <a href="#staff">Staff</a>
                 </div>
@@ -43,22 +43,26 @@
         <!-- 모바일 헤더 -->
         <div id="mobile-header">
             <div class="container">
+                <a href="javascript:void(0);" onclick="toggleMenu()" class="menu" id="open-menu">
+                    <img src="./images/icon-menu.png" alt="메뉴 열기">
+                </a>
+                <a href="javascript:void(0);" onclick="toggleMenu()" class="menu hide" id="close-menu">
+                    <img src="./images/icon-menu-close-20x20.png" alt="메뉴 열기">
+                </a>
                 <h1 class="logo">
                     <img src="./images/logo-letswift.png" alt="letswift">
                 </h1>
-                <a href="javascript:void(0);" onclick="toggleMenu()" class="menu-hamburger"><img src="./images/icon-menu.png" alt="메뉴 열기"></a>
-                <aside id="mobile-menu-panel" class="hide">
-                    <a href="javascript:void(0);" onclick="toggleMenu()" id="menu-close"><img src="./images/icon-menu-close.png" alt="메뉴 닫기"></a>
-                    <ul id="mobile-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <!-- <li><a href="#speakers">Speakers</a></li> -->
-                        <!-- <li><a href="#program">Program</a></li> -->
-                        <li><a href="#location">Location</a></li>
-                        <li><a href="#staff">Staff</a></li>
-                    </ul>
-                </aside>
             </div>
+            <aside id="mobile-menu-panel" class="hide">
+                <ul id="mobile-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#staff">Staff</a></li>
+                </ul>
+            </aside>
         </div>
         <!-- //header -->
         <div id="contents">
@@ -77,13 +81,15 @@
             <section id="about">
                 <div class="container">
                     <h3><b>Let'</b>s play at <b>Swift</b> Playgrounds</h3>
-                    <span><em>지난 3년 간 다채로운 행사와 다양한 만남에 목말라 있었나요?</em></span>
-                    <span>드디어 긴 침묵 끝에, 3년 만에 2022 레츠스위프트가 오프라인으로 돌아왔습니다!</span>
-                    <span>Swift는 오픈소스 프로젝트로, 학생부터 베테랑 개발자까지 다양한 개발자가 함께 만들어가는언어입니다.<br/>
-                        난이도 있는 기술 토픽에 대한 발표, 직접 코드 품질을 개선하는 워크숍,<br/>
-                        후원사와 함께하는 티타임과 테크토크, 네트워킹까지</span>
-                    <span>누구나 참여할 수 있는 커뮤니케이션 네트워크를 통해 다양한 활용 방식을 나눠보세요.</span>
-                    <span>함께 Swift Playground에서 만나고, 배우고, 즐겨요!</span>
+                    <div class="about-content">
+                        <span><em>지난 3년 간 다채로운 행사와 다양한 만남에 목말라 있었나요?</em></span>
+                        <span>드디어 긴 침묵 끝에, 3년 만에 2022 레츠스위프트가 오프라인으로 돌아왔습니다!</span>
+                        <span>Swift는 오픈소스 프로젝트로, 학생부터 베테랑 개발자까지 다양한 개발자가 함께 만들어가는언어입니다.<br/>
+                            난이도 있는 기술 토픽에 대한 발표, 직접 코드 품질을 개선하는 워크숍,<br/>
+                            후원사와 함께하는 티타임과 테크토크, 네트워킹까지</span>
+                        <span>누구나 참여할 수 있는 커뮤니케이션 네트워크를 통해 다양한 활용 방식을 나눠보세요.</span>
+                        <span>함께 Swift Playground에서 만나고, 배우고, 즐겨요!</span>
+                    </div>
                     <div class="buttons">
                         <div class="btn-round location">
                             <a href="#">
@@ -91,7 +97,7 @@
                                 <img src="./images/icon-button-location.png" alt="위치 아이콘"/>
                             </a>
                         </div>
-                        <div class="spacer"></div>
+                        <!-- <div class="spacer"></div> -->
                         <!-- <div class="btn-round question">
                             <a href="https://app.sli.do/event/ht1JnUJebB6FojyqiHJPe5" target="_blank">
                                 <span>테크토크 사전 질문하러 가기</span>
@@ -101,9 +107,482 @@
                     </div>
                 </div>
             </section>
-            <!-- //section-02:about -->
-            <!-- //section-03 -->
-            <!-- //section-04: Program -->
+            <!-- //section-02:About -->
+            <section id="speakers">
+                <div class="container">
+                    <h3>Speakers</h3>
+                    <ul class="profile-list">
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/gyuyeong.png" alt="허규영님의 얼굴">
+                                </div>
+                                <span class="role workshop">워크샵</span>
+                            </div>
+                            <h4>허규영</h4>
+                            <span class="caption">함수형 프로그래밍을<br/>더 잘하고 싶은 iOS 개발자</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/dae-yeong.png" alt="김대영님의 얼굴">
+                                </div>
+                                <span class="role workshop">워크샵</span>
+                            </div>
+                            <h4>김대영</h4>
+                            <span class="caption"></span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/jong-hyeon.png" alt="윤중현님의 얼굴">
+                                </div>
+                                <span class="role workshop">워크샵</span>
+                            </div>
+                            <h4>윤중현</h4>
+                            <span class="caption">무엇이든 만드는 것 자체를 좋아해요.</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/woo-seong.png" alt="김우성님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>김우성</h4>
+                            <span class="caption">iOS 개발에 더해 비즈니스 성공을 위해 할 수 있는<br/>모든 것을 합니다. 좋은 팀을 만드는데 진심입니다.</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/won-yeong.png" alt="손원영님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>손원영</h4>
+                            <span class="caption">11년차 iOS 개발자<br/>현재는 tvOS 앱개발에 집중하고 있습니다.</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/eun-bin.png" alt="권은빈님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>권은빈</h4>
+                            <span class="caption">백각이 불여일행</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/jae-guan.png" alt="이재관님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>이재관</h4>
+                            <span class="caption">구)사업가 현)iOS개발자<br/>구사현아 이재관 입니다.</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/yong-gwon.png" alt="박용권님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>박용권</h4>
+                            <span class="caption">두 고양이와 함께 살고 있는<br/>17년 묵은 소프트웨어 엔지니어에요</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/hae-seok.png" alt="이해석님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>이해석</h4>
+                            <span class="caption">피자에 진심인 개발자</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/da-hae.png" alt="이다혜님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>이다혜</h4>
+                            <span class="caption">기호 1번 무소속 iOS 개발자</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/su-jin.png" alt="강수진님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>강수진</h4>
+                            <span class="caption">우당탕탕 좌충우돌 얼레벌레<br/>iOS 대모험</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/min-gyu.png" alt="강민규님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>강민규</h4>
+                            <span class="caption">응애 나, 애기 ios 개발자</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/ye-won.png" alt="김예원님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>김예원</h4>
+                            <span class="caption">iOS 개발자로 공부중인 김예원입니다!</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/no-img.png" alt="류성두님의 얼굴">
+                                </div>
+                                <span class="role speaker">Speaker</span>
+                            </div>
+                            <h4>류성두</h4>
+                            <span class="caption"></span>
+                        </li>                        
+                    </ul>
+                </div>
+            </section>
+            <!-- //section:Speakers -->
+            <section id="supporters">
+                <div class="container">
+                    <h3>Supporters </h3>
+                    <ul class="profile-list">
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/godrem.png" alt="고드름님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>고드름</h4>
+                            <span class="caption">무엇이든 만드는 게 즐거운 레츠개발자</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/fried-gom.png" alt="곰튀김님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>곰튀김</h4>
+                            <span class="caption">사실주의 프로그래머</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/gwang-eo.png" alt="광어님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>광어</h4>
+                            <span class="caption">시작은 겁나지만, 항상 호기심에 움직여지는<br/>iOS 개발자입니다</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/sung-u.png" alt="권성우님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>권성우</h4>
+                            <span class="caption">iOS 개발하는 권성우입니다 :)</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/no-img.png" alt="신연화님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>신연화</h4>
+                            <span class="caption"></span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/leeo.png" alt="리이오님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>리이오</h4>
+                            <span class="caption">개발보다는 협업을 좋아하는 개발자 입니다.</span>
+                        </li>
+                        <li class="profile">
+                            <div class="photo">
+                                <div class="img-wrap">
+                                    <img src="./images/presenter/no-img.png" alt="정세영님의 얼굴">
+                                </div>
+                                <span class="role supporter">Supporter</span>
+                            </div>
+                            <h4>정세영</h4>
+                            <span class="caption"></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- // section:Supporters -->
+            <section id="program">
+                <div class="container">
+                    <h3>Program</h3>
+                    <div class="cont-wrap desktop">
+                        <img src="./images/cont-program-desktop-1720x1368.png" alt="">
+                    </div>
+                    <div class="cont-wrap mobile">
+                        <ul class="tabs">
+                            <li data-tab="tab-1" class="active">401호</li>
+                            <li data-tab="tab-2">402호</li>
+                        </ul>
+                        <ol id="tab-1" class="tab-content active">
+                            <li class="speech">
+                                <p class="time">10:30 - 10:50</p>
+                                <div class="caption">
+                                    <h5>Certificate 와 Provisioning profile</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>강수진</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>곰튀김</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">11:00 - 11:20</p>
+                                <div class="caption">
+                                    <h5>우린 같은 곳을 바라보고 있을까요? (TBD)</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>박용권</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>정세영</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">11:30 - 11:50</p>
+                                <div class="caption">
+                                    <h5>비전공 대졸 경력 0년차 초 주니어의 iOS 개발자로 살아남기</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>권은빈</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>광어</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">11:50 - 12:30</p>
+                                <div class="caption">
+                                    <h5>점심시간</h5>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">12:30 - 12:50</p>
+                                <div class="caption">
+                                    <h5>PencilKit과 Point in polygon 알고리즘을 활용한 올가미(Lasso) 툴 개발기</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>이해석</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>신연화</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">13:00 - 13:40</p>
+                                <div class="caption">
+                                    <h5>Modular Architecture w/ Tuist</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>김우성</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">13:50 - 14:10</p>
+                                <div class="caption">
+                                    <h5>테크스펙으로 모두가 함께 성장하기</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>류성두</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">14:20 - 14:40</p>
+                                <div class="caption">
+                                    <h5>Migration to tvOS</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>송원영</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="event">
+                                <p class="time">15:00 - 15:30</p>
+                                <div class="caption">
+                                    <h5>테크토크</h5>
+                                    <ul class="actors">
+                                        <li>
+                                            <span class="role">진행자</span><span class="names"><b>고드름</b>님</span>
+                                        </li>
+                                        <li>
+                                            <span class="role">패널</span><span class="names"><b>곰튀김</b> 님, <b>김우성</b> 님, <b>안정민</b> 님, <b>류성두</b> 님</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="event">
+                                <p class="time">15:40 - 16:10</p>
+                                <div class="caption">
+                                    <h5>네트워킹</h5>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">16:20 - 16:40</p>
+                                <div class="caption">
+                                    <h5>경품추첨</h5>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">16:40 - 16:50</p>
+                                <div class="caption">
+                                    <h5>사진촬영</h5>
+                                </div>
+                            </li>
+                        </ol>
+                        <!-- //tab-1: contents -->
+                        <ol id="tab-2" class="tab-content">
+                            <li class="speech">
+                                <p class="time">10:30 - 10:50</p>
+                                <div class="caption">
+                                    <h5>사업가의 눈으로 본 iOS 개발자의 미래</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>이재관</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>권성우</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech workshop">
+                                <p class="time">11:00 - 11:50</p>
+                                <div class="caption">
+                                    <h5>SwiftUI와 TCA로 Github Search 앱 만들기</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>허규영</strong>
+                                         <i>님,</i>
+                                         <strong>김대영</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">11:50 - 12:30</p>
+                                <div class="caption">
+                                    <h5>점심시간</h5>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">12:30 - 12:50</p>
+                                <div class="caption">
+                                    <h5>우당탕탕! Safari Extension에서 Xcode Extension까지</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>이다혜</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>고드름</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">13:00 - 13:40</p>
+                                <div class="caption">
+                                    <h5>iOS 개발에서 알아두면 좋은 것들</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>강민규</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>안정민</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="event">
+                                <p class="time">13:50 - 14:10</p>
+                                <div class="caption">
+                                    <h5>당근마켓 iOS 개발문화</h5>
+                                    <ul class="actors">
+                                        <li>
+                                            <span>티타임 with </span><span class="names"><b>당근마켓</b></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="speech">
+                                <p class="time">14:20 - 14:40</p>
+                                <div class="caption">
+                                    <h5>미정</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>김예원</strong>
+                                         <i>님  /  Supporter</i>
+                                         <strong>리이오</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="speech workshop">
+                                <p class="time">15:00 - 16:10</p>
+                                <div class="caption">
+                                    <h5>그래서 테스트 코드는 어떻게 작성하고 있나요?</h5>
+                                    <span>
+                                        <i>Speaker</i>
+                                        <strong>윤중현</strong>
+                                         <i>님</i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">16:20 - 16:40</p>
+                                <div class="caption">
+                                    <h5>경품추첨</h5>
+                                </div>
+                            </li>
+                            <li class="rest">
+                                <p class="time">16:40 - 16:50</p>
+                                <div class="caption">
+                                    <h5>사진촬영</h5>
+                                </div>
+                            </li>
+                        </ol>
+                        <!-- //tab-2: contents -->
+                    </div>
+                </div>
+            </section>
+            <!-- //section: Program -->
             <section id="location">
                 <div class="text-container">
                     <div class="text-contents">
@@ -112,7 +591,7 @@
                             <li class="address">
                                 <div class="caption">
                                     <h4>위치</h4>
-                                    <span>서울특별시 강남구 강남대로 27, 양재 AT Center 4층</span>
+                                    <span>서울특별시 강남구 강남대로 27, <br class="line-change active-only-mobile"/>양재 AT Center 4층</span>
                                 </div>
                             </li>
                             <li class="day">
@@ -137,11 +616,11 @@
                     </div>
                 </div>
                 <div id="map-container">
+                    <!-- TODO: map API -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.6416304042623!2d127.03806362258882!3d37.46918249531285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1862f6fb2c9%3A0x298b5b2b72c5a493!2zYVTshLzthLA!5e0!3m2!1sko!2skr!4v1667525313768!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
             <!-- //section: Map -->
-            <!-- // section: sponsor -->
             <section id="staff">
                 <div class="container">
                     <h3>Staff</h3>
@@ -301,10 +780,12 @@
         <!-- //contents -->
         <section id="pray">
             <div class="container">
+                <div class="pray-content">
                     <span>10월 29일 너무도 안타까운 참사로 유명을 달리하신,</span>
                     <span>저희와 함께 끝까지 맡은 바를 다 해주셨던 <b>고 Davy님</b>의 영원한 안식을 빕니다.</span>
                     <span>상심에 빠지셨을 유가족 분들께 깊은 애도의 마음을 보내며</span>
                     <span>삼가 고인의 명복을 빕니다.</span>
+                </div>
             </div>
         </section>
         <!-- //#pray -->
@@ -322,15 +803,47 @@
     mobileLinksElem.addEventListener('click', () => {
         toggleMenu();
     });
+
+        // Program: Tab touch event
+    const programTab = document.querySelector('#program .mobile ul.tabs')
+    programTab.addEventListener('click', (e) => {
+        var target = e.target;
+        while (target && target.parentNode !== programTab) {
+            target = target.parentNode; 
+            if(!target) { return; } // element doesn't exist
+        }
+        if (e.target.tagName !== 'LI') { return; }
+        // 1. ul tabs li 모두에서 active 클래스를 지운다
+        const oldActiveMenu = document.querySelector('#program .mobile .tabs>li.active');
+        oldActiveMenu.classList.remove('active');
+        // 2. tab-content 에서 active 클래스를 지운다
+        const oldDataId = oldActiveMenu.getAttribute('data-tab');
+        const oldActiveContent = document.querySelector(`#program #${oldDataId}`);
+        oldActiveContent.classList.remove('active');
+
+        // 3. 현재 터치한 li 에 active 클래스를 add
+        target.classList.add('active');
+        // 4. 탭 Id 에 해당하는 엘리먼트에 active 클래스를 add
+        const dataId = target.getAttribute('data-tab');
+        const newActiveContent = document.querySelector(`#program #${dataId}`);
+        newActiveContent.classList.add('active');
+    });
 })();
 
 function toggleMenu() {
     const elem = document.querySelector("#mobile-menu-panel");
     const isOpen = elem.classList.contains("visible");
+    const menuButton = document.querySelector("#open-menu");
+    const menuCloseButton = document.querySelector("#close-menu");
+
     if (isOpen) {
         elem.className = "hide";
+        menuCloseButton.classList.add("hide");
+        menuButton.classList.remove("hide");
     } else {
         elem.className = "visible";
+        menuCloseButton.classList.remove("hide");
+        menuButton.classList.add("hide");
     }
 }
 

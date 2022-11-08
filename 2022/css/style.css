@@ -5,6 +5,8 @@
 .hide { display: none; }
 .visible { display: block; }
 
+.line-change.active-only-mobile { display: none; }
+
 /* Layout */
 #wrap { width: 100%; }
 #header { width: 100%; background-color: rgba(32, 32, 32, 1.0); }
@@ -17,14 +19,20 @@
 
 /* header: mobile */
 #mobile-header { display: none; background-color: rgba(0, 0, 0, 1.0); width: 100%; position: fixed; top: 0; left: 0; z-index: 999999; } 
-#mobile-header > .container { display: flex; justify-content: space-between; padding: 1.250em 0; }
-#mobile-header aside { padding-top: 2vh; position: fixed; right: 0; top: 0; background-color: white; height: 100vh; width: 60vw; }
-#mobile-header a#menu-close { display: inline-block; position: absolute; top: 0; right: 0; }
-#mobile-header aside ul { margin-left: 10%; margin-top: 2rem; width: 90%; }
-#mobile-header aside ul li { margin-bottom: 1.2rem; }
-#mobile-header aside ul li a { color: #202020; font-size: 22px; font-family: 'Jost'; font-weight: 400; }
+#mobile-header > .container { padding: 1.250em 0; }
+
+#mobile-header aside { margin-top: 78px; position: fixed; left: 0; top: 0; background-color: #0A0A0A; height: 100vh; width: 100vw; border-top: 1px solid rgba(255, 255, 255, 0.3); }
+#mobile-header aside ul { width: 100%; margin: 0 auto; }
+#mobile-header aside ul li { position: relative; cursor: pointer; text-align: center; }
+#mobile-header aside ul li::after { content: ''; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color:rgba(255, 255, 255, 0.2); text-align: center; }
+#mobile-header aside ul li:last-child::after { display: none; }
+#mobile-header aside ul li a { display: block; padding: 2rem; color: white; font-size: 16px; font-family: 'Jost'; font-weight: 400; }
+#mobile-header aside ul li:hover { background-color: rgba(255, 255, 255, 0.2); }
 #mobile-header .logo img { margin-top: 0.625em; }
 
+.menu-header-cont { width: 98%; margin: 0 auto; position: relative;}
+#mobile-header a#menu-close { display: inline-block; position: absolute; top: 0; left: 4%; }
+#mobile-header a#menu-close img { margin-top: 12px; display: inline-block; width: 20px; height: 20px; }
 
 /* header: desktop */
 #header { position: fixed; top: 0; left: 0; z-index: 999999; }
@@ -35,9 +43,8 @@
 .logo { display: inline-block; }
 .logo img { width: 129px; height: auto; }
 
-
 /* contents > section-01:home */
-#contents #home { height: 100vh; position: relative; color: white; background-color: #202020; }
+#contents #home { height: 100vh; z-index: 1; position: relative; color: white; background-color: #202020; }
 #contents #home::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 100%; opacity: 0.07; background: url('../images/img-background-home.png') no-repeat center; background-size: cover; }
 
 #home > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
@@ -49,36 +56,46 @@
 #home p { text-align: center; font-size: 1.375rem; font-family: 'Jost'; font-weight: 400; }
 #home p.ticket-day { margin-top: 0.4em; }
 
-/* contents > section-02:about */
-#contents #about { height: 100vh; background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
+/* contents > About */
+#contents #about { height: 100vh; position: relative; background-color: #F7F7F7; text-align: center; }
+#contents #about::before { height: 100%; width: 100%; display: block; content: ''; position: absolute; right: 0; top: -3%; background: url('../images/background-about.png') no-repeat; background-position: 100% -10%; }
+
 #contents #about > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 #about h3 { margin-bottom: 3.313rem; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938rem;}
 #about h3 b { color: #FF3F2A; }
-#about span { margin-bottom: 0.9em; line-height: 1.5em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125rem; }
-#about span em { font-weight: 500; font-size: 1.438rem; }
+.about-content span { display: block; margin-bottom: 0.9em; line-height: 1.5em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125rem; }
+.about-content span em { font-weight: 500; font-size: 1.438rem; }
 
 /* round button */
 .btn-round { height: 3.438rem; padding: 0 40px; border-radius: 1.875em;  display: inline-block; box-sizing: border-box; cursor: default; background: #F14F3D; font-family: 'Noto Sans KR';}
 .btn-round:hover { cursor: pointer; }
-.btn-round a { margin-right: 0.275em; color: white; line-height: 3.438rem; }
+.btn-round a { margin-right: 0.375em; color: white; line-height: 3.438rem; }
 .btn-round img { vertical-align: text-bottom; }
 
 .btn-round.location { background: #F14F3D; }
 .btn-round.question { background-color: #FAAA41; }
+#about .buttons { margin-top: 1.4em; }
 #about .buttons .spacer { display: inline-block; width: 26px; }
 
 /* contents > section-03:speakers */
-#speakers { background-color: #f2f2f2; }
-#speakers h3 { text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
-#speakers .profile-list li { width: 19.8%; display: inline-block; text-align: center; }
-#speakers .profile-list img { width: 100%; }
-#speakers .profile-list h4 { font-family: 'Noto Sans KR'; font-weight: 700; font-size: 22px; color: #0A0A0A; }
-#speakers .profile-list span { display: inline-block; margin-top: 5px; font-family: 'Noto Sans KR'; font-weight: 300; color: #3C3C3C; }
+#speakers, #supporters { padding: 8rem 0; background-color: #f2f2f2; }
+#speakers h3, #supporters h3 { margin-bottom: 2rem; text-align: center; font-size: 47px; font-family: 'Jost'; font-weight: 700; }
+.profile-list li.profile { width: 17.8%; margin-right: 1.9%; margin-bottom: 65px; vertical-align: top; display: inline-block; text-align: center; }
 
+.profile-list .photo { position: relative; margin-bottom: 20px; }
+.profile-list .photo .img-wrap { width: 100%; box-shadow: 0px 0px 10px -7px rgba(0, 0, 0, 0.5); border: 0.625rem solid white; border-radius: 50%; box-sizing: border-box; }
+.profile-list .photo .img-wrap img { width: 100%; vertical-align: middle; }
+.profile-list .photo .role { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); font-size: 0.938rem; display: inline-block; padding: 0.625em 1.750em; border-radius: 20px; font-weight: 500; color: white; }
+.profile-list .photo .role.workshop { background-color: #FF422A; font-family: 'Noto Sans KR'; }
+.profile-list .photo .role.speaker { background-color: #F09D2F; }
+.profile-list .photo .role.supporter { background-color: #2B2B2B; font-family: 'Jost'; }
+.profile-list h4 { font-family: 'Noto Sans KR'; font-weight: 700; font-size: 22px; color: #0A0A0A; }
+.profile-list .caption { display: inline-block; margin-top: 5px; line-height: 1.4em; font-size: 15px; font-family: 'Noto Sans KR'; font-weight: 300; color: #3C3C3C; }
 
 /* contents > section-04:Program */
 #program { background-color: #0A0A0A; padding: 8rem 0; }
-#program .cont-wrap.desktop { overflow-x: scroll; }
+#program .cont-wrap.desktop { overflow-x: auto; }
+#program .cont-wrap.desktop > img { width: 1720px; height: 1368px; }
 #program h3 { margin-bottom: 2rem; font-size: 47px; text-align: left; color: white; font-family: 'Jost'; font-weight: 700; }
 
 /* Program: 모바일 */
@@ -95,7 +112,7 @@
 #program .tab-content > li { position: relative; padding-bottom: 30px; }
 #program .tab-content > li::before { content: ''; width: 1px; height: 100%; position: absolute; top: 5px; left: -9px; background-color: rgba(250, 170, 65, 0.4); }
 #program .tab-content > li:last-child::before { display: none;  }
-#program .tab-content .time { position: relative; margin-bottom: 1rem; color: white; font-family: 'Jost'; font-weight: 600; }
+#program .tab-content .time { position: relative; margin-bottom: 1rem; color: #FAAA41; font-family: 'Jost'; font-weight: 600; }
 #program .tab-content .time::before { content: ''; position: absolute; top: 4px; left: -12px; width: 7px; height: 7px; background-color: #FAAA41; border-radius: 50%; }
 #program .tab-content .caption { padding: 1rem; border-radius: 10px; }
 #program .tab-content h5 { font-size: 16px; font-family: 'Noto Sans KR'; font-weight: 700; }
@@ -110,7 +127,6 @@
 #program .speech.workshop .caption { border: 1px solid #FAAA41; }
 #program .speech.workshop h5::after { content: '워크샵'; position: absolute; top: -10px; right: 0; border: 1px dashed #FAAA41; color: #FAAA41; padding: 8px 20px; border-radius: 20px; font-family: 'Noto Sans KR'; font-weight: 400;}
 
-
     /* Program: 모바일 - 쉬는시간 */
 #program .tab-content .rest .caption { background-color: rgba(255, 255, 255, 0.1); }
 
@@ -122,6 +138,7 @@
 #program .tab-content .event .actors li { font-family: 'Noto Sans KR'; }
 #program .tab-content .event .actors .role { font-weight: 300; display: inline-block; width: 60px; }
 #program .tab-content .event .actors li b { font-weight: 700; }
+
 
 /* contents > section-05:Location */
 #location { display: flex; }
@@ -136,7 +153,7 @@
 #location li.address img { vertical-align: top; }
 #location li .caption { display: inline-block; font-family: 'Noto Sans KR'; }
 #location li .caption h4 { margin-bottom: 0.625em; font-size: 1.375rem; font-weight: 700; }
-#location li .caption span { margin-left: 2.300em; font-weight: 400; font-size: 1.125rem; } 
+#location li .caption span { margin-left: 2.300em; line-height: 1.5em; font-weight: 300; font-size: 1.125rem; } 
 #location li.address .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-address.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
 #location li.day .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-calendar.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
 #location li.time .caption h4::before { content: ''; display: inline-block; width: 25px; height: 25px; background: url('../images/icon-location-time.png') no-repeat; margin-right: 0.750em; vertical-align: text-bottom; }
@@ -147,7 +164,6 @@
 #sponsor { background-color: white; }
 #sponsor li { width: 407px; height: 100px; display: inline-block; }
 #sponsor li img { width: 100%; }
-
 
 /* contents > section-06:Staff */
 #staff { padding: 8rem 0; background-color: #0A0A0A; color: white; }
@@ -167,6 +183,8 @@
 #pray span:last-child { margin-bottom: 0; }
 #pray span b { font-weight: 800; font-size: 1.563rem; }
 
+#pray .pray-content { margin: 0 auto; }
+
 /* footer */
 #footer { text-align: center; }
 #footer .copywriter { height: 100px; line-height: 100px;}
@@ -177,10 +195,22 @@
 @media (max-width: 1740px) {
     .container { width: 96%; }
     .header-menu a { padding: 0.625em 0px 0.625em 3em; }
+    /* contents > About */
+    #contents #about::before { background-size: 40%; }
+    #about .about-content > span { display: none; }
+    #about .about-content { width: 583px; height: 275px; background: url(../images/cont-about-tablet-583x275.png) no-repeat center center; background-size: contain; }
     /* contents > Sponsor */
     #sponsor li { width: 24%; height: auto; }
     /* contents > Staff */
     #staff ul li { width: 18%; margin-right: 2%; }
+    /* contents > Program */
+    #program .cont-wrap.desktop { overflow-x: scroll; }
+    #program .cont-wrap.desktop > img { width: auto; }
+    /* contents > Speakers & Supporters */
+    .profile-list li.profile { width: 20.8%; margin-right: 3.8%; }
+    /* contents > Pray */
+    #pray .pray-content span { display: none; }
+    #pray .pray-content { width: 468px; height: 185px; background: url('../images/cont-pray-tablet-468x185.png') no-repeat center center; background-size: contain; }
 }
 
 /* 화면너비 0 ~ 1024 : 데스크탑 */
@@ -190,19 +220,22 @@
     /* contents > Home */
     #home h2 span { display: block; }
     #home h2 span.year { text-align: center; }
+    /* contents > About */
+    #contents #about::before { background-size: 40%; background-position: 100% 0%; }
     /* contents > Location */
-    #location li .caption span { margin-left: 0; font-weight: 400; font-size: 1.125rem; } 
+    #location li .caption span { margin-left: 0; font-size: 1.125rem; } 
     /* contents > Staff */
     #staff ul li { width: 22%; margin-right: 3%; }
-    /* contents > Pray */
-    #pray::before { opacity: 0.4; }
     /* contents > Program */
     #program { background-color: #0A0A0A; padding: 8rem 0; }
     #program .cont-wrap.desktop { display: none; }
     /* Program: 모바일 */
     #program h3 { text-align: center; }
     #program .cont-wrap.mobile { display: block; }
-
+    /* contents > Speakers & Supporters */
+    .profile-list li.profile { width: 28.8%; margin-right: 3.8%; }
+    /* contents > Pray */
+    #pray::before { opacity: 0.4; }
 }
 
 /* 화면너비 0 ~ 768 : 타블렛 */
@@ -214,37 +247,57 @@
     #location > div { width: 100%; }
     #location .text-container { justify-content: center; }
     #location #map-container { height: 100vh; }
+    /* contents > Speakers */
+    .profile-list .photo .role { padding: 0.625em 1.250em; }
     /* pray */
     #pray { height: 300px; }
     #pray span { margin-bottom: 1em; font-size: 1.275rem; }
+    /* 이때부터 program 모바일 이미지 보여주기 */
 }
 
 /* 화면너비 0 ~ 576 : 모바일 */
 @media (max-width: 576px) {
     .container { width: 96%; }
+    .line-change.active-only-mobile { display: initial; }
     /* header */
     #header { display: none; }
     #mobile-header { display: block; }
     #mobile-header .logo { width: 100%; text-align: center; }
-    .menu-hamburger img { width: 28px; height: 11px; display: inline-block; margin-top: 12px; }
+    .menu { position: absolute; top: 50%; left: 1rem; transform: translateY(-50%); }
+    .menu > img { display: inline-block; margin-top: 12px; }
+    #open-menu img { width: 28px; height: 11px; }
+    #close-menu img { width: 20px; height: 20px; }
     /* contents > Home */
-    #home h2 { font-size: 5.5rem; }
+    #home h2 { font-size: 4.5rem; }
     #home h2::after { display: none;}
-    #home h2::before { position: absolute; top: -30%; left: 58%; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
+    #home h2::before { position: absolute; top: -33%; right: -10%; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
+    #home p { font-size: 1.125em; }
     /* contents > About */
-    #contents #about { padding: 2.4em 0 }
+    #contents #about { padding: 4rem 0; }
+    #contents #about::before { background-size: 50%; background-position: 130% 0; }    
     #about span { line-height: 1.4em; }
     .btn-location { width: 98%; }
+    .btn-round a { margin-right: 0.275em; }
+    #about .about-content { width: 342px; height: 409px; background: url(../images/cont-about-mobile-342x409.png) no-repeat center center; background-size: contain; }
     /* contents > Location */
-    #location li .caption span { font-size: 1.18rem; }
+    #location li .caption span { font-size: 1.18rem; line-height: 1.6em; }
+    #location .text-contents h3 { margin-bottom: 5rem; text-align: center; border-bottom: 0px; }
+    #location li { margin-bottom: 5em; }
+    #location li .caption { display: block; text-align: center; }
+    #location li .caption h4 { position: relative; }
+    #location li .caption h4::before { position: absolute; top: -38px; left: 50%; transform: translateX(-50%); }
+    #location .text-contents { padding-top: 5rem; }
     /* contents > Sponsor */
     #contents section#sponsor { padding-top: 2rem; padding-bottom: 2rem; }
     #sponsor li { width: 49%; height: auto; }
     /* contents > Staff */
     #staff { padding: 5rem 0; }
     #staff ul li { width: 29.3%; margin-right: 4%; margin-bottom: 7%; }
-    /* contents > Pray */
+    /* contents > Speakers */
+    .profile-list .photo .img-wrap { border-width: 0.425rem; }
+    .profile-list .photo .role { padding: 0.625em 0.7em; font-size: 0.8rem; }
+    /*  Pray */
     #pray::before { opacity: 0.2; right: 0; top: 0; background: url('../images/background-pray-mobile.png') no-repeat bottom right; }
-    /* contents > Program */
-    #program .tab-content h5 { line-height: 1.3rem; }
+    #pray .pray-content { width: 319px; height: 237px; background: url('../images/cont-pray-mobile-319x237.png') no-repeat center center; background-size: contain; }
+
 }
