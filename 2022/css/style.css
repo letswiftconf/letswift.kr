@@ -49,8 +49,10 @@
 #home p { text-align: center; font-size: 1.375rem; font-family: 'Jost'; font-weight: 400; }
 #home p.ticket-day { margin-top: 0.4em; }
 
-/* contents > section-02:about */
-#contents #about { height: 100vh; background: url('../images/background-about.png') no-repeat #F7F7F7; text-align: center; }
+/* contents > About */
+#contents #about { height: 100vh; position: relative; background-color: #F7F7F7; text-align: center; }
+#contents #about::before { height: 100%; width: 100%; display: block; content: ''; position: absolute; right: 0; top: 0; background: url('../images/background-about.png') no-repeat; background-position: 100% -10%; }
+
 #contents #about > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 #about h3 { margin-bottom: 3.313rem; color: #171717; font-family: 'Jost', sans-serif; font-weight: bold; font-size: 2.938rem;}
 #about h3 b { color: #FF3F2A; }
@@ -65,6 +67,7 @@
 
 .btn-round.location { background: #F14F3D; }
 .btn-round.question { background-color: #FAAA41; }
+#about .buttons { margin-top: 2em; }
 #about .buttons .spacer { display: inline-block; width: 26px; }
 
 /* contents > section-03:speakers */
@@ -194,6 +197,8 @@
     .container { width: 96%; }
     #contents #home { background-color: darkgreen; }
     .header-menu a { padding: 0.625em 0px 0.625em 3em; }
+    /* contents > About */
+    #contents #about::before { background-size: 40%; }
     /* contents > Sponsor */
     #sponsor li { width: 24%; height: auto; }
     /* contents > Staff */
@@ -218,6 +223,8 @@
     /* contents > Home */
     #home h2 span { display: block; }
     #home h2 span.year { text-align: center; }
+    /* contents > About */
+    #contents #about::before { background-size: 40%; background-position: 100% 0%; }
     /* contents > Location */
     #location li .caption span { margin-left: 0; font-weight: 400; font-size: 1.125rem; } 
     /* contents > Staff */
@@ -271,9 +278,11 @@
     #home h2::after { display: none;}
     #home h2::before { position: absolute; top: -30%; left: 58%; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
     /* contents > About */
-    #contents #about { padding: 2.4em 0 }
+    #contents #about { padding: 4rem 0; }
+    #contents #about::before { background-size: 50%; background-position: 130% 0; }
     #about span { line-height: 1.4em; }
     .btn-location { width: 98%; }
+    .btn-round a { margin-right: 0.275em; }
     /* contents > Location */
     #location li .caption span { font-size: 1.18rem; }
     /* contents > Sponsor */
