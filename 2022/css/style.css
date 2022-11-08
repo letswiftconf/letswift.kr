@@ -60,7 +60,7 @@
 /* round button */
 .btn-round { height: 3.438rem; padding: 0 40px; border-radius: 1.875em;  display: inline-block; box-sizing: border-box; cursor: default; background: #F14F3D; font-family: 'Noto Sans KR';}
 .btn-round:hover { cursor: pointer; }
-.btn-round a { margin-right: 0.375em; color: white; line-height: 3.438rem; }
+.btn-round a { margin-right: 0.275em; color: white; line-height: 3.438rem; }
 .btn-round img { vertical-align: text-bottom; }
 
 .btn-round.location { background: #F14F3D; }
