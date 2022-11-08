@@ -73,8 +73,8 @@
 .profile-list li.profile { width: 17.8%; margin-right: 1.9%; margin-bottom: 65px; display: inline-block; text-align: center; }
 
 .profile-list .photo { position: relative; margin-bottom: 20px; }
-.profile-list .photo img { width: 100%; border: 10px solid white; border-radius: 50%; box-sizing: border-box; }
-.profile-list .photo img::after { content: ''; position: absolute; top: 0; left: 0; background-color: orange; width: 100%; height: 100%; }
+.profile-list .photo .img-wrap { width: 100%; box-shadow: 0px 0px 10px -7px rgba(0, 0, 0, 0.5); border: 0.625rem solid white; border-radius: 50%; box-sizing: border-box; }
+.profile-list .photo .img-wrap img { width: 100%; vertical-align: middle; }
 
 .profile-list .photo .role { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); font-size: 0.938rem; display: inline-block; padding: 0.625em 1.750em; border-radius: 20px; font-weight: 500; color: white; }
 .profile-list .photo .role.workshop { background-color: #FF422A; font-family: 'Noto Sans KR'; }
@@ -283,6 +283,7 @@
     #staff { padding: 5rem 0; }
     #staff ul li { width: 29.3%; margin-right: 4%; margin-bottom: 7%; }
     /* contents > Speakers */
+    .profile-list .photo .img-wrap { border-width: 0.425rem; }
     .profile-list .photo .role { padding: 0.625em 0.7em; font-size: 0.8rem; }
     /*  Pray */
     #pray::before { opacity: 0.2; right: 0; top: 0; background: url('../images/background-pray-mobile.png') no-repeat bottom right; }
