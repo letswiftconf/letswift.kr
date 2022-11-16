@@ -54,7 +54,7 @@
 #home .social-links a { display: inline-block; }
 #home .social-links a:last-child { margin-left: 2vw; }
 #home h2 { margin-bottom: 2.125rem; position:relative; display: inline-block; font-family: 'Jost'; font-weight: 800; font-size: 7.500rem; }
-#home h2::after { position: absolute; top: -20px; right: -40px; width: 60px; height: 56px; background: url('../images/simbol-bird.png') no-repeat 0px 0px; content: ""; }
+#home h2::after { position: absolute; top: -20px; right: -40px; width: 60px; height: 56px; background: url('../images/simbol-bird-60x56.png') no-repeat; background-size: contain; content: ""; }
 #home p { text-align: center; font-size: 1.375rem; font-family: 'Jost'; font-weight: 400; }
 #home .question { margin-top: 1.4rem; background-color: #F14F3D; }
 
@@ -169,29 +169,26 @@
 
 /* contents > section:Sponsor */
 #contents section#sponsor { min-height: auto; padding-top: 100px; padding-bottom: 100px; }
-#sponsor { background-color: #1C1C1C; }
+#sponsor { background-color: white; }
 .sponsor-container { width: 86vw; margin: 0 auto; position: relative; }
 
-#sponsor li { vertical-align: top; }
+/* #sponsor li { vertical-align: top; } */
 #sponsor li a { display: inline-block; }
-#sponsor li h3 { margin-bottom: 15px; text-align: center; color: white; font-family: 'Noto Sans KR'; }
+#sponsor li h3 { text-align: left; color: #090909; font-family: 'Noto Sans KR'; }
 #sponsor li h3 strong { font-weight: 700; }
-#sponsor .link-wrap { position: relative; height: 140px; display: flex; align-items: center; justify-content: center; }
-#sponsor .link-wrap::before { width: 94%; height: 1px; content: ''; position: absolute; top: 0; left: 0; background-color:  white; opacity: 0.2; }
-#sponsor .link-wrap::after { width: 94%; height: 1px; content: ''; position: absolute; bottom: 0; left: 0; background-color:  white; opacity: 0.2; }
+#sponsor li h3::after { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-left: 4px; background-color: #EB4E38; }
+#sponsor .link-wrap { position: relative; height: 140px; display: flex; align-items: center; justify-content: left; }
+#sponsor .link-wrap::after { width: 94%; height: 1px; content: ''; position: absolute; bottom: 0; left: 0; background-color:  #DFDFDF; }
+#sponsor .link-wrap a { margin-right: 60px; }
 
-#sponsor li:last-child .link-wrap::before,
-#sponsor li:last-child .link-wrap::after { right: 0; left: initial; }
+#sponsor li { width: 100%; margin-bottom: 2rem; }
+#sponsor .codesquad img { width: 284px; height: 55px; }
+#sponsor .daangn img { width: 225px; height: 63px; }
+#sponsor .line img { width: 140px; height: 49px; }
+#sponsor .hyundai img { width: 270px; height: 38px; }
+#sponsor .wanted img { width: 309px; height: 49px; }
+#sponsor .flo img { width: 106px; height: auto; }
 
-#sponsor .super li { width: 49.6%; display: inline-block; }
-#sponsor li.codesquad img { width: 353px; height: 68px; }
-#sponsor li.daangn img { width: 288px; height: 80px; }
-
-#sponsor .other { margin-top: 50px; }
-#sponsor .other li { width: 33%; display: inline-block; }
-#sponsor li.line img { width: 109px; height: 38px; }
-#sponsor li.hyundai img { width: 275px; height: 38px; }
-#sponsor li.wanted img { width: 253px; height: 49px; }
 
 /* contents > section-06:Staff */
 #staff { padding: 8rem 0; background-color: #0A0A0A; color: white; }
@@ -264,8 +261,6 @@
     .profile-list li.profile { width: 28.8%; margin-right: 3.8%; }
     /* contents > Sponsor */
     #sponsor .sponsor-container ul > li { width: 100%; margin-bottom: 26px; }
-    #sponsor .link-wrap::before { width: 100%; }
-    #sponsor .link-wrap::after { width: 100%; }
     /* contents > Pray */
     #pray::before { opacity: 0.4; }
 }
@@ -321,10 +316,15 @@
     #location .text-contents { padding-top: 5rem; }
     /* contents > Sponsor */
     #contents section#sponsor { padding-top: 4rem; padding-bottom: 3rem; }
+    #sponsor .link-wrap { align-items: flex-start; justify-content: space-evenly; flex-direction: column; }
+    #sponsor .link-wrap a { margin-right: 0px; }
+    #sponsor li:nth-child(n+3) h3{ margin-bottom: 20px; }
+
     /* contents > Staff */
     #staff { padding: 5rem 0; }
     #staff ul li { width: 29.3%; margin-right: 4%; margin-bottom: 7%; }
     /* contents > Speakers */
+    #sponsor .link-wrap { height: 150px; }
     .profile-list .photo .img-wrap { border-width: 0.425rem; }
     .profile-list .photo .role { padding: 0.625em 0.7em; font-size: 0.8rem; }
     /*  Pray */
