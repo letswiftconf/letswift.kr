@@ -101,9 +101,60 @@
 
 /* contents > section-04:Program */
 #program { background-color: #0A0A0A; padding: 8rem 0; }
-#program .cont-wrap.desktop { overflow-x: auto; }
-#program .cont-wrap.desktop > img { width: 1720px; height: 1473px; }
 #program h3 { margin-bottom: 2rem; font-size: 47px; text-align: left; color: white; font-family: 'Jost'; font-weight: 700; }
+
+/* Program: desktop */
+#program .cont-wrap.desktop { overflow-x: auto; color: white; }
+#program .cont-wrap.desktop > .program-container-desktop {
+    width: 1720px;
+    display: grid;
+    grid-column-gap: 1.4rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "401title 402title"
+    ". ."
+    ". ."
+    ". workshop1100"
+    ". workshop1100"
+    "lunch lunch"
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". workshop1500"
+    ". workshop1500"
+    "prize prize"
+    "photo photo";
+}
+.program-container-desktop > li { display: flex; justify-content: center; align-items: center; position: relative; }
+
+    /* Program: desktop - grid template area */
+.program-container-desktop .workshop-1100 { grid-area: workshop1100; }
+.program-container-desktop .workshop-1500 { grid-area: workshop1500; }
+.program-container-desktop .lunch-time { grid-area: lunch; }
+.program-container-desktop .prize-draw { grid-area: prize; }
+.program-container-desktop .photo-time { grid-area: photo; }
+    /* Program: desktop - 타이틀 */
+.program-container-desktop .title h4 { text-align: right; font-family: 'Jost'; font-weight: 700; font-size: 26px; }
+.program-container-desktop h5 { line-height: 1.4rem; font-size: 16px; font-family: 'Noto Sans KR'; font-weight: 700; }
+    /* Program: desktop - 시간표시 */
+.program-container-desktop .time { width: 140px; color: white; font-size: 15px; font-family: 'Jost'; font-weight: 600; }
+.program-container-desktop .time::before { content: ''; display: inline-block; width: 7px; height: 7px; background-color: #FAAA41; border-radius: 50%; margin-right: 4px; }
+.program-container-desktop > li::before { content: ''; width: 1px; height: 100%; position: absolute; bottom: 3px; left: 3px; background-color: rgba(250, 170, 65, 0.4); }
+.program-container-desktop > li.start::before { height: 50%; }
+.program-container-desktop > li.end::before { height: 50%; top: -3px; left: 3px; }
+    /* Program: desktop - caption 컨텐츠 */
+.program-container-desktop .caption { width: calc(100% - 140px); margin: 14px 0; padding: 10px 20px; border-radius: 10px; }
+.program-container-desktop .event .caption { border: 2px dashed #FAAA41; color: #FAAA41; }
+.program-container-desktop .rest .caption { text-align: center; }
+    /* Program: 자료 링크 */
+#program .caption > .links { margin-top: 6px; color: white; font-family: 'Noto Sans KR'; font-weight: 500; }
+#program .caption > .links a { color: white; }
+#program .caption > .links a:hover { color: gray; }
+    /* Program: 데스크탑 - 스피치 */
+#program .program-container-desktop .speech.workshop .caption::before { content: '워크샵'; display: inline-block; margin-bottom: 4px; border: 1px dashed #FAAA41; color: #FAAA41; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-family: 'Noto Sans KR'; font-weight: 400;}
+
 
 /* Program: 모바일 */
 #program .cont-wrap.mobile { display: none; color: white; }
@@ -114,7 +165,6 @@
 #program .cont-wrap.mobile .tab-content { padding-top: 35px; display: none; margin-left: 12px; }
 #program .cont-wrap.mobile .tab-content.active { display: inherit; }
 
-
     /* Program: 모바일 - 공통 */
 #program .tab-content > li { position: relative; padding-bottom: 30px; }
 #program .tab-content > li::before { content: ''; width: 1px; height: 100%; position: absolute; top: 5px; left: -9px; background-color: rgba(250, 170, 65, 0.4); }
@@ -122,30 +172,29 @@
 #program .tab-content .time { position: relative; margin-bottom: 1rem; color: #FAAA41; font-family: 'Jost'; font-weight: 600; }
 #program .tab-content .time::before { content: ''; position: absolute; top: 4px; left: -12px; width: 7px; height: 7px; background-color: #FAAA41; border-radius: 50%; }
 #program .tab-content .caption { padding: 1rem; border-radius: 10px; }
-#program .tab-content h5 { line-height: 1.4rem; font-size: 16px; font-family: 'Noto Sans KR'; font-weight: 700; }
+#program h5 { line-height: 1.4rem; font-size: 16px; font-family: 'Noto Sans KR'; font-weight: 700; }
 
     /* Program: 모바일 - 스피치 */
-#program .tab-content .speech .caption { border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; }
-#program .tab-content .speech .caption h5 { margin-bottom: 8px; }
-#program .tab-content .speech .caption span { color: rgba(255, 255, 255, 0.6); }
-#program .tab-content .speech .caption span > strong { font-family: 'Noto Sans KR'; font-weight: 700; }
-#program .tab-content .speech .caption span > i { font-size: 14px; font-family: 'Jost'; font-weight: 300; }
+#program .speech .caption { border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; }
+#program .speech .caption h5 { margin-bottom: 8px; }
+#program .speech .caption span { color: rgba(255, 255, 255, 0.6); }
+#program .speech .caption span > strong { font-family: 'Noto Sans KR'; font-weight: 700; }
+#program .speech .caption span > i { font-size: 14px; font-family: 'Jost'; font-weight: 300; }
 
 #program .speech.workshop .caption { border: 1px solid #FAAA41; }
-#program .speech.workshop h5::after { content: '워크샵'; position: absolute; top: -10px; right: 0; border: 1px dashed #FAAA41; color: #FAAA41; padding: 8px 20px; border-radius: 20px; font-family: 'Noto Sans KR'; font-weight: 400;}
-
+#program .tab-content .speech.workshop h5::after { content: '워크샵'; position: absolute; top: -10px; right: 0; border: 1px dashed #FAAA41; color: #FAAA41; padding: 8px 20px; border-radius: 20px; font-family: 'Noto Sans KR'; font-weight: 400;}
 
     /* Program: 모바일 - 쉬는시간 */
-#program .tab-content .rest .caption { background-color: rgba(255, 255, 255, 0.1); }
+#program .rest .caption { background-color: rgba(255, 255, 255, 0.1); }
 
     /* Program: 모바일 - 이벤트 */
-#program .tab-content .event { color: #FAAA41; }
-#program .tab-content .event .caption { border: 2px dashed #FAAA41; }
-#program .tab-content .event .actors { margin-top: 8px; }
-#program .tab-content .event .actors li:first-child { margin-bottom: 4px; }
-#program .tab-content .event .actors li { font-family: 'Noto Sans KR'; }
-#program .tab-content .event .actors .role { font-weight: 300; display: inline-block; width: 60px; }
-#program .tab-content .event .actors li b { font-weight: 700; }
+#program .event { color: #FAAA41; }
+#program .event .caption { border: 2px dashed #FAAA41; }
+#program .event .actors { margin-top: 8px; }
+#program .event .actors li:first-child { margin-bottom: 4px; }
+#program .event .actors li { font-family: 'Noto Sans KR'; }
+#program .event .actors .role { font-weight: 300; display: inline-block; width: 60px; }
+#program .event .actors li b { font-weight: 700; }
 
 
 /* contents > section-05:Location */
