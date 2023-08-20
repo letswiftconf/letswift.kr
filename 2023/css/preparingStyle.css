@@ -1,0 +1,61 @@
+@import "reset.css";
+
+/* Font */
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+/* Common */
+.hide { display: none; }
+.visible { display: block; }
+
+.line-change.active-only-mobile { display: none; }
+
+/* preparing site */
+#home > .container { display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; }
+#home .smallLogo { display: block; padding: 1.5rem; color: rgba(0, 71, 255, 1.0); font-size: 1.5rem; font-family: 'SF Mono', 'Jost'; font-weight: 600; }
+#home h2 { margin-bottom: 4rem; position:relative; display: inline-block; color: black; font-family: 'SF Pro Display'; font-weight: 600; font-size: 2rem; }
+#home .info { display: block; padding-top: 3rem; padding-bottom: 3rem; color: rgba(107, 118, 132, 1.0); font-size: 1rem; font-family: 'SF Mono', 'Jost'; font-weight: 400; }
+
+/* Layout */
+#wrap { width: 100%; }
+#contents { width: 100%; }
+#contents section { min-height: 100vh; }
+
+/* container */
+.container { width: 1720px; margin: 0 auto; position: relative; height: inherit; }
+
+/* contents > section-01:home */
+#contents #home { height: 100vh; z-index: 1; position: relative; color: white; background-color: white; }
+
+/* 디자인시안: 1720px */
+/* 화면너비 0 ~ 1720 : 데스크탑 */
+@media (max-width: 1740px) {
+    html { font-size: 16px; }
+    .container { width: 96%; }
+    #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/preparing/social320x320.png); }
+}
+
+/* 화면너비 0 ~ 1024 : 데스크탑 */
+@media (max-width: 1024px) {
+    html { font-size: 16px; }
+    .container { width: 98%; }
+    #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/preparing/social320x320.png); }
+}
+
+/* 화면너비 0 ~ 768 : 타블렛 */
+@media (max-width: 768px) {
+    html { font-size: 12px; }
+    .container { width: 98%; }
+    /* contents > Home */
+    #home h2 span { display: block; }
+    #home h2 span { text-align: center; }
+    #home .smallLogo { padding-bottom: 3rem; }
+    #home #open { margin-top: 12px; }
+    #home #preparingImage { width: 240px; height: 240px; background-image: url(../images/preparing/social240x240.png); }
+}
+
+/* 화면너비 0 ~ 576 : 모바일 */
+@media (max-width: 576px) {
+    .container { width: 96%; }
+    #home #preparingImage { width: 240px; height: 240px; background-image: url(../images/preparing/social240x240.png); }
+}
