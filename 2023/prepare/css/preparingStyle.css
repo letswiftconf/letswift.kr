@@ -32,14 +32,14 @@
 @media (max-width: 1740px) {
     html { font-size: 16px; }
     .container { width: 96%; }
-    #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/preparing/social320x320.png); }
+    #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/social320x320.png); }
 }
 
 /* 화면너비 0 ~ 1024 : 데스크탑 */
 @media (max-width: 1024px) {
     html { font-size: 16px; }
     .container { width: 98%; }
-    #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/preparing/social320x320.png); }
+    #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/social320x320.png); }
 }
 
 /* 화면너비 0 ~ 768 : 타블렛 */
@@ -51,11 +51,11 @@
     #home h2 span { text-align: center; }
     #home .smallLogo { padding-bottom: 3rem; }
     #home #open { margin-top: 12px; }
-    #home #preparingImage { width: 240px; height: 240px; background-image: url(../images/preparing/social240x240.png); }
+    #home #preparingImage { width: 240px; height: 240px; background-image: url(../images/social240x240.png); }
 }
 
 /* 화면너비 0 ~ 576 : 모바일 */
 @media (max-width: 576px) {
     .container { width: 96%; }
-    #home #preparingImage { width: 240px; height: 240px; background-image: url(../images/preparing/social240x240.png); }
+    #home #preparingImage { width: 240px; height: 240px; background-image: url(../images/social240x240.png); }
 }
