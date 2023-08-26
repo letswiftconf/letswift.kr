@@ -29,7 +29,7 @@
 
 /* 디자인시안: 1720px */
 /* 화면너비 0 ~ 1720 : 데스크탑 */
-@media (max-width: 1740px) {
+@media (max-width: 2560px) {
     html { font-size: 16px; }
     .container { width: 96%; }
     #home #preparingImage { width: 320px; height: 320px; background-image: url(../images/social320x320.png); }
