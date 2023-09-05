@@ -16,7 +16,7 @@ body { overflow-x: hidden; }
 #header { width: 100%; background-color: rgba(0, 71, 255, 1.0); }
 #contents { width: 100%; }
 #contents section { min-height: 50vh; }
-#footer { width: 100%; background-color: rgba(0, 71, 255, 1.0);; color: white; text-align: center;}
+#footer { width: 100%; background-color: rgba(0, 71, 255, 1.0);; color: white; }
 .defaultPadding { padding-left: 10rem; padding-right: 10rem; }
 .defaultPaddingLeft { padding-left: 10rem; }
 .defaultPaddingRight { padding-right: 10rem; }
@@ -84,7 +84,7 @@ body { overflow-x: hidden; }
 #contents #speakers { position: relative; background-color: #F9FAFB; }
 #speakers h3, #location h3, #organizers h3 { font-size: 1.5rem; font-family: 'SF Mono'; font-weight: 700; color: #0047FF; padding-top: 7.5rem; }
 
-#speakers ul { width: 80%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
+#speakers ul { width: 90%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
 .speakerList .speaker { border-radius: 8px; background: #FFF; box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.02); }
 .speakerList .speaker { width: 15.4rem; height: 20.1rem; text-align: center; }
 .speakerList li { margin-bottom: 2rem; margin-left: 1rem; margin-right: 1rem; vertical-align: auto; display: inline-block; text-align: center; }
@@ -116,7 +116,7 @@ body { overflow-x: hidden; }
 /* section-7: organizer */
 #contents #organizers { position: relative; background-color: white; }
 
-#organizers ul { width: 80%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
+#organizers ul { width: 90%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
 .organizerList .organizer { width: 9.375rem; height: 20.1rem; text-align: center; float:left ; } /* height: 20.1rem; */
 .organizerList li { margin-bottom: 2rem; margin-left: 1rem; margin-right: 1rem; display: inline-block; text-align: center; }
 .organizerList .organizer .photo { width: 9.375rem; height: 9.375rem; position: relative; margin-top: 2.5rem; margin-bottom: 1.5rem; border-radius: 50%; object-fit: cover; }
@@ -125,8 +125,12 @@ body { overflow-x: hidden; }
 .organizerList p { color: #6B7684; text-align: center; font-family: 'SF Pro'; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.25rem; }
 
 /* footer */
-#footer { text-align: center; background-color: #F9FAFB; }
-#footer .copywriter { height: 80px; line-height: 80px; color: #6B7684; font-family: 'SF Pro'; font-size: 0.875rem; font-style: normal; font-weight: 400;}
+#footer { display: inline-block; background-color: rgba(0, 71, 255, 1.0); }
+#footer #letswiftName { padding-top: 5rem; padding-left: 10rem; }
+#footer #letswiftName { color: #FFF; font-family: SF Pro; font-size: 1rem; font-style: normal;font-weight: 700; line-height: normal; }
+#footer #email { padding-top: 0.625rem; padding-left: 10rem; padding-bottom: 5rem; }
+#footer #email { color: #85BBFF; font-family: SF Pro; font-size: 1rem; font-style: normal; font-weight: 510; line-height: normal; }
+#footer .copywriter { height: 80px; line-height: 80px; color: white; font-family: 'SF Pro'; font-size: 0.875rem; font-style: normal; font-weight: 400;}
 
 @media (max-width: 2560px) {
     .container { width: 100%; }
@@ -140,7 +144,7 @@ body { overflow-x: hidden; }
     #home .artist { right: 10rem; }
 
     /* section-3: speakers */
-    #speakers ul { width: 80%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
+    #speakers ul { width: 90%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
 }
 
 /* 화면너비 0 ~ 1250 : 데스크탑 */
@@ -155,7 +159,14 @@ body { overflow-x: hidden; }
     /* section-1: home */
     #home .artist { right: 8rem; }
     /* section-3: speakers */
-    #speakers ul { width: 80%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
+    #speakers ul { width: 90%; margin: 5rem 8rem 5rem 8rem; text-align: center; }
+
+    /* section-6: Location */
+    #locationDiv { display: inline-block; }
+    #location p { color: #6B7684; font-family: 'SF Pro'; font-size: 1.375rem; font-style: normal; font-weight: 510; line-height: normal; }
+    #locationStart { padding-top: 5rem; }
+    #locationEnd { padding-top: 1rem; }
+    #map-container { width: 80vw; height: 50vh; padding-top: 5rem; padding-left: 0rem; }
 }
 
 @media (max-width: 800px) {
@@ -168,7 +179,14 @@ body { overflow-x: hidden; }
     #home .artist { right: 4rem; }
 
     /* section-3: speakers */
-    #speakers ul { width: 80%; margin: 5rem 4rem 5rem 4rem; text-align: center; }
+    #speakers ul { width: 90%; margin: 5rem 4rem 5rem 4rem; text-align: center; }
+
+    /* section-6: Location */
+    #locationDiv { display: inline-block; }
+    #location p { color: #6B7684; font-family: 'SF Pro'; font-size: 1.375rem; font-style: normal; font-weight: 510; line-height: normal; }
+    #locationStart { padding-top: 5rem; }
+    #locationEnd { padding-top: 1rem; }
+    #map-container { width: 80vw; height: 50vh; padding-top: 5rem; padding-left: 0rem; }
 }
 
 /* 화면너비 0 ~ 576 : 모바일 */
@@ -192,7 +210,7 @@ body { overflow-x: hidden; }
     #home h2 { margin-top: 4em; display: inline-block; font-family: 'SF Pro'; font-weight: 700; font-size: 2.625rem; }
 
     /* section-3: speakers */
-    #speakers ul { width: 80%; margin: 5rem 4rem 5rem 4rem; text-align: center; }
+    #speakers ul { width: 90%; margin: 5rem 0rem 5rem 2rem; text-align: center; }
 
     /* section-6: Location */
     #locationDiv { display: inline-block; }
