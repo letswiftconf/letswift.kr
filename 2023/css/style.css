@@ -306,7 +306,7 @@ body {
 #home .artist {
     position: absolute;
     right: 10rem;
-    bottom: 30px;
+    bottom: 32px;
 }
 
 #home .line {
@@ -480,6 +480,7 @@ body {
 #contents #programs {
     position: relative;
     background-color: rgba(0, 71, 255, 1.0);
+    padding-bottom: 7.5rem;
 }
 
 #programs h3 {
@@ -488,6 +489,48 @@ body {
     font-weight: 700;
     color: white;
     padding-top: 7.5rem;
+}
+
+#programs .startLine {
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    height: 1px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+#programs .programLine {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    height: 1px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+#programs .title {
+    padding-top: 1rem;
+}
+
+#programs .speakerName {
+    color: #85BBFF;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    padding-top: 2rem;
+}
+
+#programs .speakerTitle {
+    color: #FFF;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 2rem;
+    padding-top: 1rem;
 }
 
 /* section-6:Location */
@@ -759,6 +802,17 @@ body {
         line-height: 32px;
     }
 
+    /* section-5: programs */
+    #programs .startLine {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    #programs .programLine {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }    
+
     /* section-7: organizer */
     #organizers ul {
         width: 88vw;
@@ -836,6 +890,17 @@ body {
         font-size: 1.375rem;
         line-height: 28px;
     }
+
+    /* section-5: programs */
+    #programs .startLine {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #programs .programLine {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
 
 /* 화면너비 0 ~ 576 : 모바일 */
@@ -888,8 +953,10 @@ body {
     }
 
     /* section-1: home */
+
     #home .artist {
-        right: 4rem;
+        position: absolute;
+        right: 1.5rem;
     }
 
     #home h2 {
@@ -901,11 +968,11 @@ body {
     }
 
     #home #diving {
-        left: 40%;
+        left: 45%;
     }
 
     #home #reflectedDiving {
-        left: 40%;
+        left: 45%;
     }
 
     /* section-2: about */
@@ -973,6 +1040,17 @@ body {
 
     .speakerList p {
         font-size: 0.91rem;
+    }
+
+    /* section-5: programs */
+    #programs .startLine {
+        margin-left: 2.18rem;
+        margin-right: 2.18rem;
+    }
+
+    #programs .programLine {
+        margin-left: 2.18rem;
+        margin-right: 2.18rem;
     }
 
     /* section-6: Location */
