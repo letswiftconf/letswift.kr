@@ -995,6 +995,15 @@ body {
         margin: 5rem 2rem 5rem 6rem;
         text-align: center;
     }    
+
+    /* section: footer */
+    #footer #facebookIcon > img, #footer #facebookIcon {
+        left: 68%;
+    }
+    
+    #footer #instagramIcon > img, #footer #instagramIcon {
+        left: 78%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1202,6 +1211,15 @@ body {
     .organizerList p {
         font-size: 1rem;
     }    
+
+    /* section: footer */
+    #footer #facebookIcon > img, #footer #facebookIcon {
+        left: 68%;
+    }
+    
+    #footer #instagramIcon > img, #footer #instagramIcon {
+        left: 78%;
+    }
 }
 
 /* 화면너비 0 ~ 576 : 모바일 */
