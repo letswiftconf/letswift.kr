@@ -370,7 +370,8 @@ body {
 
 #speakers h3,
 #location h3,
-#organizers h3 {
+#organizers h3,
+#sponsors h3 {
     font-size: 1.5rem;
     font-family: 'SF Mono', 'Apple SD Gothic Neo', 'sans-serif';
     font-weight: 700;
@@ -552,9 +553,72 @@ body {
     color: #85BBFF;
 }
 
+/* section-sponsors */
+#sponsors h3 {
+    padding-bottom: 2rem;
+}
+
+#sponsors {
+    margin-top: -7.5rem;
+    padding-bottom: 15rem;
+    background-color: #F9FAFB;
+    display: block;
+}
+
+#sponsors .line {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    height: 1px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+#sponsors p {
+    color: black;
+    font-family: 'SF Mono', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 2rem;
+    padding-top: 1rem;
+}
+
+#carrot {
+    height: 150px;
+    padding-left: 10rem;
+}
+
+#dreamus {
+    height: 160px;
+    padding-left: 11rem;
+    margin-bottom: -2rem;
+}
+
+#jumpit {
+    padding: 3rem 0rem 3rem 12rem;
+    height: 70px;
+}
+
+#channeltalk {
+    padding-left: 4rem;
+    height: 150px;
+}
+
+#hyperconnect {
+    padding-left: 10rem;
+    height: 100px;
+}
+
+#cloudtype {
+    padding-left: 3rem;
+    height: 70px;
+}
+
 /* section-6:Location */
 #contents #location {
     margin-top: -7.5rem;
+    margin-bottom: 5rem;
     background-color: #FFF;
     height: 100vh;
 }
@@ -853,6 +917,46 @@ body {
         margin-right: 8rem;
     }    
 
+    /* section-sponsors */
+    #sponsors .line {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    #sponsors p {
+        font-size: 1.2rem;
+    }
+
+    #carrot {
+        height: 130px;
+        padding-top: 1rem;
+        padding-left: 8rem;
+    }
+
+    #dreamus {
+        height: 150px;
+        padding-left: 9rem;
+    }
+
+    #jumpit {
+        padding: 3rem 0rem 3rem 10rem;
+        height: 60px;
+    }
+
+    #channeltalk {
+        padding-left: 4rem;
+        height: 140px;
+    }
+    #hyperconnect {
+        padding-left: 8rem;
+        height: 70px;
+    }
+
+    #cloudtype {
+        padding-left: 2rem;
+        height: 50px;
+    }   
+
     /* section-6: Location */
     #contents #location {
         height: 100vh;
@@ -993,6 +1097,46 @@ body {
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
+    /* section-sponsors */
+    #sponsors .line {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #sponsors p {
+        font-size: 1.2rem;
+    }
+
+    #carrot {
+        height: 110px;
+        padding-left: 4rem;
+    }
+
+    #dreamus {
+        height: 140px;
+        padding-left: 5rem;
+    }
+
+    #jumpit {
+        padding: 3rem 0rem 3rem 6rem;
+        height: 40px;
+    }
+
+    #channeltalk {
+        padding-left: 4rem;
+        height: 110px;
+    }
+
+    #hyperconnect {
+        padding-left: 4rem;
+        height: 70px;
+    }
+
+    #cloudtype {
+        padding-left: 5rem;
+        height: 50px;
+    }       
 
     /* section-6: Location */
     #contents #location {
@@ -1209,6 +1353,51 @@ body {
         margin-left: 2.18rem;
         margin-right: 2.18rem;
     }
+
+    /* section-sponsors */
+    #sponsors .startLine {
+        margin-top: 5rem;
+    }
+
+    #sponsors .line {
+        margin-left: 2.18rem;
+        margin-right: 2.18rem;
+    }
+
+    #sponsors p {
+        font-size: 1.2rem;
+    }
+
+    #carrot {
+        height: 80px;
+        padding-left: 2.18rem;
+    }
+
+    #dreamus {
+        height: 100px;
+        padding-left: 3rem;
+    }
+
+    #jumpit {
+        padding: 3rem 0rem 3rem 4rem;
+        height: 30px;
+    }
+
+    #channeltalk {
+        padding-left: 4rem;
+        height: 100px;
+    }
+
+    #hyperconnect {
+        padding-left: 2.18rem;
+        height: 60px;
+    }
+
+    #cloudtype {
+        padding-top: 1rem;
+        padding-left: 3.2rem;
+        height: 40px;
+    }      
 
     /* section-6: Location */
     #contents #location {
