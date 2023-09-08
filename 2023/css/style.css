@@ -22,13 +22,6 @@ body {
     word-break: keep-all;
 }
 
-/* body { overflow-x: hidden; } */
-/* 수정 */
-.locationInfo {
-    width: 50%;
-    /* padding-left: 4rem; */
-}
-
 #map {
     width: 50%;
 }
@@ -56,11 +49,10 @@ body {
 }
 
 #footer {
+    margin-bottom: -1rem;
     width: 100%;
     background-color: rgba(0, 71, 255, 1.0);
-    ;
     color: white;
-    text-align: center;
 }
 
 .defaultPadding {
@@ -101,7 +93,7 @@ body {
 }
 
 #mobile-header aside {
-    margin-top: 96px;
+    margin-top: 64px;
     position: fixed;
     left: 0;
     top: 0;
@@ -208,6 +200,20 @@ body {
 
 .header-menu a:hover {
     color: rgb(125, 182, 255);
+}
+
+#ticketOpen {
+    position: fixed;
+    color: rgb(125, 182, 255);
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 0.8rem;
+    top: 3.3rem;
+    right: 10.3rem;
+}
+
+#ticketOpenMenu {
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1.6rem;
 }
 
 .logo img {
@@ -356,7 +362,10 @@ body {
 /* section-3: speakers */
 #contents #speakers {
     position: relative;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
     background-color: #F9FAFB;
+    float: left;
 }
 
 #speakers h3,
@@ -370,13 +379,13 @@ body {
 }
 
 #speakers ul {
-    width: 80%;
-    margin: 5rem 8rem 5rem 8rem;
-    padding-bottom: 8rem;
+    width: 95vw;
+    padding-bottom: 8rem 0rem 8rem 5vw;
     text-align: center;
 }
 
 .speakerList .speaker {
+    float: left;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.02);
@@ -384,7 +393,7 @@ body {
 
 .speakerList .speaker {
     width: 15.4rem;
-    height: 20.1rem;
+    height: 24rem;
     text-align: center;
 }
 
@@ -429,6 +438,7 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 0.75rem;
+    padding-bottom: 2rem;
 }
 
 .speakerList p {
@@ -443,7 +453,8 @@ body {
 
 /* section-4: about2 */
 #contents #about2 {
-    height: 40vh;
+    clear: left;
+    height: 540px;
     position: relative;
     background-color: white;
 }
@@ -491,8 +502,16 @@ body {
     padding-top: 7.5rem;
 }
 
+#programs #timetable {
+    font-size: 1rem;
+    font-family: 'SF Mono', 'Apple SD Gothic Neo', 'sans-serif';
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.30);
+    padding-top: 3rem;
+}
+
 #programs .startLine {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 10rem;
     margin-right: 10rem;
     height: 1px;
@@ -509,10 +528,6 @@ body {
     background: rgba(255, 255, 255, 0.30);
 }
 
-#programs .title {
-    padding-top: 1rem;
-}
-
 #programs .speakerName {
     color: #85BBFF;
     font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
@@ -520,7 +535,7 @@ body {
     font-style: normal;
     font-weight: 590;
     line-height: normal;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 #programs .speakerTitle {
@@ -530,17 +545,23 @@ body {
     font-style: normal;
     font-weight: 590;
     line-height: 2rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
+}
+
+#programs .commingsoon {
+    color: #85BBFF;
 }
 
 /* section-6:Location */
 #contents #location {
-    background-color: #F9FAFB;
+    margin-top: -7.5rem;
+    background-color: #FFF;
     height: 100vh;
 }
 
 #locationDiv {
     display: flex;
+    flex-direction: row;
 }
 
 #location p {
@@ -560,17 +581,19 @@ body {
     padding-top: 1rem;
 }
 
-/* #map-container {
-    width: 45vw;
+#map-container {
+    width: 90%;
     height: 50vh;
     padding-top: 5rem;
-    padding-left: 6rem;
-} */
+}
 
 /* section-7: organizer */
 #contents #organizers {
+    float: left;
+    width: 100%;
+    padding-bottom: 7.5rem;
     position: relative;
-    background-color: white;
+    background-color: #F9FAFB;
 }
 
 #organizers ul {
@@ -632,15 +655,16 @@ body {
 
 /* footer */
 #footer { 
+    clear: none;
     display: inline-block; 
     background-color: rgba(0, 71, 255, 1.0); 
-    height: 10.5rem;
+    margin-top: -7.5rem;
+    height: 12rem;
 }
 
 #footer #letswiftName { 
     position: absolute;
-    padding-top: 3.75rem; 
-    padding-left: 11.25rem; 
+    padding-top: 4rem;
 }
 
 #footer #letswiftName { 
@@ -654,8 +678,7 @@ body {
 
 #footer #email { 
     position: absolute;
-    padding-top: 5.625rem; 
-    padding-left: 11.25rem;
+    padding-top: 6rem; 
 }
 
 #footer #email { 
@@ -669,14 +692,16 @@ body {
 
 #footer #facebookIcon > img, #footer #facebookIcon {
     position: absolute;
-    padding-top: 4rem; 
+    top: 30%; 
+    left: 75%;
     width: 2.5rem;
     height: 2.5rem;
 }
 
 #footer #instagramIcon > img, #footer #instagramIcon {
     position: absolute;
-    padding-top: 4rem; 
+    top: 30%; 
+    left: 80%;
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -717,8 +742,8 @@ body {
 
     /* section-3: speakers */
     #speakers ul {
-        width: 80%;
-        margin: 5rem 8rem 5rem 8rem;
+        width: 90vw;
+        margin: 5rem 0rem 5rem 10vw;
         text-align: center;
     }
 }
@@ -756,6 +781,10 @@ body {
         padding: 1em 0px 0.625em 2em;
     }
 
+    #ticketOpen {
+        right: 8.3rem;
+    }
+
     /* section-1: home */
     #home .artist {
         right: 8rem;
@@ -782,9 +811,20 @@ body {
 
     /* section-3: speakers */
     #speakers ul {
-        width: 90%;
-        margin: 5rem 3rem;
+        width: 90vw;
+        margin: 5rem 0rem 5rem 10vw;
         text-align: center;
+    }
+
+    .speakerList .speaker {
+        width: 15rem;
+        height: 25rem;
+        text-align: center;
+    }
+
+    .speakerList p {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     /* section-4: about2 */
@@ -813,9 +853,41 @@ body {
         margin-right: 8rem;
     }    
 
+    /* section-6: Location */
+    #contents #location {
+        height: 100vh;
+    }
+
+    #locationDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #locationInfo {
+        width: 100%;
+    }
+
+    #location p {
+        width: 100%;
+    }
+
+    #locationEnd {
+        padding-top: 1rem;
+    }
+
+    #map {
+        width: 100%;
+    }
+    
+    #map-container {
+        width: 100%;
+        height: 40vh;
+        padding-top: 4rem;
+    }
+
     /* section-7: organizer */
     #organizers ul {
-        width: 88vw;
+        width: 84vw;
         margin: 5rem 2rem 5rem 6rem;
         text-align: center;
     }    
@@ -841,6 +913,10 @@ body {
 
     .defaultPaddingRight {
         padding-right: 2rem;
+    }
+
+    #ticketOpen {
+        right: 2.4rem;
     }
 
     /* section-1: home */
@@ -870,9 +946,25 @@ body {
 
     /* section-3: speakers */
     #speakers ul {
-        width: 95vw;
-        margin: 5rem 2rem;
+        width: 90vw;
+        margin: 5rem 0rem 5rem 10vw;
         text-align: center;
+    }
+
+    .speakerList .speaker {
+        margin-left: 2rem;
+        width: 18rem;
+        height: 24rem;
+    }
+
+    .speakerList p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .speakerList .speaker .photo {
+        width: 9.375rem;
+        height: 9.375rem;
     }
 
     /* section-4: about2 */
@@ -901,6 +993,71 @@ body {
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
+    /* section-6: Location */
+    #contents #location {
+        height: 100vh;
+    }
+
+    #locationDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #locationInfo {
+        width: 100%;
+    }
+
+    #location p {
+        width: 100%;
+    }
+
+    #locationEnd {
+        padding-top: 1rem;
+    }
+
+    #map {
+        width: 100%;
+    }
+    
+    #map-container {
+        width: 100%;
+        height: 40vh;
+        padding-top: 4rem;
+    }
+
+    /* section-7: organizer */
+    #organizers ul {
+        width: 98vw;
+        margin: 5rem 0rem 5rem 0rem;
+        text-align: center;
+    }
+
+    .organizerList .organizer {
+        width: 24vw;
+        height: 20.1rem;
+        text-align: center;
+        float: left;
+    }
+
+    .organizerList li {
+        margin-left: 2rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .organizerList .organizer .photo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .organizerList h4 {
+        font-size: 1.18rem;
+    }
+
+    .organizerList p {
+        font-size: 1rem;
+    }    
 }
 
 /* 화면너비 0 ~ 576 : 모바일 */
@@ -968,11 +1125,11 @@ body {
     }
 
     #home #diving {
-        left: 45%;
+        left: 43%;
     }
 
     #home #reflectedDiving {
-        left: 45%;
+        left: 43%;
     }
 
     /* section-2: about */
@@ -998,14 +1155,15 @@ body {
 
     /* section-3: speakers */
     #speakers ul {
-        width: 100vw;
-        margin: 5rem 0rem;
+        width: 95vw;
+        margin: 5rem 0rem 5rem 5vw;
         text-align: center;
     }
 
     .speakerList .speaker {
-        width: 40%;
-        height: 21.5rem;
+        margin-left: 2vw;
+        width: 40vw;
+        height: 26rem;
     }
 
     .speakerList .speaker .photo {
@@ -1014,12 +1172,14 @@ body {
     }
 
     .speakerList h4 {
-        font-size: 1.36rem;
+        font-size: 15px;
     }
 
     .speakerList p {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        font-size: 12px;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        line-height: 15px;
     }
     
     /* section-4: about2 */
@@ -1038,12 +1198,9 @@ body {
         line-height: 24px;
     }    
 
-    .speakerList p {
-        font-size: 0.91rem;
-    }
-
     /* section-5: programs */
     #programs .startLine {
+        margin-top: 1rem;
         margin-left: 2.18rem;
         margin-right: 2.18rem;
     }
@@ -1054,52 +1211,60 @@ body {
     }
 
     /* section-6: Location */
+    #contents #location {
+        height: 100vh;
+    }
+
     #locationDiv {
         display: flex;
         flex-direction: column;
     }
 
-    #location p {
-        color: #6B7684;
-        font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
-        font-size: 1.375rem;
-        font-style: normal;
-        font-weight: 510;
-        line-height: normal;
+    #locationInfo {
+        width: 100%;
     }
 
-    #locationStart {
-        padding-top: 5rem;
+    #location p {
+        width: 100%;
     }
 
     #locationEnd {
         padding-top: 1rem;
     }
 
+    #map {
+        width: 100%;
+    }
+    
+    #map-container {
+        width: 100%;
+        height: 40vh;
+        padding-top: 4rem;
+    }
+
     /* section-7: organizer */
     #organizers ul {
         width: 100vw;
-        margin: 5rem 2rem 5rem 2rem;
+        margin: 5rem 0rem 5rem 0rem;
         text-align: center;
     }
 
     .organizerList .organizer {
-        width: 9rem;
+        width: 24vw;
         height: 20.1rem;
         text-align: center;
         float: left;
     }
 
     .organizerList li {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-left: 2rem;
         display: inline-block;
         text-align: center;
     }
 
     .organizerList .organizer .photo {
-        width: 9rem;
-        height: 9rem;
+        width: 24vw;
+        height: 24vw;
     }
 
     .organizerList h4 {
@@ -1108,5 +1273,16 @@ body {
 
     .organizerList p {
         font-size: 1rem;
+        line-break: anywhere;
+    }
+
+    /* section: footer */
+    #footer #facebookIcon > img, #footer #facebookIcon {
+        left: 65%;
+    }
+    
+    #footer #instagramIcon > img, #footer #instagramIcon {
+        left: 78%;
     }
 }
+

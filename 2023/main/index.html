@@ -13,6 +13,8 @@
     <meta name="author" content="letswift" />
     <meta name="keywords" content="Let'Swift, iOS, 컨퍼런스, 2023" />
     <meta name="description" content="레츠스위프트 컨퍼런스 2023에서 Deep Dive 해보세요." />
+    <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="LetSwift2023: Deep Dive into the unknown ">
@@ -31,18 +33,21 @@
         <!-- section-0: desktop header -->
         <div id="header">
             <div class="container">
-                <h1 class="logo defaultPaddingLeft">
-                    <img src="../images/whiteLogo120x120.png" alt="letswift">
-                </h1>
+                <a href="https://letswift.kr/2023">
+                    <h1 class="logo defaultPaddingLeft">
+                        <img src="../images/whiteLogo120x120.png" alt="letswift">
+                    </h1>
+                </a>
                 <div class="header-menu defaultPaddingRight">
                     <a href="#about" class="menu">About</a>
-                    <a href="#speakers" class="menu">Speakers</a>
+                    <!-- <a href="#speakers" class="menu">Speakers</a> -->
                     <a href="#programs" class="menu">Program</a>
                     <a href="#location" class="menu">Location</a>
                     <a href="#organizers" class="menu">Organizer</a>
                     <!-- TODO: 티켓 링크 걸기 -->
-                    <a href="#" class="ticket" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Ticket →</a>
+                    <a href="javascript:void(0);" class="ticket">Ticket →</a>
                 </div>
+                <p id="ticketOpen">9.18 Site Open</p>
             </div>
         </div>
         <!-- section-0: mobile header -->
@@ -61,10 +66,11 @@
             <aside id="mobile-menu-panel" class="hide">
                 <ul id="mobile-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#speakers">Speakers</a></li>
+                    <!-- <li><a href="#speakers">Speakers</a></li> -->
                     <li><a href="#programs">Program</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#organizers">Organizer</a></li>
+                    <li><a href="javascript:void(0);">Ticket → <span id="ticketOpenMenu">9.18 Site open</span></a></li>
                 </ul>
             </aside>
         </div>
@@ -108,163 +114,152 @@
             <!-- end about1 -->
 
             <!-- section-3: speakers -->
-            <section class="page" id="speakers">
+            <!-- TODO: Speakers 정보 업데이트 -->
+            <!-- <section class="page" id="speakers">
                 <div class="container">
                     <h3 class="defaultPadding">Speakers</h3>
                     <ul class="speakerList">
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>김성종님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>방현석님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
+                                <img class="photo"
+                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
+                                    alt="이미지">
+                                <h4>안정민님</h4>
+                                <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
+                            </a>
+                        </li>
+                        <li class="speaker">
+                            <a href="https://medium.com/@jungkim" target="_blank">
                                 <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>고드름</h4>
+                                <p>스위프트 뒤에서 몰래 함께한 혼열왕자 오브젝티브-C처럼 레츠스위프트 그 시작을 함께했던 교육 개발자입니다</p>
+                            </a>
+                        </li>
+                        <li class="speaker">
+                            <a href="https://www.linkedin.com/in/mbkwon" target="_blank">
+                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
+                                <img class="photo"
+                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
+                                    alt="이미지">
+                                <h4>권문범님</h4>
+                                <p>유엔젤 - 위메프를 거쳐 네이버, 쿠팡까지 교육, 커머스, 메신저, 검색 등 다양한 앱 개발 경험을 가진 iOS 개발자!! 공부, 입사, 성장 등에 걸친 경험에 대해 얘기하길 좋아합니다.</p>
+                            </a>
+                        </li>
+                        <li class="speaker">
+                            <a href="https://github.com/heoblitz" target="_blank">
+                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
+                                <img class="photo"
+                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
+                                    alt="이미지">
+                                <h4>허원님</h4>
+                                <p>유연한 서비스를 만드는데 관심이 많은 iOS 개발자입니다.</p>
+                            </a>
+                        </li>
+                        <li class="speaker">
+                            <a href="" target="_blank">
+                                <img class="photo"
+                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
+                                    alt="이미지">
+                                <h4>리이오</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>노경섭님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>안솔찬님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>이승준님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>Jihoon</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>김우성님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>허성진님</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>곰튀김</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>
                         <li class="speaker">
                             <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
                                 <img class="photo"
                                     src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
                                     alt="이미지">
-                                <h4>연사자 이름</h4>
-                                <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
-                            </a>
-                        </li>
-                        <li class="speaker">
-                            <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
-                                <img class="photo"
-                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
-                                    alt="이미지">
-                                <h4>연사자 이름</h4>
-                                <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
-                            </a>
-                        </li>
-                        <li class="speaker">
-                            <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
-                                <img class="photo"
-                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
-                                    alt="이미지">
-                                <h4>연사자 이름</h4>
-                                <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
-                            </a>
-                        </li>
-                        <li class="speaker">
-                            <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
-                                <img class="photo"
-                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
-                                    alt="이미지">
-                                <h4>연사자 이름</h4>
-                                <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
-                            </a>
-                        </li>
-                        <li class="speaker">
-                            <a href="" target="_blank">
-                                <img class="speakerArrow" src="../images/arrow72x72.png" alt="바로가기">
-                                <img class="photo"
-                                    src="https://image.utoimage.com/preview/cp872655/2021/09/202109002759_500.jpg"
-                                    alt="이미지">
-                                <h4>연사자 이름</h4>
+                                <h4>라이노</h4>
                                 <p>스피커의 자기소개 문구가 들어가요. 최대 길이는 두 줄로 할까요?</p>
                             </a>
                         </li>                                                
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <!-- end speaker -->
 
             <!-- section-4: about2 -->
@@ -286,75 +281,76 @@
                 <div class="container">
                     <h3 class="defaultPadding">Program</h3>
                     <div>
+                        <p id="timetable" class="defaultPadding">9월 18일에 연사자와 타임테이블 정보가 공개됩니다.</p>
                         <div class="startLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">김성종님</p>
                             <p class="speakerTitle defaultPadding">스위프트 매크로, 어디다 쓰죠?</p>
+                            <p class="speakerName defaultPadding">김성종님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">방현석님</p>
                             <p class="speakerTitle defaultPadding">Unwind Segue사용법 : Storyboard에서 Segue를 사용할때 dismiss를 구현하는 방법말고 좀더 깔끔하게 관리하고 싶다면 Unwind Segue를 사용하세요.</p>
+                            <p class="speakerName defaultPadding">방현석님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">안정민님</p>
                             <p class="speakerTitle defaultPadding">iOS 애플리케이션 개발 생산성 고찰 - 빠른 퇴근을 위한 우리는 어떻게 해야할 것인가?</p>
+                            <p class="speakerName defaultPadding">안정민님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
+                            <p class="speakerTitle defaultPadding commingsoon">Coming Soon!</p>
                             <p class="speakerName defaultPadding">고드름</p>
-                            <p class="speakerTitle defaultPadding">주제</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">권문범님</p>
                             <p class="speakerTitle defaultPadding">객체가 함수를 만났을 때</p>
+                            <p class="speakerName defaultPadding">권문범님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
+                            <p class="speakerTitle defaultPadding commingsoon">Coming Soon!</p>
                             <p class="speakerName defaultPadding">리이오</p>
-                            <p class="speakerTitle defaultPadding">주제</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">노경섭님</p>
                             <p class="speakerTitle defaultPadding">SwiftUI를 통한 일과 놀이에 관한 이야기</p>
+                            <p class="speakerName defaultPadding">노경섭님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">안솔찬님</p>
                             <p class="speakerTitle defaultPadding">Metal Shader로 달라지는 UX/UI의 변화</p>
+                            <p class="speakerName defaultPadding">안솔찬님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">이승준님</p>
                             <p class="speakerTitle defaultPadding">오픈 소스로서의 Swift 깊게 바라보기: Swift-evolution과 proposal</p>
+                            <p class="speakerName defaultPadding">이승준님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">Jihoon</p>
                             <p class="speakerTitle defaultPadding">Swift로 Cross Platform 하기</p>
+                            <p class="speakerName defaultPadding">Jihoon</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
+                            <p class="speakerTitle defaultPadding commingsoon">Coming Soon!</p>
                             <p class="speakerName defaultPadding">김우성님</p>
-                            <p class="speakerTitle defaultPadding">주제</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">허성진님</p>
                             <p class="speakerTitle defaultPadding">BLE 기기를 연동하다보면 마주하는 문제들과 부딪혀보기(백그라운드 처리? 페어링? 선택적 스캔?)</p>
+                            <p class="speakerName defaultPadding">허성진님</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">곰튀김</p>
                             <p class="speakerTitle defaultPadding">요즘유행하는 AI 나도 해보자 (feat. CoreML)</p>
+                            <p class="speakerName defaultPadding">곰튀김</p>
                         </div>
                         <div class="programLine"></div>
                         <div class="felxDiv">
-                            <p class="speakerName defaultPadding">라이노</p>
                             <p class="speakerTitle defaultPadding">Path of Swift - Swift가 프로그램이 되기까지</p>
+                            <p class="speakerName defaultPadding">라이노</p>
                         </div>
                     </div>                    
                 </div>            
@@ -362,23 +358,22 @@
             <!-- end program -->
 
             <!-- TODO: section-6: location -->
-            <!-- <section class="page" id="location">
+            <section class="" id="location">
                 <div class="container">
                     <h3 class="defaultPadding">Location</h3>
-                    <div id="locationDiv" class="defaultPadding">
-                        <div class="locationInfo ">
+                    <div id="locationDiv" class="">
+                        <div class="locationInfo defaultPadding">
                             <p id="locationStart">서울특별시 강남구 테헤란로 7길 22</p>
                             <p id="locationEnd">과학기술컨벤션센터</p>
                         </div>
                         <div id="map">
-                            <iframe id="map-container" class="defaultPaddingRight"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405279.28158954496!2d126.50896023361578!3d37.478558911088754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca11641de4cab%3A0x19235e823c73b149!2z6rO87ZWZ6riw7Iig7Luo67Kk7IWY7IS87YSwKFNUIENlbnRlcik!5e0!3m2!1sko!2skr!4v1693653883285!5m2!1sko!2skr"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe id="map-container" class=""
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405279.28158954496!2d126.50896023361578!3d37.478558911088754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca11641de4cab%3A0x19235e823c73b149!2z6rO87ZWZ6riw7Iig7Luo67Kk7IWY7IS87YSwKFNUIENlbnRlcik!5e0!3m2!1sko!2skr!4v1693653883285!5m2!1sko!2skr" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- end location -->
 
             <!-- TODO: section-7: organizer -->
@@ -387,150 +382,10 @@
                     <h3 class="defaultPadding">Organizer</h3>
                     <ul class="organizerList">
                         <li class="organizer">
-                            <a href="" target="_blank">
+                            <a href="https://www.instagram.com/reel/Cq7j5ycrG9e/?igshid=MzRlODBiNWFlZA==" target="_blank">
                                 <img class="photo" src="../images/organizers/at.jpg" alt="아티">
                                 <h4>아틀라스</h4>
-                                <p>소개글</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/kangkyung.jpg" alt="강경훈(강경)">
-                                <h4>강경훈(강경)</h4>
-                                <p>러닝과 고양이를 사랑합니다😻</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo"
-                                    src="https://manyalittle.shop/web/product/big/202206/66b7be97d67d6f134802c47d821e16b1.jpg"
-                                    alt="오거나이저">
-                                <h4>장진호</h4>
-                                <p>소개글</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/sanghee.jpg" alt="오거나이저">
-                                <h4>안상희(셀리나)</h4>
-                                <p>음악을 사랑하는 개발자</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/szzang.png" alt="오거나이저">
-                                <h4>안상훈(szzang, 상짱)</h4>
-                                <p>수다떨기 좋아하는 iOS 개발자</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo"
-                                    src="https://manyalittle.shop/web/product/big/202206/66b7be97d67d6f134802c47d821e16b1.jpg"
-                                    alt="오거나이저">
-                                <h4>김태완(애셔)</h4>
-                                <p>추리를 좋아하는 개발자🕵🏻 </p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo"
-                                    src="https://manyalittle.shop/web/product/big/202206/66b7be97d67d6f134802c47d821e16b1.jpg"
-                                    alt="오거나이저">
-                                <h4>황지희(Jee.e)</h4>
-                                <div class="organizerText">
-                                    <p>빠른 길보다 바른 길을 가는, 호기심 가득한 iOS 디발자입니다 :D</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/taeguun.jpeg" alt="오거나이저">
-                                <h4>김태균</h4>
-                                <p>하고 싶은 일 모두 할 수 있음 좋겠네 😝</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/ns.png" alt="오거나이저">
-                                <h4>김남수(에네스)</h4>
-                                <p>제 이름 약자는 NS이에요 iOS개발자가 된건 운명이였나봐요 😆</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/jinwook.jpeg" alt="오거나이저">
-                                <h4>최진욱</h4>
-                                <p>디지털 노마드가 되기 위해서 으쌰으쌰💪🏻</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/neuli.png" alt="오거나이저">
-                                <h4>하늘이</h4>
-                                <p>iOS 개발 재미지지 않나요? ㅎ.ㅎ</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/duri.jpeg" alt="오거나이저">
-                                <h4>김두리(두리)</h4>
-                                <p>두리두리한 세상을 살아가는 ios 개발자 김두리입니다. 유쾌하게 개발하며 지내고 있어요. 다들 하윙?</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/hani.png" alt="오거나이저">
-                                <h4>이하원(하니)</h4>
-                                <p>☺️</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/jeein.JPG" alt="오거나이저">
-                                <h4>허지인(지니)</h4>
-                                <p>그냥 합니다 뭐든 🥹</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/dongheon.jpeg" alt="오거나이저">
-                                <h4>이동헌</h4>
-                                <p>즐거운 개발 문화를 만들어 나가고 싶어요!</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo"
-                                    src="https://manyalittle.shop/web/product/big/202206/66b7be97d67d6f134802c47d821e16b1.jpg"
-                                    alt="오거나이저">
-                                <h4>최예주(체즈)</h4>
-                                <p>소개글</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo" src="../images/organizers/noah.JPG" alt="오거나이저">
-                                <h4>홍승현(Noah)</h4>
-                                <p>안녕하세요 Noah입니다 :) 즐거운 커뮤니티 함께 만들어가요!</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo"
-                                    src="https://manyalittle.shop/web/product/big/202206/66b7be97d67d6f134802c47d821e16b1.jpg"
-                                    alt="오거나이저">
-                                <h4>박경민</h4>
-                                <p>소개글</p>
-                            </a>
-                        </li>
-                        <li class="organizer">
-                            <a href="" target="_blank">
-                                <img class="photo"
-                                    src="../images/organizers/gul.jpeg"
-                                    alt="오거나이저">
-                                <h4>귤</h4>
-                                <p>❄️</p>
+                                <p>‘우리’를 위해 노력하며 성장하기 위한 소통법을 만들어가고 있어요 😊</p>
                             </a>
                         </li>
                         <li class="organizer">
@@ -542,16 +397,132 @@
                                 <p>누구나 iOS에 입문하기 좋은 세상을 만들고 있는 개발자리 유투버 입니다!</p>
                             </a>
                         </li>
+                        <li class="organizer">
+                            <a href="https://github.com/noah0316" target="_blank">
+                                <img class="photo" src="../images/organizers/noah.JPG" alt="오거나이저">
+                                <h4>홍승현(Noah)</h4>
+                                <p>안녕하세요 Noah입니다 :) 즐거운 커뮤니티 함께 만들어가요!</p>
+                            </a>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/duri.jpeg" alt="오거나이저">
+                            <h4>김두리(두리)</h4>
+                            <p>두리두리한 세상을 살아가는 김두리입니다. 유쾌하게 개발하며 지내고 있어요. 다들 하윙?</p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo"
+                                src="../images/organizers/jeehee.jpeg"
+                                alt="오거나이저">
+                            <h4>황지희(Jee.e)</h4>
+                            <div class="organizerText">
+                                <p>빠른 길보다 바른 길을 가는, 호기심 가득한 iOS 디발자입니다 :D</p>
+                            </div>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/ns.png" alt="오거나이저">
+                            <h4>김남수(에네스)</h4>
+                            <p>제 이름 약자는 NS이에요 iOS개발자가 된건 운명이였나봐요 😆</p>
+                        </li>
+                        <li class="organizer">
+                            <a href="https://github.com/szzang-kr" target="_blank">
+                                <img class="photo" src="../images/organizers/szzang.png" alt="오거나이저">
+                                <h4>안상훈(szzang, 상짱)</h4>
+                                <p>수다떨기를 좋아하는 iOS 개발자</p>
+                            </a>
+                        </li>
+                        <li class="organizer">
+                            <a href="https://www.linkedin.com/in/jinho-jang-620085117/" target="_blank">
+                                <img class="photo"
+                                    src="../images/organizers/jinho.jpg"
+                                    alt="오거나이저">
+                                <h4>장진호</h4>
+                                <p>“대충 흑백사진에 글쓰면 명언같다”</p>
+                            </a>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/sanghee.jpg" alt="오거나이저">
+                            <h4>안상희(셀리나)</h4>
+                            <p>음악을 사랑하는 개발자</p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo"
+                                src="../images/organizers/asher.png"
+                                alt="오거나이저">
+                            <h4>김태완(애셔)</h4>
+                            <p>추리를 좋아하는 개발자🕵🏻 </p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/jinwook.jpeg" alt="오거나이저">
+                            <h4>최진욱</h4>
+                            <p>디지털 노마드가 되기 위해서 으쌰으쌰💪🏻</p>
+                        </li>
+                        <li class="organizer">
+                            <a href="https://github.com/NEULiee" target="_blank">
+                                <img class="photo" src="../images/organizers/neuli.png" alt="오거나이저">
+                                <h4>하늘이</h4>
+                                <p>길을 찾고있어요! 🙈</p>
+                            </a>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/taeguun.jpeg" alt="오거나이저">
+                            <h4>김태균</h4>
+                            <p>하고 싶은 일 모두 할 수 있음 좋겠네 😝</p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/hani.png" alt="오거나이저">
+                            <h4>이하원(하니)</h4>
+                            <p>☺️</p>
+                        </li>
+                        <li class="organizer">
+                            <a href="https://www.linkedin.com/in/jiin-heo-672177227/" target="_blank">
+                                <img class="photo" src="../images/organizers/jeein.JPG" alt="오거나이저">
+                                <h4>허지인(지니)</h4>
+                                <p>그냥 합니다 뭐든 🥹</p>
+                            </a>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/dongheon.jpeg" alt="오거나이저">
+                            <h4>이동헌</h4>
+                            <p>즐거운 개발 문화를 만들어 나가고 싶어요!</p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo"
+                                src="../images/organizers/chez.JPG"
+                                alt="오거나이저">
+                            <h4>최예주(체즈)</h4>
+                            <p>안녕하세요 iOS 개발자 체즈입니다..</p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo" src="../images/organizers/kangkyung.jpg" alt="강경훈(강경)">
+                            <h4>강경훈(강경)</h4>
+                            <p>러닝과 고양이를 사랑합니다😻</p>
+                        </li>
+                        <li class="organizer">
+                            <img class="photo"
+                                src="../images/organizers/chez.JPG"
+                                alt="오거나이저">
+                            <h4>박경민</h4>
+                            <p>재밌는 게 좋아요</p>
+                        </li>
+                        <li class="organizer">
+                            <a href="" target="_blank">
+                                <img class="photo"
+                                    src="../images/organizers/gul.jpeg"
+                                    alt="오거나이저">
+                                <h4>귤</h4>
+                                <p>❄️</p>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
             <!-- end organizer -->
 
             <!-- end content -->
-            <footer id="footer">
+            <footer id="footer" class="page">
                 <div class="container">
-                    <p id="letswiftName">Let’Swift 2023</p>
-                    <p id="email">letswift.official@gmail.com</p>
+                    <p id="letswiftName" class="defaultPaddingLeft">Let’Swift 2023</p>
+                    <p id="email" class="defaultPaddingLeft">letswift.official@gmail.com</p>
                     <!-- TODO: 링크 이동 -->
                     <a id="facebookIcon" href="" target="_blank">
                         <img src="../images/Facebook120x120.png" alt="Facebook">
@@ -610,12 +581,14 @@
                     menuButton.classList.remove("hide");
                     mobileHeaderLogo.setAttribute("src", "../images/whiteLogo120x120.png");
                     mobileHeader.style.backgroundColor = "rgba(0, 71, 255, 1.0)";
+                    document.body.style.overflow = "scroll";
                 } else {
                     elem.className = "visible";
                     menuCloseButton.classList.remove("hide");
                     menuButton.classList.add("hide");
                     mobileHeaderLogo.setAttribute("src", "../images/blackLogo120x120.png");
                     mobileHeader.style.backgroundColor = "white";
+                    document.body.style.overflow = "hidden";
                 }
             }
 
