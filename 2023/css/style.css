@@ -589,34 +589,37 @@ body {
 }
 
 #carrot {
-    height: 150px;
+    height: 4rem;
     padding-left: 10rem;
+    padding-top: 1rem;
 }
 
 #dreamus {
     height: 160px;
-    padding-left: 11rem;
-    margin-bottom: -2rem;
+    padding-left: 9rem;
+    margin-top: -2rem;
+    margin-bottom: -4rem;
 }
 
 #jumpit {
-    padding: 3rem 0rem 3rem 12rem;
-    height: 70px;
+    padding-left: 10rem;
+    height: 2.5rem;
 }
 
 #channeltalk {
     padding-left: 4rem;
-    height: 150px;
+    height: 3.25rem;
 }
 
 #hyperconnect {
     padding-left: 10rem;
-    height: 100px;
+    height: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 #cloudtype {
     padding-left: 3rem;
-    height: 70px;
+    height: 60px;
 }
 
 /* section-6:Location */
@@ -932,8 +935,6 @@ body {
     }
 
     #carrot {
-        height: 130px;
-        padding-top: 1rem;
         padding-left: 8rem;
     }
 
@@ -943,17 +944,14 @@ body {
     }
 
     #jumpit {
-        padding: 3rem 0rem 3rem 10rem;
-        height: 60px;
+        padding-left: 10rem;
     }
 
     #channeltalk {
         padding-left: 4rem;
-        height: 140px;
     }
     #hyperconnect {
         padding-left: 8rem;
-        height: 70px;
     }
 
     #cloudtype {
@@ -1122,7 +1120,6 @@ body {
     }
 
     #carrot {
-        height: 110px;
         padding-left: 4rem;
     }
 
@@ -1132,18 +1129,16 @@ body {
     }
 
     #jumpit {
-        padding: 3rem 0rem 3rem 6rem;
+        padding-left: 6rem;
         height: 40px;
     }
 
     #channeltalk {
         padding-left: 4rem;
-        height: 110px;
     }
 
     #hyperconnect {
         padding-left: 4rem;
-        height: 70px;
     }
 
     #cloudtype {
@@ -1391,28 +1386,27 @@ body {
     }
 
     #carrot {
-        height: 80px;
+        padding-top: 1.5rem;
         padding-left: 2.18rem;
     }
 
     #dreamus {
         height: 100px;
-        padding-left: 3rem;
+        padding-left: 1.5rem;
     }
 
     #jumpit {
-        padding: 3rem 0rem 3rem 4rem;
-        height: 30px;
+        padding-top: 1.5rem;
+        padding-left: 2.5rem;
     }
 
     #channeltalk {
         padding-left: 4rem;
-        height: 100px;
+        margin-bottom: 0.3rem;
     }
 
     #hyperconnect {
         padding-left: 2.18rem;
-        height: 60px;
     }
 
     #cloudtype {
