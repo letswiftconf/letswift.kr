@@ -588,6 +588,12 @@ body {
     padding-top: 1rem;
 }
 
+#codesquard {
+    padding-top: 1.5rem;
+    padding-left: 10rem;
+    height: 3rem;
+}
+
 #carrot {
     height: 4rem;
     padding-left: 10rem;
@@ -595,10 +601,9 @@ body {
 }
 
 #dreamus {
-    height: 160px;
-    padding-left: 9rem;
-    margin-top: -2rem;
-    margin-bottom: -4rem;
+    height: 40px;
+    padding-left: 10rem;
+    padding-top: 1rem;
 }
 
 #jumpit {
@@ -934,17 +939,22 @@ body {
         font-size: 1.2rem;
     }
 
+    #codesquard {
+        padding-top: 1rem;
+        padding-left: 8rem;
+    }
+
     #carrot {
         padding-left: 8rem;
     }
 
     #dreamus {
-        height: 150px;
-        padding-left: 9rem;
+        height: 40px;
+        padding-left: 8rem;
     }
 
     #jumpit {
-        padding-left: 10rem;
+        padding-left: 8rem;
     }
 
     #channeltalk {
@@ -955,7 +965,7 @@ body {
     }
 
     #cloudtype {
-        padding-left: 2rem;
+        padding-left: 1.8rem;
         height: 50px;
     }   
 
@@ -1119,17 +1129,22 @@ body {
         font-size: 1.2rem;
     }
 
+    #codesquard {
+        padding-top: 1rem;
+        padding-left: 4rem;
+    }
+
     #carrot {
         padding-left: 4rem;
     }
 
     #dreamus {
-        height: 140px;
-        padding-left: 5rem;
+        padding-left: 4rem;
     }
 
     #jumpit {
-        padding-left: 6rem;
+        padding-top: 1rem;
+        padding-left: 4rem;
         height: 40px;
     }
 
@@ -1143,7 +1158,7 @@ body {
 
     #cloudtype {
         padding-left: 5rem;
-        height: 50px;
+        height: 40px;
     }       
 
     /* section-6: Location */
@@ -1385,24 +1400,28 @@ body {
         font-size: 1.2rem;
     }
 
+    #codesquard {
+        padding-top: 1.5rem;
+        padding-left: 2.18rem;
+    }
+
     #carrot {
         padding-top: 1.5rem;
         padding-left: 2.18rem;
     }
 
     #dreamus {
-        height: 100px;
-        padding-left: 1.5rem;
+        height: 35px;
+        padding-left: 2.18rem;
     }
 
     #jumpit {
-        padding-top: 1.5rem;
-        padding-left: 2.5rem;
+        padding-top: 1rem;
+        padding-left: 2.18rem;
     }
 
     #channeltalk {
-        padding-left: 4rem;
-        margin-bottom: 0.3rem;
+        padding-left: 3rem;
     }
 
     #hyperconnect {
@@ -1411,8 +1430,8 @@ body {
 
     #cloudtype {
         padding-top: 1rem;
-        padding-left: 3.2rem;
-        height: 40px;
+        padding-left: 3.5rem;
+        height: 36px;
     }      
 
     /* section-6: Location */
