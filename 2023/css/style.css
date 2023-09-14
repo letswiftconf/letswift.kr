@@ -627,6 +627,13 @@ body {
     height: 60px;
 }
 
+#jpub {
+    padding-top: 1rem;
+    padding-left: 10rem;
+    height: 5rem;
+    margin-bottom: -1rem;
+}
+
 /* section-6:Location */
 #contents #location {
     margin-top: -7.5rem;
@@ -969,6 +976,10 @@ body {
         height: 50px;
     }   
 
+    #jpub {
+        padding-left: 8rem;
+    }
+
     /* section-6: Location */
     #contents #location {
         height: 100vh;
@@ -1159,7 +1170,11 @@ body {
     #cloudtype {
         padding-left: 5rem;
         height: 40px;
-    }       
+    }    
+    
+    #jpub {
+        padding-left: 4rem;
+    }
 
     /* section-6: Location */
     #contents #location {
@@ -1425,14 +1440,20 @@ body {
     }
 
     #hyperconnect {
+        padding-top: 1rem;
         padding-left: 2.18rem;
+        height: 20px;
     }
 
     #cloudtype {
         padding-top: 1rem;
-        padding-left: 3.5rem;
-        height: 36px;
-    }      
+        padding-left: 2.18rem;
+        height: 32px;
+    }   
+    
+    #jpub {
+        padding-left: 2.18rem;
+    }
 
     /* section-6: Location */
     #contents #location {
