@@ -2,11 +2,11 @@
 
 /* Font */
 @import url('https://fonts.cdnfonts.com/css/sf-mono');
-@import url('https://fonts.cdnfonts.com/css/sf-mono.woff');
-@import url('https://fonts.cdnfonts.com/css/sf-mono.woff2');
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display.woff');
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display.woff2');
+/* @import url('https://fonts.cdnfonts.com/css/sf-pro-display'); */
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../font/SF-Pro-Display-Semibold.woff') format('woff');
+}
 
 /* Common */
 .hide {
@@ -49,7 +49,7 @@ body {
 }
 
 #contents section {
-    min-height: 50vh;
+    /* min-height: 50vh; */
 }
 
 #footer {
@@ -367,7 +367,6 @@ body {
 #contents #speakers {
     position: relative;
     padding-bottom: 5rem;
-    margin-bottom: 5rem;
     background-color: #F9FAFB;
     float: left;
 }
@@ -412,20 +411,22 @@ body {
 }
 
 .speakerList .speaker .speakerArrow {
-    position: absolute;
-    padding-top: 1.375rem;
+    position:absolute;
+    padding-top: 1.325rem;
     padding-left: 9.5rem;
     width: 1.5rem;
     height: 1.5rem;
 }
 
 .speakerList .speaker .photo {
+    float: none;
     width: 9.375rem;
     height: 9.375rem;
     position: relative;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .speakerList h4 {
@@ -507,18 +508,34 @@ body {
     padding-top: 7.5rem;
 }
 
-#programs #timetable {
-    font-size: 1rem;
-    font-family: 'SF Mono', 'Apple SD Gothic Neo', 'sans-serif';
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.30);
-    padding-top: 3rem;
+#programs .felxDiv {
+    display: flex;
+    padding-top: 2rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+}
+
+#programs .timeTable {
+    flex: auto;
+    /* margin-left: 2rem; */
+}
+
+#programs .room {
+    color: #85BBFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.25rem;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    padding-top: 5rem;
+}
+
+#programs .room2 {
+    padding-top: 7rem;
 }
 
 #programs .startLine {
-    margin-top: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-top: 2.5rem;
     height: 1px;
     flex-shrink: 0;
     background: rgba(255, 255, 255, 0.30);
@@ -526,21 +543,57 @@ body {
 
 #programs .programLine {
     margin-top: 2rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
     height: 1px;
     flex-shrink: 0;
     background: rgba(255, 255, 255, 0.30);
 }
 
+#programs .time {
+    flex: none;
+    width: 10rem;
+    margin: auto;
+    color: #FFF;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+}
+
+#programs .lunchTime {
+    color: #85BBFF;
+    flex: none;
+    width: 10rem;
+    margin: auto;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+}
+
+#programs .programInfo {
+    flex: auto;
+    padding-left: 6rem;
+}
+
 #programs .speakerName {
+    margin-top: 0.625rem;
     color: #85BBFF;
     font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
     font-size: 1rem;
     font-style: normal;
-    font-weight: 590;
+    font-weight: 510;
     line-height: normal;
-    padding-top: 1rem;
+}
+
+#programs .lunch {
+    margin-top: 0.2rem;
+    color: #85BBFF;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
 }
 
 #programs .speakerTitle {
@@ -550,7 +603,6 @@ body {
     font-style: normal;
     font-weight: 590;
     line-height: 2rem;
-    padding-top: 2rem;
 }
 
 #programs .commingsoon {
@@ -895,7 +947,7 @@ body {
     /* section-3: speakers */
     #speakers ul {
         width: 90vw;
-        margin: 5rem 0rem 5rem 10vw;
+        /* margin: 5rem 0rem 5rem 10vw; */
         text-align: center;
     }
 
@@ -906,9 +958,9 @@ body {
     }
 
     .speakerList p {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }    
 
     /* section-4: about2 */
     #about2 p {
@@ -926,15 +978,10 @@ body {
     }
 
     /* section-5: programs */
-    #programs .startLine {
-        margin-left: 8rem;
-        margin-right: 8rem;
+    #programs .programInfo {
+        flex: auto;
+        padding-left: 2rem;
     }
-
-    #programs .programLine {
-        margin-left: 8rem;
-        margin-right: 8rem;
-    }    
 
     /* section-sponsors */
     #sponsors .line {
@@ -1094,13 +1141,25 @@ body {
     }
 
     .speakerList p {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .speakerList .speaker .photo {
         width: 9.375rem;
         height: 9.375rem;
+    }
+
+    .speakerList .speaker .speakerArrow {
+        padding-top: 1.375rem;
+        padding-left: 10.6rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .speakerList p {
+        font-size: 1rem;
+        line-height: 1.3rem;
     }
 
     /* section-4: about2 */
@@ -1120,15 +1179,6 @@ body {
     }
 
     /* section-5: programs */
-    #programs .startLine {
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
-
-    #programs .programLine {
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
 
     /* section-sponsors */
     #sponsors .line {
@@ -1354,12 +1404,19 @@ body {
     .speakerList .speaker {
         margin-left: 2vw;
         width: 40vw;
-        height: 26rem;
+        height: 27rem;
     }
 
     .speakerList .speaker .photo {
-        width: 9.375rem;
-        height: 9.375rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .speakerList .speaker .speakerArrow {
+        padding-left: 10.5rem;
+        padding-top: 1.325rem;
+        width: 1.3rem;
+        height: 1.3rem;
     }
 
     .speakerList h4 {
@@ -1368,8 +1425,8 @@ body {
 
     .speakerList p {
         font-size: 12px;
-        padding-left: 1.3rem;
-        padding-right: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         line-height: 15px;
     }
     
@@ -1391,14 +1448,32 @@ body {
 
     /* section-5: programs */
     #programs .startLine {
-        margin-top: 1rem;
-        margin-left: 2.18rem;
-        margin-right: 2.18rem;
+        margin-top: 3.5rem;
     }
 
-    #programs .programLine {
-        margin-left: 2.18rem;
-        margin-right: 2.18rem;
+    #programs .felxDiv {
+        display: inline-block;
+    }
+
+    #programs .programInfo {
+        flex: none;
+        padding-left: 0rem;
+    }
+
+    #programs .time {
+        flex: none;
+        width: auto;
+        padding-left: 0rem;
+    }
+
+    #programs .lunchTime {
+        flex: none;
+        font-size: 1.375rem;
+    }
+
+    #programs .programInfo {
+        flex: none;
+        padding-top: 1.8rem;
     }
 
     /* section-sponsors */
@@ -1531,3 +1606,11 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .speakerList .speaker .speakerArrow {
+        padding-left: 9rem;
+        padding-top: 1rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
