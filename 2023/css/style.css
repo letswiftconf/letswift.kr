@@ -577,6 +577,15 @@ body {
     padding-left: 6rem;
 }
 
+#programs .closing {
+    color: #85BBFF;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 2rem;
+}
+
 #programs .speakerName {
     margin-top: 0.625rem;
     color: #85BBFF;
