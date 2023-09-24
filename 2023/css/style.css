@@ -2,11 +2,11 @@
 
 /* Font */
 @import url('https://fonts.cdnfonts.com/css/sf-mono');
-/* @import url('https://fonts.cdnfonts.com/css/sf-pro-display'); */
-@font-face {
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+/* @font-face {
     font-family: 'SF Pro';
     src: url('../font/SF-Pro-Display-Semibold.woff') format('woff');
-}
+} */
 
 /* Common */
 .hide {
