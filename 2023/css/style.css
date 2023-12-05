@@ -595,6 +595,17 @@ body {
     line-height: normal;
 }
 
+#programs .speakerLink {
+    margin-top: 0.625rem;
+    color: #85BBFF;
+    font-family: 'SF Pro', 'Apple SD Gothic Neo', 'sans-serif';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    text-decoration: underline;
+}
+
 #programs .lunch {
     margin-top: 0.2rem;
     color: #85BBFF;
