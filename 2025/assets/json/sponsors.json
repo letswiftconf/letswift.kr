@@ -44,5 +44,51 @@
             "youtube": ""
         },
         "tier": "Individual"
+    },
+    {
+        "description": "Stay hungry, stay foolish 🔥",
+        "id": "12",
+        "image_name": "harry_ho.jpeg",
+        "image_url": "https: //letswift.kr/2025/assets/sponsors/harry_ho.jpeg",
+        "name": "Harry Ho",
+        "name_en": "Harry Ho",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "https://instagram.com/harry_ho_0102",
+            "linkedin": "",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
+    },
+    {
+        "description": "",
+        "id": "13",
+        "image_name": "arex.jpeg",
+        "image_url": "https: //letswift.kr/2025/assets/sponsors/arex.jpeg",
+        "name": "강동영",
+        "name_en": "아렉스",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/kangdongyeong-rx",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
     }
 ]
