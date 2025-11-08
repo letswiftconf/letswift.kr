@@ -90,5 +90,28 @@
             "youtube": ""
         },
         "tier": "Individual"
+    },
+    {
+        "description": "메타 뉴욕 iOS 개발자 - AI가 플랫폼이 된 지금 모바일 개발자는 무엇으로 차별화될까요?",
+        "id": "14",
+        "image_name": "soojin_ro.jpg",
+        "image_url": "https: //letswift.kr/2025/assets/sponsors/soojin_ro.jpg",
+        "name": "노수진",
+        "name_en": "Soojin Ro",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/soojinro/",
+            "mastodon": "",
+            "medium": "",
+            "thread": "https://www.threads.com/@soojin_ro",
+            "web": "https://www.nyprogrammer.com/",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
     }
 ]
