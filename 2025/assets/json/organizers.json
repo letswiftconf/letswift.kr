@@ -223,5 +223,80 @@
             "youtube": "",
             "medium": ""
         }
+    },
+    {
+        "id": "10",
+        "name": "김민호",
+        "name_en": "",
+        "nickname": "",
+        "image_name": "minho.PNG",
+        "image_url": "https://letswift.kr/2025/assets/organizers/minho.PNG",
+        "affiliation": "",
+        "affiliation_en": "",
+        "description": "치어리더형 개발자",
+        "team": [],
+        "social": {
+            "web": "",
+            "email": "",
+            "github": "https://github.com/stealmh",
+            "linkedin": "https://www.linkedin.com/in/minho-kim-088b81309",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
+    },
+    {
+        "id": "11",
+        "name": "윤준수",
+        "name_en": "",
+        "nickname": "",
+        "image_name": "junsoo.jpeg",
+        "image_url": "https://letswift.kr/2025/assets/organizers/junsoo.jpeg",
+        "affiliation": "",
+        "affiliation_en": "",
+        "description": "🌊",
+        "team": [],
+        "social": {
+            "web": "",
+            "email": "",
+            "github": "",
+            "linkedin": "https://www.linkedin.com/in/junsuyun",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
+    },
+    {
+        "id": "12",
+        "name": "안나",
+        "name_en": "",
+        "nickname": "",
+        "image_name": "anna.jpeg",
+        "image_url": "https://letswift.kr/2025/assets/organizers/anna.jpeg",
+        "affiliation": "",
+        "affiliation_en": "",
+        "description": "✨🔥",
+        "team": [],
+        "social": {
+            "web": "",
+            "email": "addlight19@gmail.com",
+            "github": "",
+            "linkedin": "https://www.linkedin.com/in/유빈-정-25638623b/",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
     }
 ]
