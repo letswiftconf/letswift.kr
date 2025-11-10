@@ -113,5 +113,28 @@
             "youtube": ""
         },
         "tier": "Individual"
+    },
+    {
+        "description": "무야호~!",
+        "id": "15",
+        "image_name": "will.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/will.jpg",
+        "name": "이승민",
+        "name_en": "윌",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "https://github.com/Minny27",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/dltmdals0608",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
     }
 ]
