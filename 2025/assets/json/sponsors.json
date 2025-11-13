@@ -165,7 +165,7 @@
         "id": "8",
         "image_name": "vivi.jpg",
         "image_url": "https://letswift.kr/2025/assets/sponsors/vivi.jpg",
-        "name": "김예빈",
+        "name": "vivi",
         "name_en": "vivi",
         "should_display": true,
         "social": {
@@ -217,6 +217,52 @@
         "should_display": true,
         "social": {
             "web": "https://www.revenuecat.com/",
+            "email": "",
+            "github": "",
+            "linkedin": "",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
+    },
+    {
+        "id": "11",
+        "name": "도서출판 인사이트",
+        "name_en": "Insight Book",
+        "tier": "dev_growth",
+        "image_name": "insight_white.png",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/insight_white.png",
+        "description": "",
+        "should_display": true,
+        "social": {
+            "web": "https://ebook.insightbook.co.kr",
+            "email": "",
+            "github": "",
+            "linkedin": "",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
+    },
+    {
+        "id": "12",
+        "name": "튜링의 사과",
+        "name_en": "Turing Apple",
+        "tier": "dev_growth",
+        "image_name": "turingapple_white.png",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/turingapple_white.png",
+        "description": "",
+        "should_display": true,
+        "social": {
+            "web": "https://turingapple.com",
             "email": "",
             "github": "",
             "linkedin": "",
