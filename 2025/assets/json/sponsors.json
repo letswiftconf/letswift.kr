@@ -1,7 +1,7 @@
 [
     {
         "description": "🧚-< ᵍᵉᵗ ᵃ ⱽⁱˢⁱᵒⁿ ᴾʳᵒ",
-        "id": "7",
+        "id": "1",
         "image_name": "bummo.jpeg",
         "image_url": "https: //letswift.kr/2025/assets/sponsors/bummo.jpeg",
         "name": "구범모",
@@ -24,7 +24,7 @@
     },
     {
         "description": "",
-        "id": "11",
+        "id": "2",
         "image_name": "seongnam_jimi.jpeg",
         "image_url": "https: //letswift.kr/2025/assets/sponsors/seongnam_jimi.jpeg",
         "name": "성남 지미",
@@ -47,7 +47,7 @@
     },
     {
         "description": "Stay hungry, stay foolish 🔥",
-        "id": "12",
+        "id": "3",
         "image_name": "harry_ho.jpeg",
         "image_url": "https: //letswift.kr/2025/assets/sponsors/harry_ho.jpeg",
         "name": "Harry Ho",
@@ -70,7 +70,7 @@
     },
     {
         "description": "",
-        "id": "13",
+        "id": "4",
         "image_name": "arex.jpeg",
         "image_url": "https: //letswift.kr/2025/assets/sponsors/arex.jpeg",
         "name": "강동영",
@@ -93,7 +93,7 @@
     },
     {
         "description": "메타 뉴욕 iOS 개발자 - AI가 플랫폼이 된 지금 모바일 개발자는 무엇으로 차별화될까요?",
-        "id": "14",
+        "id": "5",
         "image_name": "soojin_ro.jpg",
         "image_url": "https: //letswift.kr/2025/assets/sponsors/soojin_ro.jpg",
         "name": "노수진",
@@ -116,7 +116,7 @@
     },
     {
         "description": "무야호~!",
-        "id": "15",
+        "id": "6",
         "image_name": "will.jpg",
         "image_url": "https://letswift.kr/2025/assets/sponsors/will.jpg",
         "name": "이승민",
@@ -136,5 +136,97 @@
             "youtube": ""
         },
         "tier": "Individual"
+    },
+    {
+        "description": "링고링고링~🎶",
+        "id": "7",
+        "image_name": "lingo.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/lingo.jpg",
+        "name": "링고",
+        "name_en": "Lingo",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/lingostar/",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
+    },
+    {
+        "description": "٩( ᐛ )و (혹시 특수문자 잘리면 이걸로 부탁드립니다! -> 🤗🔥✨)",
+        "id": "8",
+        "image_name": "vivi.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/vivi.jpg",
+        "name": "김예빈",
+        "name_en": "vivi",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "https://www.instagram.com/ye_bean_2",
+            "linkedin": "https://www.linkedin.com/in/vivi-kim",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
+    },
+    {
+        "description": "나의 개발자 여정 길잡이 Let'Swift",
+        "id": "9",
+        "image_name": "doyoung.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/doyoung.jpg",
+        "name": "염도영",
+        "name_en": "",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/dyyeom",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
+    },
+    {
+        "id": "10",
+        "name": "RevenuCat",
+        "name_en": "RevenuCat",
+        "tier": "Gold",
+        "image_name": "rc_color.png",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/rc_color.png",
+        "description": "",
+        "should_display": true,
+        "social": {
+            "web": "https://www.revenuecat.com/",
+            "email": "",
+            "github": "",
+            "linkedin": "",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
     }
 ]
