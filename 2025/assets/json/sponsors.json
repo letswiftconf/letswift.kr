@@ -274,5 +274,51 @@
             "youtube": "",
             "medium": ""
         }
+    },
+    {
+        "description": "",
+        "id": "13",
+        "image_name": "potato.png",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/potato.png",
+        "name": "익명의 감자",
+        "name_en": "",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
+    },
+    {
+        "description": "우리의 앱으로 더 행복한 세상을 만듭시다",
+        "id": "14",
+        "image_name": "jongwook_park.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/jongwook_park.jpg",
+        "name": "박종욱",
+        "name_en": "",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/jongwook-park-25553051/",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
     }
 ]
