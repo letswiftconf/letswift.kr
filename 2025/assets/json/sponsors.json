@@ -320,5 +320,28 @@
             "youtube": ""
         },
         "tier": "Individual"
+    },
+    {
+        "description": "",
+        "id": "15",
+        "image_name": "minsone.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/minsone.jpg",
+        "name": "안정민 / 민소네",
+        "name_en": "",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "https://github.com/minsone",
+            "instagram": "",
+            "linkedin": "",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
     }
 ]
