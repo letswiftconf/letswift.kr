@@ -298,5 +298,55 @@
             "youtube": "",
             "medium": ""
         }
+    },
+    {
+        "id": "13",
+        "name": "서주영",
+        "name_en": "",
+        "nickname": "제로",
+        "image_name": "seojoo.jpg",
+        "image_url": "https://letswift.kr/2025/assets/organizers/seojoo.jpg",
+        "affiliation": "홍익대학교",
+        "affiliation_en": "",
+        "description": "모두 스위프트합시다!",
+        "team": [],
+        "social": {
+            "web": "",
+            "email": "",
+            "github": "https://github.com/seojoozero",
+            "linkedin": "https://www.linkedin.com/in/jooyoung-seo-972a4730a",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
+    },
+    {
+        "id": "14",
+        "name": "심현희",
+        "name_en": "",
+        "nickname": "웰디",
+        "image_name": "hyeonhee.jpg",
+        "image_url": "https://letswift.kr/2025/assets/organizers/hyeonhee.jpg",
+        "affiliation": "KRAFTON",
+        "affiliation_en": "",
+        "description": "그럼에도 불구하고 여전히 사람과 연결의 가치를 믿습니다",
+        "team": [],
+        "social": {
+            "web": "",
+            "email": "",
+            "github": "",
+            "linkedin": "https://www.linkedin.com/in/hyeonheeshim",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
     }
 ]
