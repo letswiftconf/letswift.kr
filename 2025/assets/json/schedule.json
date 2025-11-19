@@ -244,10 +244,10 @@
         "name": "macOS 앱에서 파이썬 및 pip 패키지 완전 통합하기",
         "name_en": "macOS 앱에서 파이썬 및 pip 패키지 완전 통합하기",
         "type": "presentation",
-        "track": "트랙 B",
-        "track_en": "Track B",
-        "venue": "C홀",
-        "venue_en": "Hall C",
+        "track": "Track A",
+        "track_en": "Track A",
+        "venue": "B홀",
+        "venue_en": "Hall B",
         "speakers": [
             {
                 "id": "10",
@@ -275,9 +275,9 @@
                 }
             }
         ],
-        "start_time": "2025-11-24T11:20:00",
+        "start_time": "2025-11-24T13:40:00",
         "duration": 2400,
-        "end_time": "2025-11-24T12:00:00",
+        "end_time": "2025-11-24T14:20:00",
         "keynote_url": "",
         "video_url": "",
         "level": "easy"
@@ -347,10 +347,10 @@
         "name": "SwiftUI로 디자인시스템 약간 오버 엔지니어링 설계하기 (feat. OOP)",
         "name_en": "SwiftUI로 디자인시스템 약간 오버 엔지니어링 설계하기 (feat. OOP)",
         "type": "presentation",
-        "track": "Track A",
-        "track_en": "Track A",
-        "venue": "B홀",
-        "venue_en": "Hall B",
+        "track": "트랙 B",
+        "track_en": "Track B",
+        "venue": "C홀",
+        "venue_en": "Hall C",
         "speakers": [
             {
                 "id": "12",
@@ -378,9 +378,9 @@
                 }
             }
         ],
-        "start_time": "2025-11-24T13:40:00",
-        "duration": 1200,
-        "end_time": "2025-11-24T14:00:00",
+        "start_time": "2025-11-24T11:40:00",
+        "duration": 1800,
+        "end_time": "2025-11-24T12:10:00",
         "keynote_url": "",
         "video_url": "",
         "level": "easy"
@@ -458,10 +458,10 @@
         "name": "Vapor와 함께 풀스택 개발자 도전",
         "name_en": "Vapor와 함께 풀스택 개발자 도전",
         "type": "presentation",
-        "track": "Track A",
-        "track_en": "Track A",
-        "venue": "B홀",
-        "venue_en": "Hall B",
+        "track": "트랙 B",
+        "track_en": "Track B",
+        "venue": "C홀",
+        "venue_en": "Hall C",
         "speakers": [
             {
                 "id": "9",
@@ -489,9 +489,9 @@
                 }
             }
         ],
-        "start_time": "2025-11-24T14:00:00",
+        "start_time": "2025-11-24T11:20:00",
         "duration": 1200,
-        "end_time": "2025-11-24T14:20:00",
+        "end_time": "2025-11-24T11:40:00",
         "keynote_url": "",
         "video_url": "",
         "level": "easy"
