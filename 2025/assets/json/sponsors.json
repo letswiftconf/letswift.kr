@@ -343,5 +343,28 @@
             "youtube": ""
         },
         "tier": "Individual"
+    },
+    {
+        "description": "LetSwift의 첫번째 브랜치였던 LetSwift Pangyo에서 후원합니다.",
+        "id": "16",
+        "image_name": "wanbok.jpg",
+        "image_url": "https://letswift.kr/2025/assets/sponsors/wanbok.jpg",
+        "name": "최완복",
+        "name_en": "",
+        "should_display": true,
+        "social": {
+            "email": "",
+            "facebook": "",
+            "github": "",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/wanbok",
+            "mastodon": "",
+            "medium": "",
+            "thread": "",
+            "web": "",
+            "x": "",
+            "youtube": ""
+        },
+        "tier": "Individual"
     }
 ]
