@@ -1,11 +1,11 @@
 {
     "feature_flags": {
         "commemorative_pass_2025": {
-            "enabled": true,
+            "enabled": false,
             "min_app_version": "9.0"
         },
         "enable_survey_2025": {
-            "enabled": false,
+            "enabled": true,
             "min_app_version": "9.0"
         }
     },
