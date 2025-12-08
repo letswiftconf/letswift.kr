@@ -348,5 +348,30 @@
             "youtube": "",
             "medium": ""
         }
+    },
+    {
+        "id": "15",
+        "name": "",
+        "name_en": "",
+        "nickname": "Toby",
+        "image_name": "toby.jpg",
+        "image_url": "https://letswift.kr/2025/assets/organizers/toby.jpg",
+        "affiliation": "",
+        "affiliation_en": "",
+        "description": "커뮤니티를 사랑하는 iOS개발자",
+        "team": [],
+        "social": {
+            "web": "",
+            "email": "",
+            "github": "",
+            "linkedin": "",
+            "x": "",
+            "mastodon": "",
+            "facebook": "",
+            "instagram": "",
+            "thread": "",
+            "youtube": "",
+            "medium": ""
+        }
     }
 ]
